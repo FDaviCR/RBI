@@ -1,0 +1,25 @@
+<%- include('../../../partials/head.ejs'); %>
+	<body>
+		<%- include('../../../partials/header-menu/header-cadastro.ejs'); %>
+	
+		<section class="unidade container-fluid dataBox">
+			<h1 class="titulo">Cadastrar Unidade</h1>
+			<hr>
+			<div class="table-data row justify-content-md-center">
+		
+				<form method="POST" action="/cadastro/site/save" class="form-cadastro">
+					<div class="mb-4">
+					  <label for="site" class="form-label">New Site</label>
+					  <input type="text" class="form-control" id="site" name="site" required>
+					</div>
+					<div class="mb-4">
+					  <label for="FMS" class="form-label">Management Systems Factor</label>
+					  <input class="form-control" id="FMS" name="FMS" type="number" step="any" min="0" required>
+					</div>
+					<button type="submit" class="btn btn-success">Cadastrar</button>
+					<a href="/cadastro/site" class="ml-2"><button type="button" class="btn btn-secondary">Cancelar</button></a>
+				</form>
+			</div>
+		</section>
+	</body>
+<%- include('../../../partials/footer.ejs'); %>

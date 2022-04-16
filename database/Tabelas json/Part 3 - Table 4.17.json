@@ -1,0 +1,218 @@
+[
+    {
+        "ComponentType": "COMPC",
+        "EquipmentType": "Compressor",
+        "outage_Large": 7,
+        "outage_Medium": 3,
+        "outage_Rupture": 0,
+        "outage_Small": 0
+    },
+    {
+        "ComponentType": "COMPR",
+        "EquipmentType": "Compressor",
+        "outage_Large": 7,
+        "outage_Medium": 3,
+        "outage_Rupture": 0,
+        "outage_Small": 0
+    },
+    {
+        "ComponentType": "HEXSS",
+        "EquipmentType": "Heat exchanger",
+        "outage_Large": 3,
+        "outage_Medium": 3,
+        "outage_Rupture": 10,
+        "outage_Small": 2
+    },
+    {
+        "ComponentType": "HEXTS",
+        "EquipmentType": "Heat exchanger",
+        "outage_Large": 3,
+        "outage_Medium": 3,
+        "outage_Rupture": 10,
+        "outage_Small": 2
+    },
+    {
+        "ComponentType": "HEXTUBE",
+        "EquipmentType": "Heat exchanger",
+        "outage_Large": 0,
+        "outage_Medium": 0,
+        "outage_Rupture": 0,
+        "outage_Small": 0
+    },
+    {
+        "ComponentType": "PIPE-1",
+        "EquipmentType": "Pipe",
+        "outage_Large": 0,
+        "outage_Medium": 0,
+        "outage_Rupture": 1,
+        "outage_Small": 0
+    },
+    {
+        "ComponentType": "PIPE-2",
+        "EquipmentType": "Pipe",
+        "outage_Large": 0,
+        "outage_Medium": 0,
+        "outage_Rupture": 1,
+        "outage_Small": 0
+    },
+    {
+        "ComponentType": "PIPE-4",
+        "EquipmentType": "Pipe",
+        "outage_Large": 0,
+        "outage_Medium": 1,
+        "outage_Rupture": 2,
+        "outage_Small": 0
+    },
+    {
+        "ComponentType": "PIPE-6",
+        "EquipmentType": "Pipe",
+        "outage_Large": 2,
+        "outage_Medium": 1,
+        "outage_Rupture": 3,
+        "outage_Small": 0
+    },
+    {
+        "ComponentType": "PIPE-8",
+        "EquipmentType": "Pipe",
+        "outage_Large": 2,
+        "outage_Medium": 2,
+        "outage_Rupture": 3,
+        "outage_Small": 0
+    },
+    {
+        "ComponentType": "PIPE-10",
+        "EquipmentType": "Pipe",
+        "outage_Large": 2,
+        "outage_Medium": 2,
+        "outage_Rupture": 4,
+        "outage_Small": 0
+    },
+    {
+        "ComponentType": "PIPE-12",
+        "EquipmentType": "Pipe",
+        "outage_Large": 4,
+        "outage_Medium": 3,
+        "outage_Rupture": 4,
+        "outage_Small": 1
+    },
+    {
+        "ComponentType": "PIPE-16",
+        "EquipmentType": "Pipe",
+        "outage_Large": 4,
+        "outage_Medium": 3,
+        "outage_Rupture": 5,
+        "outage_Small": 1
+    },
+    {
+        "ComponentType": "PIPEGT16",
+        "EquipmentType": "Pipe",
+        "outage_Large": 5,
+        "outage_Medium": 4,
+        "outage_Rupture": 7,
+        "outage_Small": 1
+    },
+    {
+        "ComponentType": "PUMP2S",
+        "EquipmentType": "Pump",
+        "outage_Large": 0,
+        "outage_Medium": 0,
+        "outage_Rupture": 0,
+        "outage_Small": 0
+    },
+    {
+        "ComponentType": "PUMP1S",
+        "EquipmentType": "Pump",
+        "outage_Large": 0,
+        "outage_Medium": 0,
+        "outage_Rupture": 0,
+        "outage_Small": 0
+    },
+    {
+        "ComponentType": "PUMPR",
+        "EquipmentType": "Pump",
+        "outage_Large": 0,
+        "outage_Medium": 0,
+        "outage_Rupture": 0,
+        "outage_Small": 0
+    },
+    {
+        "ComponentType": "TANKBOTTOM",
+        "EquipmentType": "Tank650",
+        "outage_Large": 0,
+        "outage_Medium": 0,
+        "outage_Rupture": 50,
+        "outage_Small": 5
+    },
+    {
+        "ComponentType": "COURSE-1-10",
+        "EquipmentType": "Tank650",
+        "outage_Large": 3,
+        "outage_Medium": 3,
+        "outage_Rupture": 14,
+        "outage_Small": 2
+    },
+    {
+        "ComponentType": "KODRUM",
+        "EquipmentType": "Vessel",
+        "outage_Large": 3,
+        "outage_Medium": 3,
+        "outage_Rupture": 10,
+        "outage_Small": 2
+    },
+    {
+        "ComponentType": "FINFAN",
+        "EquipmentType": "Vessel",
+        "outage_Large": 2,
+        "outage_Medium": 0,
+        "outage_Rupture": 3,
+        "outage_Small": 0
+    },
+    {
+        "ComponentType": "FILTER",
+        "EquipmentType": "Vessel",
+        "outage_Large": 2,
+        "outage_Medium": 1,
+        "outage_Rupture": 3,
+        "outage_Small": 0
+    },
+    {
+        "ComponentType": "DRUM",
+        "EquipmentType": "Vessel",
+        "outage_Large": 3,
+        "outage_Medium": 3,
+        "outage_Rupture": 10,
+        "outage_Small": 2
+    },
+    {
+        "ComponentType": "REACTOR",
+        "EquipmentType": "Vessel",
+        "outage_Large": 6,
+        "outage_Medium": 6,
+        "outage_Rupture": 21,
+        "outage_Small": 4
+    },
+    {
+        "ComponentType": "COLBTM",
+        "EquipmentType": "Vessel",
+        "outage_Large": 5,
+        "outage_Medium": 4,
+        "outage_Rupture": 21,
+        "outage_Small": 3
+    },
+    {
+        "ComponentType": "COLTOP",
+        "EquipmentType": "Vessel",
+        "outage_Large": 5,
+        "outage_Medium": 4,
+        "outage_Rupture": 21,
+        "outage_Small": 3
+    },
+    {
+        "ComponentType": "COLMID",
+        "EquipmentType": "Vessel",
+        "outage_Large": 5,
+        "outage_Medium": 4,
+        "outage_Rupture": 21,
+        "outage_Small": 3
+    }
+]

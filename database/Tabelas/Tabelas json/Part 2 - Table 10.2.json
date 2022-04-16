@@ -1,0 +1,26 @@
+[
+    {
+        "NOPWHT_CO3<100ppm": "None",
+        "NOPWHT_CO3?100ppm": "None",
+        "PWHT_CO3AllConcentrations": "None",
+        "pHofWater": "< 7,5"
+    },
+    {
+        "NOPWHT_CO3<100ppm": "Low",
+        "NOPWHT_CO3?100ppm": "Medium",
+        "PWHT_CO3AllConcentrations": "None",
+        "pHofWater": "? 7,5 to 8,0"
+    },
+    {
+        "NOPWHT_CO3<100ppm": "Low",
+        "NOPWHT_CO3?100ppm": "High",
+        "PWHT_CO3AllConcentrations": "None",
+        "pHofWater": "? 8,0 to 9,0"
+    },
+    {
+        "NOPWHT_CO3<100ppm": "High",
+        "NOPWHT_CO3?100ppm": "High",
+        "PWHT_CO3AllConcentrations": "None",
+        "pHofWater": "? 9,0"
+    }
+]

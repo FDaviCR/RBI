@@ -1,0 +1,37 @@
+[
+    {
+        "1000to10000ppm": "High",
+        "50to1000ppm": "Moderate",
+        "<50ppm": "Low",
+        ">10000ppm": "High",
+        "pHofWater": "< 5,5"
+    },
+    {
+        "1000to10000ppm": "Low",
+        "50to1000ppm": "Low",
+        "<50ppm": "Low",
+        ">10000ppm": "Moderate",
+        "pHofWater": "5,5 to 7,5"
+    },
+    {
+        "1000to10000ppm": "Moderate",
+        "50to1000ppm": "Moderate",
+        "<50ppm": "Low",
+        ">10000ppm": "Moderate",
+        "pHofWater": "7,6 to 8,3"
+    },
+    {
+        "1000to10000ppm": "Moderate",
+        "50to1000ppm": "Moderate",
+        "<50ppm": "Low",
+        ">10000ppm": "High",
+        "pHofWater": "8,4 to 8,9"
+    },
+    {
+        "1000to10000ppm": "High",
+        "50to1000ppm": "Moderate",
+        "<50ppm": "Low",
+        ">10000ppm": "High",
+        "pHofWater": "> 9,0"
+    }
+]

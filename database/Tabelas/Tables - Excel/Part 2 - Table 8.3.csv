@@ -1,0 +1,4 @@
+Environmental Severity;As-welded <200;As-welded 200 to 237;As-welded >237 ;PWHT <200;PWHT 200 to 237;PWHT >237
+High;Low;Medium;High;None;Low;Medium
+Moderate;Low;Medium;High;None;None;Low
+Low;Low;Low;Medium;None;None;None

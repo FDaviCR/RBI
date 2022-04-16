@@ -1,0 +1,41 @@
+Material;matcost
+Carbon Steel;1
+Organic Coatings (< 80 mil);1.2
+1.25Cr-0.5Mo;1.3
+2.25Cr-1Mo;1.7
+5Cr-0.5Mo;1.7
+7Cr-0.5Mo;2
+Clad 304 SS;2.1
+Fiberglass;2.5
+Polypropylene Lined (pp);2.5
+9Cr-1Mo;2.6
+405 SS;2.8
+410 SS;2.8
+304 SS;3.2
+Clad 316 SS;3.3
+Strip Lined Alloy;3.3
+Organic Coating (> 80 mil);3.4
+CS “Saran” Lined;3.4
+CS Rubber Lined;4.4
+316 SS;4.8
+CS Glass Lined;5.8
+Clad Alloy 400;6.4
+90/10 Cu/Ni;6.8
+Clad Alloy 600;7
+CS “Teflon” Lined;7.8
+Clad Nickel;8
+Alloy 800;8.4
+70/30 Cu/Ni;8.5
+904L;8.8
+Alloy 20;11
+Alloy 400;15
+Alloy 600;15
+Nickel;18
+Acid Brick;20
+Refractory;20
+Alloy 625;26
+Titanium;28
+Alloy “C”;29
+Zirconium;34
+Alloy “B”;36
+Tantalum;535

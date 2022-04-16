@@ -1,0 +1,68 @@
+<!------------------------------ INSPEÇÃO ----------------------------------------->		
+<div class="dados-componente">
+	<div>
+		<ul>
+			<li>
+				<label for="installationDate">Installation Date</label>
+				<input name="instalationDate" id="instalationDate" type="date" max="9999-12-31">
+			</li>
+			<li>
+				<label for="lastInspectionInterna">Inside Inspection Last Date</label>
+				<input name="lastInspectionInterna" id="lastInspectionInterna" type="date" max="9999-12-31">
+			</li>
+			<li>
+				<label for="rbiDate">RBI Date</label>
+				<input name="rbiDate" id="rbiDate" type="date" max="9999-12-31">
+			</li>
+			<li>
+				<label for="planDate">Plan Date</label>
+				<input name="planDate" id="planDate"type="date" max="9999-12-31">
+			</li>
+			<li>
+				<label for="turnaroundDate1">Turnaround Date 1</label>
+				<input name="turnaroundDate1" id="turnaroundDate1" type="date" max="9999-12-31">
+			</li>
+			<li>
+				<label for="turnaroundDate2">Turnaround Date 2</label>
+				<input name="turnaroundDate2" id="turnaroundDate2" type="date" max="9999-12-31">
+			</li>
+			<li>
+				<label for="prazoMax">Prazo máximo de inspeção (meses)</label>
+				<input name="prazoMax" id="prazoMax" type="number" step="any" min="0">
+			</li>
+		</ul>
+	</div>
+	<div>
+		<ul>
+			<li>
+				<label for="maximumProcessTemperature">Maximum process temperature (°C)</label>
+				<input name="maximumProcessTemperature" id="maximumProcessTemperature" type="number" step="any" min="0">
+			</li>
+			<li>
+				<label for="steamTrace">Heat traced?</label>
+				<select name="steamTrace" id="steamTrace">
+					<option value=""></option>
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</select>
+			</li>
+			<li>
+				<label for="steamOut">Steamed Out?</label>
+				<select name="steamOut" id="steamOut">
+					<option value=""></option>
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</select>
+			</li>
+			<li>
+				<label for="pwht">PWHT?</label>
+				<select name="pwht" id="pwht">
+					<option value=""></option>
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</select>
+			</li>	
+		</ul>
+	</div>
+	<%- include('./inspection-plan.ejs');%>
+</div>

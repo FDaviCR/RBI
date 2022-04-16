@@ -1,0 +1,92 @@
+[
+    {
+        "COF_maior": null,
+        "COF_menor": null,
+        "Category": "1",
+        "DF_maior": "1",
+        "DF_menor": "0",
+        "POF_maior": "0.0000306",
+        "POF_menor": "0"
+    },
+    {
+        "COF_maior": null,
+        "COF_menor": null,
+        "Category": "2",
+        "DF_maior": "10",
+        "DF_menor": "1",
+        "POF_maior": "0.000306",
+        "POF_menor": "0.0000306"
+    },
+    {
+        "COF_maior": null,
+        "COF_menor": null,
+        "Category": "3",
+        "DF_maior": "100",
+        "DF_menor": "10",
+        "POF_maior": "0.00306",
+        "POF_menor": "0.000306"
+    },
+    {
+        "COF_maior": null,
+        "COF_menor": null,
+        "Category": "4",
+        "DF_maior": "1000",
+        "DF_menor": "100",
+        "POF_maior": "0.0306",
+        "POF_menor": "0.00306"
+    },
+    {
+        "COF_maior": null,
+        "COF_menor": null,
+        "Category": "5",
+        "DF_maior": null,
+        "DF_menor": "1000",
+        "POF_maior": null,
+        "POF_menor": "0.0306"
+    },
+    {
+        "COF_maior": "9.29",
+        "COF_menor": "0",
+        "Category": "A",
+        "DF_maior": null,
+        "DF_menor": null,
+        "POF_maior": null,
+        "POF_menor": null
+    },
+    {
+        "COF_maior": "92.9",
+        "COF_menor": "9.29",
+        "Category": "B",
+        "DF_maior": null,
+        "DF_menor": null,
+        "POF_maior": null,
+        "POF_menor": null
+    },
+    {
+        "COF_maior": "929",
+        "COF_menor": "92.9",
+        "Category": "C",
+        "DF_maior": null,
+        "DF_menor": null,
+        "POF_maior": null,
+        "POF_menor": null
+    },
+    {
+        "COF_maior": "9290",
+        "COF_menor": "929",
+        "Category": "D",
+        "DF_maior": null,
+        "DF_menor": null,
+        "POF_maior": null,
+        "POF_menor": null
+    },
+    {
+        "COF_maior": null,
+        "COF_menor": "9290",
+        "Category": "E",
+        "DF_maior": null,
+        "DF_menor": null,
+        "POF_maior": null,
+        "POF_menor": null
+    }
+]

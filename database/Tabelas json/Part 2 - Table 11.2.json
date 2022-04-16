@@ -1,0 +1,47 @@
+[
+    {
+        "Material": "All regular 300 series SS and Alloys 600 and 800",
+        "equalmore427_SolutionAnnealed(default)": "High",
+        "equalmore427_StabilizedAfterWelding": "None",
+        "equalmore427_StabilizedBeforeWelding": "None",
+        "less427_SolutionAnnealed(default)": "Medium",
+        "less427_StabilizedAfterWelding": "None",
+        "less427_StabilizedBeforeWelding": "None"
+    },
+    {
+        "Material": "H Grade 300 series SS",
+        "equalmore427_SolutionAnnealed(default)": "High",
+        "equalmore427_StabilizedAfterWelding": "None",
+        "equalmore427_StabilizedBeforeWelding": "None",
+        "less427_SolutionAnnealed(default)": "High",
+        "less427_StabilizedAfterWelding": "None",
+        "less427_StabilizedBeforeWelding": "None"
+    },
+    {
+        "Material": "L Grade 300 series SS",
+        "equalmore427_SolutionAnnealed(default)": "Medium",
+        "equalmore427_StabilizedAfterWelding": "None",
+        "equalmore427_StabilizedBeforeWelding": "None",
+        "less427_SolutionAnnealed(default)": "Low",
+        "less427_StabilizedAfterWelding": "None",
+        "less427_StabilizedBeforeWelding": "None"
+    },
+    {
+        "Material": "321 SS",
+        "equalmore427_SolutionAnnealed(default)": "High",
+        "equalmore427_StabilizedAfterWelding": "Low",
+        "equalmore427_StabilizedBeforeWelding": "High",
+        "less427_SolutionAnnealed(default)": "Medium",
+        "less427_StabilizedAfterWelding": "Low",
+        "less427_StabilizedBeforeWelding": "Medium"
+    },
+    {
+        "Material": "347 SS, Alloy 20, Alloy 625, all austenitic weld overlay",
+        "equalmore427_SolutionAnnealed(default)": "Medium",
+        "equalmore427_StabilizedAfterWelding": "Low",
+        "equalmore427_StabilizedBeforeWelding": "Low",
+        "less427_SolutionAnnealed(default)": "Low",
+        "less427_StabilizedAfterWelding": "Low",
+        "less427_StabilizedBeforeWelding": "Low"
+    }
+]

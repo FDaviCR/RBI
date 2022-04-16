@@ -1,0 +1,29 @@
+[
+    {
+        "EnvironmentalSeverity": "Low",
+        "HighSulfurSteela>0.01%S_Aswelded": "High",
+        "HighSulfurSteela>0.01%S_PWHT": "High",
+        "LowSulfurSteel?0.01%S_Aswelded": "High",
+        "LowSulfurSteel?0.01%S_PWHT": "Medium",
+        "ProductForm - Seamless/ExtrudedPipe_Aswelded": "Medium",
+        "ProductForm - Seamless/ExtrudedPipe_PWHT": "Low"
+    },
+    {
+        "EnvironmentalSeverity": "Moderate",
+        "HighSulfurSteela>0.01%S_Aswelded": "High",
+        "HighSulfurSteela>0.01%S_PWHT": "Medium",
+        "LowSulfurSteel?0.01%S_Aswelded": "Medium",
+        "LowSulfurSteel?0.01%S_PWHT": "Low",
+        "ProductForm - Seamless/ExtrudedPipe_Aswelded": "Low",
+        "ProductForm - Seamless/ExtrudedPipe_PWHT": "Low"
+    },
+    {
+        "EnvironmentalSeverity": "High",
+        "HighSulfurSteela>0.01%S_Aswelded": "Medium",
+        "HighSulfurSteela>0.01%S_PWHT": "Low",
+        "LowSulfurSteel?0.01%S_Aswelded": "Low",
+        "LowSulfurSteel?0.01%S_PWHT": "Low",
+        "ProductForm - Seamless/ExtrudedPipe_Aswelded": "Low",
+        "ProductForm - Seamless/ExtrudedPipe_PWHT": "Low"
+    }
+]

@@ -1,0 +1,204 @@
+<!------------------------------ PLANO DE INSPEÇÃO ----------------------------------------->
+<div class="inspection-history">
+	<h3 class="revisar titulo">Histórico de Inspeção</h3>
+	<div class="history-tabela table-responsive">
+		<table class="table table-striped table-bordered table-success" cellspacing="0" cellpadding="0"> 
+			<thead>
+				<tr> 
+					<th>Date</th>
+					<th>Thinning</th>
+					<th>Lining</th>
+					<th>SCC Caustic</th>
+					<th>SCC Amine</th>
+					<th>SCC Sulfide</th>
+					<th>HIC/SOHIC-H2S</th>
+					<th>ACSCC</th>
+					<th>PASCC</th>
+					<th>SCC Chloride</th>
+					<th>HSC-HF</th>
+					<th>HIC/SOHIC-HF</th>
+					<th>External Ferritic</th>
+					<th>CUI Ferritic</th>
+					<th>EXTCLSCC Aust</th>
+					<th>CUI EXTCLSCC Austenitic</th>
+					<th>HTHA</th>
+					<th>Brittle Fracture</th>
+					<th>Low-Alloy Embrittlement</th>
+					<th>885°F Embrittlement</th>
+					<th>Sigma Phase Embrittlement</th>
+					<th>Piping Mechanical Fatigue</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr> 
+					<td>
+						<label for="inspectionDate">Date1</label>
+						<input id="inspectionDate" type="date" max="9999-12-31">
+					</td>
+					
+					<td>
+						<label for="effetThinning">Effectiveness Thinning</label>
+						<select id="effetThinning" class="efetividade dm1">
+							<option value="">1</option><option value="A">A</option>
+							<option value="B">B</option>
+							<option value="C">C</option>
+							<option value="D">D</option>
+							<option value="E">E</option>
+						</select>
+						<label>Thickness (mm)</label>
+						<input class="trdi-history" type="number" step="any" min="0"> mm
+					</td>
+					<td><label for="effetLining">Effectiveness Lining</label><select id="effetLining" class="efetividade dm2"><option value="">2</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetScccaustic">Effectiveness Scccaustic</label><select id="effetScccaustic" class="efetividade dm3"><option value="">3</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetSccamine">Effectiveness Sccamine</label><select id="effetSccamine" class="efetividade dm4"><option value="">4</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetSccsulfide">Effectiveness Sccsulfide</label><select id="effetSccsulfide" class="efetividade dm5"><option value="">5</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetHicsohich2S">Effectiveness Hicsohich2S</label><select id="effetHicsohich2S" class="efetividade dm6"><option value="">6</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetAcscc">Effectiveness Acscc</label><select id="effetAcscc" class="efetividade dm7"><option value="">7</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetPascc">Effectiveness Pascc</label><select id="effetPascc" class="efetividade dm8"><option value="">8</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetSccchloride">Effectiveness Sccchloride</label><select id="effetSccchloride" class="efetividade dm9"><option value="">9</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetHschf">Effectiveness Hschf</label><select id="effetHschf" class="efetividade dm10"><option value="">10</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetHicsohichf">Effectiveness Hicsohichf</label><select id="effetHicsohichf" class="efetividade dm11"><option value="">11</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetExternalferritic">Effectiveness Externalferritic</label><select id="effetExternalferritic" class="efetividade dm12"><option value="">12</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetCuiferritic">Effectiveness Cuiferritic</label><select id="effetCuiferritic" class="efetividade dm13"><option value="">13</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetExtclsccaustenitic">Effectiveness Extclsccaustenitic</label><select id="effetExtclsccaustenitic" class="efetividade dm14"><option value="">14</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetCuiextclsccaustenitic">Effectiveness Cuiextclsccaustenitic</label><select id="effetCuiextclsccaustenitic" class="efetividade dm15"><option value="">15</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetHtha">Effectiveness Htha</label><select id="effetHtha" class="efetividade dm16"><option value="">16</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetBrittlefracture">Effectiveness Brittlefracture</label><select id="effetBrittlefracture" class="efetividade dm17"><option value="">17</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetLowalloysteelembrittlement">Effectiveness Lowalloysteelembrittlement</label><select id="effetLowalloysteelembrittlement" class="efetividade dm18"><option value="">18</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetEmbrittlement885F">Effectiveness Embrittlement885F</label><select id="effetEmbrittlement885F" class="efetividade dm19"><option value="">19</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetSigmaphaseembrittlement">Effectiveness Sigmaphaseembrittlement</label><select id="effetSigmaphaseembrittlement" class="efetividade dm20"><option value="">20</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetPipingmechanicalfatigue">Effectiveness Pipingmechanicalfatigue</label><select id="effetPipingmechanicalfatigue" class="efetividade dm21"><option value="">21</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+
+
+				</tr>
+				<tr> 
+					<td>
+						<label for="inspectionDate">Date1</label>
+						<input id="inspectionDate" type="date" max="9999-12-31">
+					</td>
+					
+					<td>
+						<label for="effetThinning">Effectiveness Thinning</label>
+						<select id="effetThinning" class="efetividade dm1">
+							<option value="">1</option><option value="A">A</option>
+							<option value="B">B</option>
+							<option value="C">C</option>
+							<option value="D">D</option>
+							<option value="E">E</option>
+						</select>
+						<label>Thickness (mm)</label>
+						<input class="trdi-history" type="number" step="any" min="0"> mm
+					</td>
+					<td><label for="effetLining">Effectiveness Lining</label><select id="effetLining" class="efetividade dm2"><option value="">2</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetScccaustic">Effectiveness Scccaustic</label><select id="effetScccaustic" class="efetividade dm3"><option value="">3</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetSccamine">Effectiveness Sccamine</label><select id="effetSccamine" class="efetividade dm4"><option value="">4</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetSccsulfide">Effectiveness Sccsulfide</label><select id="effetSccsulfide" class="efetividade dm5"><option value="">5</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetHicsohich2S">Effectiveness Hicsohich2S</label><select id="effetHicsohich2S" class="efetividade dm6"><option value="">6</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetAcscc">Effectiveness Acscc</label><select id="effetAcscc" class="efetividade dm7"><option value="">7</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetPascc">Effectiveness Pascc</label><select id="effetPascc" class="efetividade dm8"><option value="">8</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetSccchloride">Effectiveness Sccchloride</label><select id="effetSccchloride" class="efetividade dm9"><option value="">9</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetHschf">Effectiveness Hschf</label><select id="effetHschf" class="efetividade dm10"><option value="">10</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetHicsohichf">Effectiveness Hicsohichf</label><select id="effetHicsohichf" class="efetividade dm11"><option value="">11</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetExternalferritic">Effectiveness Externalferritic</label><select id="effetExternalferritic" class="efetividade dm12"><option value="">12</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetCuiferritic">Effectiveness Cuiferritic</label><select id="effetCuiferritic" class="efetividade dm13"><option value="">13</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetExtclsccaustenitic">Effectiveness Extclsccaustenitic</label><select id="effetExtclsccaustenitic" class="efetividade dm14"><option value="">14</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetCuiextclsccaustenitic">Effectiveness Cuiextclsccaustenitic</label><select id="effetCuiextclsccaustenitic" class="efetividade dm15"><option value="">15</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetHtha">Effectiveness Htha</label><select id="effetHtha" class="efetividade dm16"><option value="">16</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetBrittlefracture">Effectiveness Brittlefracture</label><select id="effetBrittlefracture" class="efetividade dm17"><option value="">17</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetLowalloysteelembrittlement">Effectiveness Lowalloysteelembrittlement</label><select id="effetLowalloysteelembrittlement" class="efetividade dm18"><option value="">18</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetEmbrittlement885F">Effectiveness Embrittlement885F</label><select id="effetEmbrittlement885F" class="efetividade dm19"><option value="">19</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetSigmaphaseembrittlement">Effectiveness Sigmaphaseembrittlement</label><select id="effetSigmaphaseembrittlement" class="efetividade dm20"><option value="">20</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetPipingmechanicalfatigue">Effectiveness Pipingmechanicalfatigue</label><select id="effetPipingmechanicalfatigue" class="efetividade dm21"><option value="">21</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+
+
+				</tr>
+				<tr> 
+					<td>
+						<label for="inspectionDate">Date1</label>
+						<input id="inspectionDate" type="date" max="9999-12-31">
+					</td>
+					
+					<td>
+						<label for="effetThinning">Effectiveness Thinning</label>
+						<select id="effetThinning" class="efetividade dm1">
+							<option value="">1</option><option value="A">A</option>
+							<option value="B">B</option>
+							<option value="C">C</option>
+							<option value="D">D</option>
+							<option value="E">E</option>
+						</select>
+						<label>Thickness (mm)</label>
+						<input class="trdi-history" type="number" step="any" min="0"> mm
+					</td>
+					<td><label for="effetLining">Effectiveness Lining</label><select id="effetLining" class="efetividade dm2"><option value="">2</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetScccaustic">Effectiveness Scccaustic</label><select id="effetScccaustic" class="efetividade dm3"><option value="">3</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetSccamine">Effectiveness Sccamine</label><select id="effetSccamine" class="efetividade dm4"><option value="">4</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetSccsulfide">Effectiveness Sccsulfide</label><select id="effetSccsulfide" class="efetividade dm5"><option value="">5</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetHicsohich2S">Effectiveness Hicsohich2S</label><select id="effetHicsohich2S" class="efetividade dm6"><option value="">6</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetAcscc">Effectiveness Acscc</label><select id="effetAcscc" class="efetividade dm7"><option value="">7</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetPascc">Effectiveness Pascc</label><select id="effetPascc" class="efetividade dm8"><option value="">8</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetSccchloride">Effectiveness Sccchloride</label><select id="effetSccchloride" class="efetividade dm9"><option value="">9</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetHschf">Effectiveness Hschf</label><select id="effetHschf" class="efetividade dm10"><option value="">10</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetHicsohichf">Effectiveness Hicsohichf</label><select id="effetHicsohichf" class="efetividade dm11"><option value="">11</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetExternalferritic">Effectiveness Externalferritic</label><select id="effetExternalferritic" class="efetividade dm12"><option value="">12</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetCuiferritic">Effectiveness Cuiferritic</label><select id="effetCuiferritic" class="efetividade dm13"><option value="">13</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetExtclsccaustenitic">Effectiveness Extclsccaustenitic</label><select id="effetExtclsccaustenitic" class="efetividade dm14"><option value="">14</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetCuiextclsccaustenitic">Effectiveness Cuiextclsccaustenitic</label><select id="effetCuiextclsccaustenitic" class="efetividade dm15"><option value="">15</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetHtha">Effectiveness Htha</label><select id="effetHtha" class="efetividade dm16"><option value="">16</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetBrittlefracture">Effectiveness Brittlefracture</label><select id="effetBrittlefracture" class="efetividade dm17"><option value="">17</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetLowalloysteelembrittlement">Effectiveness Lowalloysteelembrittlement</label><select id="effetLowalloysteelembrittlement" class="efetividade dm18"><option value="">18</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetEmbrittlement885F">Effectiveness Embrittlement885F</label><select id="effetEmbrittlement885F" class="efetividade dm19"><option value="">19</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetSigmaphaseembrittlement">Effectiveness Sigmaphaseembrittlement</label><select id="effetSigmaphaseembrittlement" class="efetividade dm20"><option value="">20</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetPipingmechanicalfatigue">Effectiveness Pipingmechanicalfatigue</label><select id="effetPipingmechanicalfatigue" class="efetividade dm21"><option value="">21</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+
+
+				</tr>
+				<tr> 
+					<td>
+						<label for="inspectionDate">Date1</label>
+						<input id="inspectionDate" type="date" max="9999-12-31">
+					</td>
+					
+					<td>
+						<label for="effetThinning">Effectiveness Thinning</label>
+						<select id="effetThinning" class="efetividade dm1">
+							<option value="">1</option><option value="A">A</option>
+							<option value="B">B</option>
+							<option value="C">C</option>
+							<option value="D">D</option>
+							<option value="E">E</option>
+						</select>
+						<label>Thickness (mm)</label>
+						<input class="trdi-history" type="number" step="any" min="0"> mm
+					</td>
+					<td><label for="effetLining">Effectiveness Lining</label><select id="effetLining" class="efetividade dm2"><option value="">2</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetScccaustic">Effectiveness Scccaustic</label><select id="effetScccaustic" class="efetividade dm3"><option value="">3</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetSccamine">Effectiveness Sccamine</label><select id="effetSccamine" class="efetividade dm4"><option value="">4</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetSccsulfide">Effectiveness Sccsulfide</label><select id="effetSccsulfide" class="efetividade dm5"><option value="">5</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetHicsohich2S">Effectiveness Hicsohich2S</label><select id="effetHicsohich2S" class="efetividade dm6"><option value="">6</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetAcscc">Effectiveness Acscc</label><select id="effetAcscc" class="efetividade dm7"><option value="">7</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetPascc">Effectiveness Pascc</label><select id="effetPascc" class="efetividade dm8"><option value="">8</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetSccchloride">Effectiveness Sccchloride</label><select id="effetSccchloride" class="efetividade dm9"><option value="">9</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetHschf">Effectiveness Hschf</label><select id="effetHschf" class="efetividade dm10"><option value="">10</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetHicsohichf">Effectiveness Hicsohichf</label><select id="effetHicsohichf" class="efetividade dm11"><option value="">11</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetExternalferritic">Effectiveness Externalferritic</label><select id="effetExternalferritic" class="efetividade dm12"><option value="">12</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetCuiferritic">Effectiveness Cuiferritic</label><select id="effetCuiferritic" class="efetividade dm13"><option value="">13</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetExtclsccaustenitic">Effectiveness Extclsccaustenitic</label><select id="effetExtclsccaustenitic" class="efetividade dm14"><option value="">14</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetCuiextclsccaustenitic">Effectiveness Cuiextclsccaustenitic</label><select id="effetCuiextclsccaustenitic" class="efetividade dm15"><option value="">15</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetHtha">Effectiveness Htha</label><select id="effetHtha" class="efetividade dm16"><option value="">16</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetBrittlefracture">Effectiveness Brittlefracture</label><select id="effetBrittlefracture" class="efetividade dm17"><option value="">17</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetLowalloysteelembrittlement">Effectiveness Lowalloysteelembrittlement</label><select id="effetLowalloysteelembrittlement" class="efetividade dm18"><option value="">18</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetEmbrittlement885F">Effectiveness Embrittlement885F</label><select id="effetEmbrittlement885F" class="efetividade dm19"><option value="">19</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetSigmaphaseembrittlement">Effectiveness Sigmaphaseembrittlement</label><select id="effetSigmaphaseembrittlement" class="efetividade dm20"><option value="">20</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+					<td><label for="effetPipingmechanicalfatigue">Effectiveness Pipingmechanicalfatigue</label><select id="effetPipingmechanicalfatigue" class="efetividade dm21"><option value="">21</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>   <option value="E">E</option></select></td>
+
+
+				</tr>
+			</tbody>							
+		</table>
+	</div>
+	<div class="btn-history table-data row justify-content-md-center">
+		<button type="button" class="btn btn-primary" id="novaInspecao">Nova inspecão</button>
+		<button type="button" class="btn btn-secondary ml-2" id="editarInspecao">Editar</button>
+	</div>
+</div>

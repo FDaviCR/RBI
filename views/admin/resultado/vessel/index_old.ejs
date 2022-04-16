@@ -1,0 +1,342 @@
+<%- include('../../../partials/head.ejs'); %>
+	<body>
+		<%- include('../../../partials/header-menu/header-cadastro.ejs'); %>
+		<section class="unidade container-fluid">
+			<h2 class="titulo"><%= component.component %></h2>
+			<hr>	
+			<div class="table-data row justify-content-between">
+				<div role="group" aria-label="Menu de ações">
+					<a href="/cadastro/site/***siteId***/equipment/***equipmentType***/***equipmentId***/component"><button type="button" class="btn btn-secondary"><i class="bi bi-arrow-left"></i> Voltar</button></a>
+					<button type="button" class="btn btn-warning mr-2" id="editarCadastro"><i class="bi bi-pencil-square"></i> Editar</button>
+				</div>
+				<div class="btn-group" role="group" aria-label="Menu de navegação">
+					<button type="button" class="btn btn-nav btn-primary btn-outline-primary">General</button>
+					<button type="button" class="btn btn-nav btn-primary btn-outline-primary">Operation</button>
+					<button type="button" class="btn btn-nav btn-primary btn-outline-primary">Dates</button>
+					<button type="button" class="btn btn-nav btn-primary btn-outline-primary">Inspection Plan</button>
+					<button type="button" class="btn btn-nav btn-primary btn-outline-primary">Damage Mechanisms</button>
+				</div>
+			</div>
+			<hr>
+			<div class="table-data">
+				<!-- <div class="table-data row justify-content-md-center"> -->
+
+				<form>
+					<fieldset class="">
+						<div class="row justify-content-md-center mb-3">
+							<label for="site" class="col-sm-2 col-form-label">Site</label>
+							<div class="col-sm-3">
+								<input type="text" id="site" name="site" class="form-control" value="<%= site.site %>">
+							</div>
+							
+							<label for="FMS" class="col-sm-2 col-form-label">FMS</label>
+							<div class="col-sm-3">
+								<input id="FMS" name="FMS" type="number" step="any" min="0" class="form-control" value="<%= site.FMS %>">
+							</div>
+						</div>
+
+						<div class="row justify-content-md-center mb-3">
+							<label for="equipment" class="col-sm-2 col-form-label">Equipment</label>
+							<div class="col-sm-3">
+								<input type="text" id="equipment" name="equipment" class="form-control" value="<%= equipment.equipment %>">
+							</div>
+							
+							<label for="equipmentType" class="col-sm-2 col-form-label">Equipment Type</label>
+							<div class="col-sm-3">
+								<input type="text" id="equipmentType" name="equipmentType" class="form-control" value="<%= equipment.equipmentType %>">
+							</div>
+						</div>
+						
+						<div class="row justify-content-md-center mb-3">
+							<label for="component" class="col-sm-2 col-form-label">Component</label>
+							<div class="col-sm-3">
+								<input type="text" id="component" name="component" class="form-control" value="<%= component.component %>">
+							</div>
+							
+							<label for="componentType" class="col-sm-2 col-form-label">Component Type</label>
+							<div class="col-sm-3">
+								<input type="text" id="componentType" name="componentType" class="form-control" value="<%= component.componentType %>">
+							</div>
+						</div>
+						
+						<div class="row justify-content-md-center mb-3">
+							<label for="detectionSystem" class="col-sm-2 col-form-label">Detection System</label>
+							<div class="col-sm-8">
+								<select id="detectionSystem" name="detectionSystem" class="form-control">
+									<option value=""></option>
+									<option value="A">A | Instrumentation designed specifically to detect material losses by changes in operating conditions (i.e. loss of pressure or flow) in the system.</option>
+									<option value="B">B | Suitably located detectors to determine when the material is present outside the pressure-containing envelope.</option>
+									<option value="C">C | Visual detection, cameras, or detectors with marginal coverage.</option>
+								</select>
+							</div>
+						</div>
+						
+						<div class="row justify-content-md-center mb-3">
+							<label for="isolationSystem" class="col-sm-2 col-form-label">Isolation System</label>
+							<div class="col-sm-8">
+								<select id="isolationSystem" name="isolationSystem" class="form-control">
+									<option value=""></option>
+									<option value="A">A | Isolation or shutdown systems activated directly from process instrumentation or detectors, with no operator intervention.</option>
+									<option value="B">B | Isolation or shutdown systems activated by operators in the control room or other suitable locations remote from the leak.</option>
+									<option value="C">C | Isolation dependent on manually operated valves.</option>
+								</select>
+							</div>
+						</div>
+						
+						<div class="row justify-content-md-center mb-3">
+							<label for="mitigationSystem" class="col-sm-2 col-form-label">Mitigation System</label>
+							<div class="col-sm-8">
+								<select id="mitigationSystem" name="mitigationSystem" class="form-control">
+									<option value=""></option>
+									<option value="0.25">Inventory blowdown, coupled with isolation system classification B or higher</option>
+									<option value="0.2">Fire water deluge system and monitors</option>
+									<option value="0.05">Fire water monitors only</option>
+									<option value="0.15">Foam spray system</option>
+									<option value="0">None</option>
+								</select>
+							</div>
+						</div>
+						<div class="row justify-content-md-center mb-3">
+							<label for="inventoryGroup" class="col-sm-2 col-form-label revisar">Inventory Group</label>
+							<div class="col-sm-3">
+								<input type="text" id="grupoInventario" name="grupoInventario" placeholder="Colocar lista suspensa" class="form-control">
+							</div>
+							
+							<label for="inventoryGroupMass" class="col-sm-2 col-form-label revisar">Inventory Group Mass (kg)</label>
+							<div class="col-sm-3">
+								<input type="text" id="inventoryGroupMass" name="inventoryGroupMass" class="form-control">
+							</div>
+						</div>
+					</fieldset>
+					
+					<!------------------------------ CONSEQUENCIA ----------------------------------------->		
+					<fieldset class="">		
+						<div class="row justify-content-md-center mb-3">
+							<label for="operatingPressure" class="col-sm-2 col-form-label">Operating Pressure (kgf/cm²)</label>
+							<div class="col-sm-3">
+								<input type="number" id="operatingPressure" name="operatingPressure" step="any" class="form-control">
+							</div>
+							
+							<label for="operatingTemperature" class="col-sm-2 col-form-label">Operating Temperature (°C)</label>
+							<div class="col-sm-3">
+								<input type="number" id="operatingTemperature" name="operatingTemperature" step="any" class="form-control">
+							</div>
+						</div>						
+						<div class="row justify-content-md-center mb-3">
+							<label for="insideDiameter" class="col-sm-2 col-form-label">Inside Diameter (mm)</label>
+							<div class="col-sm-3">
+								<input type="number" id="insideDiameter" name="insideDiameter" step="any" min="0" class="form-control">
+							</div>
+							
+							<label for="volumeComponent" class="col-sm-2 col-form-label">Volume (m³)</label>
+							<div class="col-sm-3">
+								<input type="number" id="volumeComponent" name="volumeComponent" step="any" min="0" class="form-control">
+							</div>
+						</div>	
+						<div class="row justify-content-md-center mb-3">
+							<label for="representativeFluid" class="col-sm-2 col-form-label revisar">Representative Fluid</label>
+							<div class="col-sm-3">
+								<select id="representativeFluid" name="representativeFluid" class="form-control">
+									<option value=""></option>
+									<option value="">Puxar do Banco de Dados</option>
+								</select>
+							</div>
+							
+							<label for="storedFluidPhase" class="col-sm-2 col-form-label revisar">Stored Fluid Phase</label>
+							<div class="col-sm-3">
+								<select id="storedFluidPhase" name="storedFluidPhase" class="form-control">
+									<option value=""></option>
+									<option value="liquid">Liquid</option>
+									<option value="gas">Gas</option>
+								</select>
+							</div>
+						</div>	
+						<div class="row justify-content-md-center mb-3">
+							<label for="percentLiquid" class="col-sm-2 col-form-label">% Liquid</label>
+							<div class="col-sm-3">
+								<input type="number" id="percentLiquid" name="percentLiquid" step="any" min="0" max="100" class="form-control">
+							</div>
+							
+							<label for="reynolds" class="col-sm-2 col-form-label">N. Reynolds</label>
+							<div class="col-sm-3">
+								<input id="reynolds" name="reynolds" type="number" step="any" min="0" placeholder="Opcional" class="opcional form-control">
+							</div>
+						</div>	
+						<div class="row justify-content-md-center mb-3">
+							<label for="toxicComposition" class="col-sm-2 col-form-label revisar">Toxic Composition</label>
+							<div class="col-sm-3">
+								<select id="toxicComposition" name="toxicComposition" class="form-control">
+									<option value=""></option>
+									<option value="">Puxar do Banco de Dados</option>
+								</select>
+							</div>
+							
+							<label for="percentToxicFluid" class="col-sm-2 col-form-label">% Toxic Fluid</label>
+							<div class="col-sm-3">
+								<input type="number" id="percentToxicFluid" name="percentToxicFluid" step="any" min="0" max="100" class="form-control">
+							</div>
+						</div>
+						<div class="row justify-content-md-center mb-3">
+							<label for="idlh" class="col-sm-2 col-form-label revisar">IDLH Concentration?</label>
+							<div class="col-sm-3">
+								<select id="idlh" name="idlh" class="form-control revisar">
+									<option value="">vai ficar oculto</option>
+									<option value="true">Yes</option>
+									<option value="false">No</option>
+									<option value="">Colocar opção para puxar direto da tabela</option>
+								</select>
+							</div>
+						</div>
+					</fieldset>
+
+					<fieldset class="">
+						<div class="row justify-content-md-center mb-3">
+							<label for="installationDate" class="col-sm-2 col-form-label">Installation Date</label>
+							<div class="col-sm-3">
+								<input name="instalationDate" id="instalationDate" type="date" max="9999-12-31" class="form-control">
+							</div>
+							
+							<label for="lastInspectionInterna" class="col-sm-2 col-form-label">Last Inside Inspection</label>
+							<div class="col-sm-3">
+								<input name="lastInspectionInterna" id="lastInspectionInterna" type="date" max="9999-12-31" class="form-control">
+							</div>
+						</div>
+						<div class="row justify-content-md-center mb-3">
+							<label for="rbiDate" class="col-sm-2 col-form-label">RBI Date</label>
+							<div class="col-sm-3">
+								<input name="rbiDate" id="rbiDate" type="date" max="9999-12-31" class="form-control">
+							</div>
+							
+							<label for="planDate" class="col-sm-2 col-form-label">Plan Date</label>
+							<div class="col-sm-3">
+								<input name="planDate" id="planDate"type="date" max="9999-12-31" class="form-control">
+							</div>
+						</div>	
+						<div class="row justify-content-md-center mb-3">
+							<label for="turnaroundDate1" class="col-sm-2 col-form-label">Turnaround Date 1</label>
+							<div class="col-sm-3">
+								<input name="turnaroundDate1" id="turnaroundDate1" type="date" max="9999-12-31" class="form-control">
+							</div>
+							
+							<label for="turnaroundDate2" class="col-sm-2 col-form-label">Turnaround Date 2</label>
+							<div class="col-sm-3">
+								<input name="turnaroundDate2" id="turnaroundDate2" type="date" max="9999-12-31" class="form-control">
+							</div>
+						</div>		
+						<div class="row justify-content-md-center mb-3">
+							<label for="prazoMax" class="col-sm-2 col-form-label">Prazo máximo de inspeção (meses)</label>
+							<div class="col-sm-3">
+								<input name="prazoMax" id="prazoMax" type="number" step="any" min="0" class="form-control">
+							</div>
+							
+							<label for="maximumProcessTemperature" class="col-sm-2 col-form-label">Maximum process temperature (°C)</label>
+							<div class="col-sm-3">
+								<input name="maximumProcessTemperature" id="maximumProcessTemperature" type="number" step="any" min="0" class="form-control">
+							</div>
+						</div>		
+						<div class="row justify-content-md-center mb-3">
+							<label for="steamTrace" class="col-sm-2 col-form-label">Heat traced?</label>
+							<div class="col-sm-3">
+								<select name="steamTrace" id="steamTrace" class="form-control">
+									<option value=""></option>
+									<option value="true">Yes</option>
+									<option value="false">No</option>
+								</select>
+							</div>
+							
+							<label for="steamOut" class="col-sm-2 col-form-label">Steamed Out?</label>
+							<div class="col-sm-3">
+								<select name="steamOut" id="steamOut" class="form-control">
+									<option value=""></option>
+									<option value="true">Yes</option>
+									<option value="false">No</option>
+								</select>
+							</div>
+						</div>		
+						<div class="row justify-content-md-center mb-3">
+							<label for="pwht" class="col-sm-2 col-form-label">PWHT?</label>
+							<div class="col-sm-3">
+								<select name="pwht" id="pwht" class="form-control">
+									<option value=""></option>
+									<option value="true">Yes</option>
+									<option value="false">No</option>
+								</select>
+							</div>
+						</div>		
+							
+							
+							
+							
+
+
+
+
+
+
+								
+					</fieldset>
+					<fieldset class="">
+						<%- include('../../../partials/damage-mechanism-flag.ejs');%>
+						<hr>
+						<%- include('../../../partials/inspection-plan.ejs');%>
+						
+					</fieldset>
+					<fieldset class="">
+
+						<%- include('../../../partials/damage-mechanism.ejs');%>
+						
+					</fieldset>
+				</form>
+			</div>
+				
+								
+							
+					
+			
+		</section>
+	</body>
+	<script>
+		// var filtro = document.getElementById('filtro-clientes');
+		// var tabela = document.getElementById('lista-clientes');
+		// filtro.onkeyup = function() {
+		// 	var nomeFiltro = filtro.value;
+		// 	for (var i = 1; i < tabela.rows.length; i++) {
+		// 		var conteudoCelula = tabela.rows[i].cells[1].innerText;
+		// 		var corresponde = conteudoCelula.toLowerCase().indexOf(nomeFiltro) >= 0;
+		// 		tabela.rows[i].style.display = corresponde ? '' : 'none';
+		// 	}
+		// };
+	
+	
+		function clickBtnNav(el){
+			btnNav.forEach(el=>el.classList.add("btn-outline-primary"))
+			this.classList.toggle("btn-outline-primary");
+		};
+	
+		function navform(){
+			btnNav.forEach((el)=>{
+				el.addEventListener("click", clickBtnNav);
+			});
+			btnNav.forEach((el,index)=>{
+				el.addEventListener("click", ()=>{	
+					fieldset.forEach((content) => {
+						content.classList.add("inativo");
+						});
+					fieldset[index].classList.remove("inativo");
+				});
+			});
+		};
+		
+		const btnNav = document.querySelectorAll(".btn-nav");
+		const fieldset = document.querySelectorAll("fieldset");
+		navform();
+		window.onload = btnNav[0].click();
+	
+		const input = document.querySelectorAll("input");
+		const selection = document.querySelectorAll("select");
+		
+		input.forEach((el)=>el.disabled = true);
+		selection.forEach((el)=>el.disabled = true);
+	
+	</script>
+<%- include('../../../partials/footer.ejs'); %>

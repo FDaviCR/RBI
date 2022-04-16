@@ -1,0 +1,28 @@
+Equipment Type;Component Type;outage_Small;outage_Medium;outage_Large;outage_Rupture
+Compressor;COMPC;0;3;7;0
+Compressor;COMPR;0;3;7;0
+Heat exchanger;HEXSS;2;3;3;10
+Heat exchanger;HEXTS;2;3;3;10
+Heat exchanger;HEXTUBE;0;0;0;0
+Pipe;PIPE-1;0;0;0;1
+Pipe;PIPE-2;0;0;0;1
+Pipe;PIPE-4;0;1;0;2
+Pipe;PIPE-6;0;1;2;3
+Pipe;PIPE-8;0;2;2;3
+Pipe;PIPE-10;0;2;2;4
+Pipe;PIPE-12;1;3;4;4
+Pipe;PIPE-16;1;3;4;5
+Pipe;PIPEGT16;1;4;5;7
+Pump;PUMP2S;0;0;0;0
+Pump;PUMP1S;0;0;0;0
+Pump;PUMPR;0;0;0;0
+Tank650;TANKBOTTOM;5;0;0;50
+Tank650;COURSE-1-10;2;3;3;14
+Vessel;KODRUM;2;3;3;10
+Vessel;FINFAN;0;0;2;3
+Vessel;FILTER;0;1;2;3
+Vessel;DRUM;2;3;3;10
+Vessel;REACTOR;4;6;6;21
+Vessel;COLBTM;3;4;5;21
+Vessel;COLTOP;3;4;5;21
+Vessel;COLMID;3;4;5;21

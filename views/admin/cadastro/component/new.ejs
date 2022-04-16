@@ -1,0 +1,44 @@
+<%- include('../../../partials/head.ejs'); %>
+	<body>
+		<%- include('../../../partials/header-menu/header-cadastro.ejs'); %>
+	
+		<section class="unidade container-fluid dataBox">
+			<h1 class="titulo">Cadastrar Componente</h1>
+			<hr>
+			<div class="table-data row justify-content-md-center">
+											
+				<form method="POST" action="/cadastro/component/save" class="form-cadastro">
+					<div class="mb-4">
+					  <input value="<%= siteId %>" type="hidden" class="form-control" id="siteId" name="siteId" readonly >
+					  <input value="<%= equipmentId %>" type="hidden" class="form-control" id="equipmentId" name="equipmentId" readonly >
+					  <input value="<%= equipmentType %>" type="hidden" class="form-control" id="equipmentType" name="equipmentType" readonly >
+					</div>
+					<div class="mb-4">
+					  <label for="component" class="form-label">New Component</label>
+					  <input type="text" class="form-control" id="component" name="component" required>
+					</div>
+					<div class="mb-4">
+						<label for="componentType" class="form-label">Component Type</label>
+						<select id="componentType" name="componentType" class="form-select form-control" aria-label="Default select example" required>
+						  <option value="" selected></option>
+							<% componentTypeOptions.forEach((el, index)=>{ %>
+								<option value="<%= componentTypeOptions[index] %>"> <%= componentTypeOptions[index] %></option>
+							<% }) %>
+						</select>
+					</div>
+					<div class="mb-4">
+						<label for="inventoryGroupId" class="form-label">Inventory Group</label>
+						<select id="inventoryGroupId" name="inventoryGroupId" class="form-select form-control" aria-label="Default select example" required>
+							<option value="" selected></option>
+							<% inventoryOptions.forEach((el, index)=>{ %>
+								<option value="<%= inventory[index].id %>"> <%= inventoryOptions[index] %> </option>
+							<% }) %>
+						</select>
+					</div>
+					<button type="submit" class="btn btn-success">Cadastrar</button>
+					<a href="/cadastro/site/<%= siteId %>/equipment/<%= equipmentType %>/<%= equipmentId %>/component" class="ml-2"><button type="button" class="btn btn-secondary">Cancelar</button></a>
+				</form>
+			</div>
+		</section>
+	</body>
+<%- include('../../../partials/footer.ejs'); %>

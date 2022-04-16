@@ -1,0 +1,12 @@
+Thinning Mechanism _Fom;Key Process Variable and Electrical Resistance Probes;Key Process Variable;Electrical Resistance Probes;Corrosion Coupons
+Hydrochloric acid (HCI) corrosion;20;10;10;2
+High temperature sulfidic/naphthenic acid corrosion;10;10;10;2
+High temperature H2S/H2 corrosion;1;1;10;1
+Sulfuric acid (H2S/H2) corrosion_Low velocity;20;20;10;2
+Sulfuric acid (H2S/H2) corrosion_High velocity;20;10;10;1
+Hydrofluoric acid (HF) corrosion;10;10;1;1
+Sour water corrosion_Low velocity;20;20;10;2
+Sour water corrosion_High velocity;10;10;2;2
+Amine_Low velocity;20;20;10;2
+Amine_High velocity;10;10;10;1
+Other corrosion mechanism;1;1;1;1

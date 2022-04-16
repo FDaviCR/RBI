@@ -1,0 +1,218 @@
+[
+    {
+        "Concatenar": "AA",
+        "DetectionSystemRating": "A",
+        "IsolationSystemRating": "A",
+        "MaximumLeakDurationld_max": "20 minutes for 6.4 mm leaks",
+        "dn": 6.4,
+        "ld_max": 20
+    },
+    {
+        "Concatenar": "AB",
+        "DetectionSystemRating": "A",
+        "IsolationSystemRating": "B",
+        "MaximumLeakDurationld_max": "30 minutes for 6.4 mm leaks",
+        "dn": 6.4,
+        "ld_max": 30
+    },
+    {
+        "Concatenar": "AC",
+        "DetectionSystemRating": "A",
+        "IsolationSystemRating": "C",
+        "MaximumLeakDurationld_max": "40 minutes for 6.4 mm leaks",
+        "dn": 6.4,
+        "ld_max": 40
+    },
+    {
+        "Concatenar": "BA",
+        "DetectionSystemRating": "B",
+        "IsolationSystemRating": "A",
+        "MaximumLeakDurationld_max": "40 minutes for 6.4 mm leaks",
+        "dn": 6.4,
+        "ld_max": 40
+    },
+    {
+        "Concatenar": "BB",
+        "DetectionSystemRating": "B",
+        "IsolationSystemRating": "B",
+        "MaximumLeakDurationld_max": "40 minutes for 6.4 mm leaks",
+        "dn": 6.4,
+        "ld_max": 40
+    },
+    {
+        "Concatenar": "BC",
+        "DetectionSystemRating": "B",
+        "IsolationSystemRating": "C",
+        "MaximumLeakDurationld_max": "1 hour for 6.4 mm leaks",
+        "dn": 6.4,
+        "ld_max": 60
+    },
+    {
+        "Concatenar": "CA",
+        "DetectionSystemRating": "C",
+        "IsolationSystemRating": "A",
+        "MaximumLeakDurationld_max": "1 hour for 6.4 mm leaks",
+        "dn": 6.4,
+        "ld_max": 60
+    },
+    {
+        "Concatenar": "CB",
+        "DetectionSystemRating": "C",
+        "IsolationSystemRating": "B",
+        "MaximumLeakDurationld_max": "1 hour for 6.4 mm leaks",
+        "dn": 6.4,
+        "ld_max": 60
+    },
+    {
+        "Concatenar": "CC",
+        "DetectionSystemRating": "C",
+        "IsolationSystemRating": "C",
+        "MaximumLeakDurationld_max": "1 hour for 6.4 mm leaks",
+        "dn": 6.4,
+        "ld_max": 60
+    },
+    {
+        "Concatenar": "AA",
+        "DetectionSystemRating": "A",
+        "IsolationSystemRating": "A",
+        "MaximumLeakDurationld_max": "10 minutes for 25 mm leaks",
+        "dn": 25,
+        "ld_max": 10
+    },
+    {
+        "Concatenar": "AB",
+        "DetectionSystemRating": "A",
+        "IsolationSystemRating": "B",
+        "MaximumLeakDurationld_max": "20 minutes for 25 mm leaks",
+        "dn": 25,
+        "ld_max": 20
+    },
+    {
+        "Concatenar": "AC",
+        "DetectionSystemRating": "A",
+        "IsolationSystemRating": "C",
+        "MaximumLeakDurationld_max": "30 minutes for 25 mm leaks",
+        "dn": 25,
+        "ld_max": 30
+    },
+    {
+        "Concatenar": "BA",
+        "DetectionSystemRating": "B",
+        "IsolationSystemRating": "A",
+        "MaximumLeakDurationld_max": "30 minutes for 25 mm leaks",
+        "dn": 25,
+        "ld_max": 30
+    },
+    {
+        "Concatenar": "BB",
+        "DetectionSystemRating": "B",
+        "IsolationSystemRating": "B",
+        "MaximumLeakDurationld_max": "30 minutes for 25 mm leaks",
+        "dn": 25,
+        "ld_max": 30
+    },
+    {
+        "Concatenar": "BC",
+        "DetectionSystemRating": "B",
+        "IsolationSystemRating": "C",
+        "MaximumLeakDurationld_max": "30 minutes for 25 mm leaks",
+        "dn": 25,
+        "ld_max": 30
+    },
+    {
+        "Concatenar": "CA",
+        "DetectionSystemRating": "C",
+        "IsolationSystemRating": "A",
+        "MaximumLeakDurationld_max": "40 minutes for 25 mm leaks",
+        "dn": 25,
+        "ld_max": 40
+    },
+    {
+        "Concatenar": "CB",
+        "DetectionSystemRating": "C",
+        "IsolationSystemRating": "B",
+        "MaximumLeakDurationld_max": "40 minutes for 25 mm leaks",
+        "dn": 25,
+        "ld_max": 40
+    },
+    {
+        "Concatenar": "CC",
+        "DetectionSystemRating": "C",
+        "IsolationSystemRating": "C",
+        "MaximumLeakDurationld_max": "40 minutes for 25 mm leaks",
+        "dn": 25,
+        "ld_max": 40
+    },
+    {
+        "Concatenar": "AA",
+        "DetectionSystemRating": "A",
+        "IsolationSystemRating": "A",
+        "MaximumLeakDurationld_max": "5 minutes for 102 mm leaks",
+        "dn": 102,
+        "ld_max": 5
+    },
+    {
+        "Concatenar": "AB",
+        "DetectionSystemRating": "A",
+        "IsolationSystemRating": "B",
+        "MaximumLeakDurationld_max": "10 minutes for 102 mm leaks",
+        "dn": 102,
+        "ld_max": 10
+    },
+    {
+        "Concatenar": "AC",
+        "DetectionSystemRating": "A",
+        "IsolationSystemRating": "C",
+        "MaximumLeakDurationld_max": "20 minutes for 102 mm leaks",
+        "dn": 102,
+        "ld_max": 20
+    },
+    {
+        "Concatenar": "BA",
+        "DetectionSystemRating": "B",
+        "IsolationSystemRating": "A",
+        "MaximumLeakDurationld_max": "20 minutes for 102 mm leaks",
+        "dn": 102,
+        "ld_max": 20
+    },
+    {
+        "Concatenar": "BB",
+        "DetectionSystemRating": "B",
+        "IsolationSystemRating": "B",
+        "MaximumLeakDurationld_max": "20 minutes for 102 mm leaks",
+        "dn": 102,
+        "ld_max": 20
+    },
+    {
+        "Concatenar": "BC",
+        "DetectionSystemRating": "B",
+        "IsolationSystemRating": "C",
+        "MaximumLeakDurationld_max": "20 minutes for 102 mm leaks",
+        "dn": 102,
+        "ld_max": 20
+    },
+    {
+        "Concatenar": "CA",
+        "DetectionSystemRating": "C",
+        "IsolationSystemRating": "A",
+        "MaximumLeakDurationld_max": "20 minutes for 102 mm leaks",
+        "dn": 102,
+        "ld_max": 20
+    },
+    {
+        "Concatenar": "CB",
+        "DetectionSystemRating": "C",
+        "IsolationSystemRating": "B",
+        "MaximumLeakDurationld_max": "20 minutes for 102 mm leaks",
+        "dn": 102,
+        "ld_max": 20
+    },
+    {
+        "Concatenar": "CC",
+        "DetectionSystemRating": "C",
+        "IsolationSystemRating": "C",
+        "MaximumLeakDurationld_max": "20 minutes for 102 mm leaks",
+        "dn": 102,
+        "ld_max": 20
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "200to237": "Medium",
+        "<200": "Low",
+        ">237": "High",
+        "Susceptibility": "As-welded"
+    },
+    {
+        "200to237": "Low",
+        "<200": "None",
+        ">237": "High",
+        "Susceptibility": "PWHT"
+    }
+]

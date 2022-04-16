@@ -1,0 +1,35 @@
+Representative Fluid;Fluid Type;Examples of Applicable Materials
+C1-C2;TYPE 0;Methane, ethane, ethylene, LNG, fuel gas
+C3-C4;TYPE 0;Propane, butane, isobutane, LPG
+C5;TYPE 0;Pentane
+C6-C8;TYPE 0;Gasoline, naphtha, light straight run, heptane
+C9-C12;TYPE 0;Diesel, kerosene
+C13-C16;TYPE 0;Jet fuel, kerosene, atmospheric gas oil
+C17-C25;TYPE 0;Gas oil, typical crude
+C25+;TYPE 0;Residuum, heavy crude, lube oil, seal oil
+H2;TYPE 0;Hydrogen
+H2S;TYPE 0;Hydrogen sulfide
+HF;TYPE 0;Hydrogen fluoride
+HCl(Acid);TYPE 0;Hydrochloric acid
+Water;TYPE 0;Water
+Steam;TYPE 0;Steam
+Acid/Caustic;TYPE 0;Acid, caustic
+Aromatics;TYPE 1;Benzene, toluene, xylene, cumene
+AlCl3;TYPE 0;Aluminum chloride
+Pyrophoric;TYPE 0;Pyrophoric materials
+Ammonia;TYPE 0;Ammonia
+Chlorine;TYPE 0;Chlorine
+CO;TYPE 1;Carbon monoxide
+DEE;TYPE 0;Diethyl ether
+HCl(Gas);TYPE 1;Hydrogen chloride
+Nitric acid;TYPE 1;Nitric acid
+NO2;TYPE 1;Nitrogen dioxide
+Phosgene;TYPE 0;Phosgene
+TDI;TYPE 1;Toluene diisocyanate
+Methanol;TYPE 1;Methanol
+PO;TYPE 1;Propylene oxide
+Styrene;TYPE 1;Styrene
+EEA;TYPE 1;Ethylene glycol monoethyl ether acetate
+EE;TYPE 1;Ethylene glycol monoethyl ether
+EG;TYPE 1;Ethylene glycol
+EO;TYPE 1;Ethylene oxide

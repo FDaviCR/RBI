@@ -1,0 +1,5 @@
+Operating Temperature (C);Severe;Moderate;Mild;Dry
+<49;None;None;None;None
+49 to 93;High;High;Medium;Low
+93 to 149;High;Medium;Low;None
+>149;None;None;None;None

@@ -1,0 +1,68 @@
+[
+    {
+        "CorrosionCoupons": 2,
+        "ElectricalResistanceProbes": 10,
+        "KeyProcessVariable": 10,
+        "ThinningMechanism_Fom": "Hydrochloric acid (HCI) corrosion"
+    },
+    {
+        "CorrosionCoupons": 2,
+        "ElectricalResistanceProbes": 10,
+        "KeyProcessVariable": 10,
+        "ThinningMechanism_Fom": "High temperature sulfidic/naphthenic acid corrosion"
+    },
+    {
+        "CorrosionCoupons": 1,
+        "ElectricalResistanceProbes": 10,
+        "KeyProcessVariable": 1,
+        "ThinningMechanism_Fom": "High temperature H2S/H2 corrosion"
+    },
+    {
+        "CorrosionCoupons": 2,
+        "ElectricalResistanceProbes": 10,
+        "KeyProcessVariable": 20,
+        "ThinningMechanism_Fom": "Sulfuric acid (H2S/H2) corrosion_Low velocity"
+    },
+    {
+        "CorrosionCoupons": 1,
+        "ElectricalResistanceProbes": 10,
+        "KeyProcessVariable": 10,
+        "ThinningMechanism_Fom": "Sulfuric acid (H2S/H2) corrosion_High velocity"
+    },
+    {
+        "CorrosionCoupons": 1,
+        "ElectricalResistanceProbes": 1,
+        "KeyProcessVariable": 10,
+        "ThinningMechanism_Fom": "Hydrofluoric acid (HF) corrosion"
+    },
+    {
+        "CorrosionCoupons": 2,
+        "ElectricalResistanceProbes": 10,
+        "KeyProcessVariable": 20,
+        "ThinningMechanism_Fom": "Sour water corrosion_Low velocity"
+    },
+    {
+        "CorrosionCoupons": 2,
+        "ElectricalResistanceProbes": 2,
+        "KeyProcessVariable": 10,
+        "ThinningMechanism_Fom": "Sour water corrosion_High velocity"
+    },
+    {
+        "CorrosionCoupons": 2,
+        "ElectricalResistanceProbes": 10,
+        "KeyProcessVariable": 20,
+        "ThinningMechanism_Fom": "Amine_Low velocity"
+    },
+    {
+        "CorrosionCoupons": 1,
+        "ElectricalResistanceProbes": 10,
+        "KeyProcessVariable": 10,
+        "ThinningMechanism_Fom": "Amine_High velocity"
+    },
+    {
+        "CorrosionCoupons": 1,
+        "ElectricalResistanceProbes": 1,
+        "KeyProcessVariable": 1,
+        "ThinningMechanism_Fom": "Other corrosion mechanism"
+    }
+]

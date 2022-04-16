@@ -1,0 +1,172 @@
+<div class="dados-componente">
+	<div>
+		<ul>				
+			<li>
+				<label for="equipment">Equipment</label>
+				<input type="text" id="equipment" name="test">
+			</li>
+			<li class="revisar">
+				<label for="equipmentType">Equipment Type</label>
+				<input type="text" id="equipmentType" name="test" placeholder="Colocar lista suspensa">
+			</li>
+		</ul>
+	</div>
+	<div>
+		<ul>
+			<li>
+				<label for="component">Component</label>
+				<input type="text" id="component" name="test">
+			</li>
+			<li class="revisar">
+				<label for="componentType">Component Type</label>
+				<input type="text" id="componentType" name="test" placeholder="Colocar lista suspensa">
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="dados-componente">
+	<div>
+		<ul>
+			<li>
+				<label for="site">Site</label>
+				<select id="site" name="test">
+					<option value=""></option>
+					<option value="U-2110">U-2110</option>
+					<option value="U-2111">U-2111</option>
+					<option value="U-2221">U-2221</option>
+				</select>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<ul>
+			<li>
+				<label for="FMS">Management Systems Factor (FMS)</label>
+				<input id="FMS" name="FMS" type="number" step="any" min="0">
+			</li>
+		</ul>
+	</div>
+</div>
+<!------------------------------ SISTEMAS DE PROTEÇÃO ----------------------------------------->
+<div class="dados-componente">
+	<div>
+		<ul>
+			<li>
+				<label for="detectionSystem">Detection System</label>
+				<select id="detectionSystem" name="detectionSystem">
+					<option value=""></option>
+					<option value="A">A | Instrumentation designed specifically to detect material losses by changes in operating conditions (i.e. loss of pressure or flow) in the system.</option>
+					<option value="B">B | Suitably located detectors to determine when the material is present outside the pressure-containing envelope.</option>
+					<option value="C">C | Visual detection, cameras, or detectors with marginal coverage.</option>
+				</select>
+			</li>
+			<li>
+				<label for="isolationSystem">Isolation System</label>
+				<select id="isolationSystem" name="isolationSystem">
+					<option value=""></option>
+					<option value="A">A | Isolation or shutdown systems activated directly from process instrumentation or detectors, with no operator intervention.</option>
+					<option value="B">B | Isolation or shutdown systems activated by operators in the control room or other suitable locations remote from the leak.</option>
+					<option value="C">C | Isolation dependent on manually operated valves.</option>
+				</select>
+			</li>
+			<li>
+				<label for="mitigationSystem">Mitigation System</label>
+				<select id="mitigationSystem" name="mitigationSystem">
+					<option value=""></option>
+					<option value="0.25">Inventory blowdown, coupled with isolation system classification B or higher</option>
+					<option value="0.2">Fire water deluge system and monitors</option>
+					<option value="0.05">Fire water monitors only</option>
+					<option value="0.15">Foam spray system</option>
+					<option value="0">None</option>
+				</select>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<ul>
+			<li class="revisar">
+				<label for="inventoryGroup">Inventory Group</label>
+				<input type="text" id="grupoInventario" name="grupoInventario" placeholder="Colocar lista suspensa">
+			</li>
+			<li class="revisar">
+				<label for="inventoryGroupMass">Inventory Group Mass (kg)</label>
+				<input type="text" id="inventoryGroupMass" name="inventoryGroupMass">
+			</li>
+		</ul>
+	</div>
+</div>
+
+<!------------------------------ CONSEQUENCIA ----------------------------------------->		
+<div class="dados-componente">
+	<div>
+		<ul>
+			<li>
+				<label for="operatingPressure">Operating Pressure (kgf/cm²)</label>
+				<input type="number" id="operatingPressure" name="operatingPressure" step="any">
+			</li>
+			<li>
+				<label for="operatingTemperature">Operating Temperature (°C)</label>
+				<input type="number" id="operatingTemperature" name="operatingTemperature" step="any">
+			</li>
+			<li>
+				<label for="insideDiameter">Inside Diameter (mm)</label>
+				<input type="number" id="insideDiameter" name="insideDiameter" step="any" min="0">
+			</li>
+			<li>
+				<label for="lengthComponent">Length (mm)</label>
+				<input type="number" id="lengthComponent" name="lengthComponent" step="any" min="0">
+			</li>
+			<li class="revisar">
+				<label for="volumeComponent">Volume (m³)</label>
+				<input type="number" id="volumeComponent" name="volumeComponent" step="any" min="0" placeholder="Só preencher para componentes No cilindricos">
+			</li>
+		</ul>
+	</div>
+	<div>
+		<ul>
+			<li class="revisar">
+				<label for="representativeFluid">Representative Fluid</label>
+				<select id="representativeFluid" name="representativeFluid">
+					<option value=""></option>
+					<option value="">Puxar do Banco de Dados</option>
+				</select>
+			</li>
+			<li>
+				<label for="storedFluidPhase">Stored Fluid Phase</label>
+				<select id="storedFluidPhase" name="storedFluidPhase">
+					<option value=""></option>
+					<option value="liquid">Liquid</option>
+					<option value="gas">Gas</option>
+				</select>
+			</li>
+			<li>
+				<label for="percentLiquid">% Liquid</label>
+				<input type="number" id="percentLiquid" name="percentLiquid" step="any" min="0" max="100">
+			</li>
+			<li>
+				<label for="reynolds">N. Reynolds</label>
+				<input class="opcional" id="reynolds" name="reynolds" type="number" step="any" min="0" placeholder="Opcional">
+			</li>
+			<li class="revisar">
+				<label for="toxicComposition">Toxic Composition</label>
+				<select id="toxicComposition" name="toxicComposition">
+					<option value=""></option>
+					<option value="">Puxar do Banco de Dados</option>
+				</select>
+			</li>
+			<li>
+				<label for="percentToxicFluid">% Toxic Fluid</label>
+				<input type="number" id="percentToxicFluid" name="percentToxicFluid" step="any" min="0" max="100">
+			</li>
+			<li class="revisar">
+				<label for="idlh">IDLH Concentration?</label>
+				<select id="idlh" name="idlh">
+					<option value=""></option>
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+					<option value="">Colocar opção para puxar direto da tabela</option>
+				</select>
+			</li>
+		</ul>
+	</div>
+</div>

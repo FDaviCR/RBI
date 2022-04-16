@@ -1,0 +1,40 @@
+<%- include('../../../partials/head.ejs'); %>
+	<body>
+		<%- include('../../../partials/header-menu/header-cadastro.ejs'); %>
+	
+		<section class="unidade container-fluid dataBox">
+			<h1 class="titulo">Editar Cadastro Equipamento</h1>
+			<hr>
+			<div class="table-data row justify-content-md-center">
+		
+				<form method="POST" action="/cadastro/site/<%= equipment.siteId %>/equipment/update" class="form-cadastro">
+					<div class="mb-4">
+						<input value="<%= equipment.siteId %>" type="hidden" class="form-control" id="siteId" name="siteId" readonly >
+					</div>
+					<div class="mb-4">
+						<label for="equipment" class="form-label">Equipment</label>
+						<input value="<%= equipment.equipment %>" type="text" class="form-control" id="equipment" name="equipment" required>
+					</div>
+					<div class="mb-4">
+						<label for="equipmentType" class="form-label">Equipment Type</label>
+						<select id="equipmentType" name="equipmentType" class="form-select form-control" aria-label="Default select example" required disabled>
+						  <option value="<%= equipment.equipmentType %>" selected><%= equipment.equipmentType %></option>
+						<!--  <option value="Compressor">Compressor</option>
+						  <option value="Heat_Exchanger">Heat_Exchanger</option>
+						  <option value="Pipe">Pipe</option>
+						  <option value="Pump">Pump</option>
+						  <option value="Tank650">Tank650</option>
+						  <option value="Vessel">Vessel</option>
+						-->
+						</select>
+						
+					</div>
+					<input type="hidden" name="equipmentId" value="<%= equipment.id %>">
+					<button type="submit" class="btn btn-success">Atualizar</button>
+					<a href="/cadastro/site/<%= equipment.siteId %>/equipment" class="ml-2"><button type="button" class="btn btn-secondary">Cancelar</button></a>
+				</form>
+			</div>
+		</section>
+		<%- include('../../../partials/modal.ejs'); %>
+	</body>
+<%- include('../../../partials/footer.ejs'); %>

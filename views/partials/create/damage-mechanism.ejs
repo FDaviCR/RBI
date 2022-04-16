@@ -1,0 +1,49 @@
+	<div class="table-data">
+		<div class="btn-group menu-nav-dm js-menu-nav-dm" role="group" aria-label="Basic example">
+			<button type="button" class="btn btn-success btn-outline-success" data-id="btnThinning">Thinning</button>
+			<button type="button" class="btn btn-success btn-outline-success" data-id="btnLining">Lining</button>
+			<button type="button" class="btn btn-success btn-outline-success" data-id="btnsccCaustic">SCC Caustic</button>
+			<button type="button" class="btn btn-success btn-outline-success" data-id="btnsccAmine">SCC Amine</button>
+			<button type="button" class="btn btn-success btn-outline-success" data-id="btnsccSulfide">SCC Sulfide</button>
+			<button type="button" class="btn btn-success btn-outline-success" data-id="btnhicSohicH2S">HIC/SOHIC-H2S</button>
+			<button type="button" class="btn btn-success btn-outline-success" data-id="btnacscc">ACSCC</button>
+			<button type="button" class="btn btn-success btn-outline-success" data-id="btnpascc">PASCC</button>
+			<button type="button" class="btn btn-success btn-outline-success" data-id="btnsccChloride">SCC Chloride</button>
+			<button type="button" class="btn btn-success btn-outline-success" data-id="btnhscHF">HSC-HF</button>
+			<button type="button" class="btn btn-success btn-outline-success" data-id="btnhicSohicHF">HIC/SOHIC-HF</button>
+			<button type="button" class="btn btn-success btn-outline-success" data-id="btnexternalFerritic">External Ferritic</button>
+			<button type="button" class="btn btn-success btn-outline-success" data-id="btncuiFerritic">CUI Ferritic</button>
+			<button type="button" class="btn btn-success btn-outline-success" data-id="btnextclsccAustenitic">EXTCLSCC Austenitic</button>
+			<button type="button" class="btn btn-success btn-outline-success" data-id="btncuiExtclsccAustenitic">CUI EXTCLSCC Austenitic</button>
+			<button type="button" class="btn btn-success btn-outline-success" data-id="btnHTHA">HTHA</button>
+			<button type="button" class="btn btn-success btn-outline-success" data-id="btnbrittleFracture">Brittle Fracture</button>
+			<button type="button" class="btn btn-success btn-outline-success" data-id="btnlowAlloySteelEmbrittlement">Low Alloy Steel Embrittlement</button>
+			<button type="button" class="btn btn-success btn-outline-success" data-id="btnembrittlement885F">885 °F Embrittlement</button>
+			<button type="button" class="btn btn-success btn-outline-success" data-id="btnsigmaPhaseEmbrittlement">Sigma Phase Embrittlement</button>
+			<button type="button" class="btn btn-success btn-outline-success" data-id="btnpipingMechanicalFatigue">Piping Mechanical Fatigue</button>
+		</div>
+	</div>
+					
+	<div class="dados-dm">
+		<%- include('./damage-mechanism/thinning.ejs');%>
+		<%- include('./damage-mechanism/lining.ejs');%>
+		<%- include('./damage-mechanism/scc-caustic.ejs');%>
+		<%- include('./damage-mechanism/scc-amine.ejs');%>
+		<%- include('./damage-mechanism/scc-sulfide.ejs');%>
+		<%- include('./damage-mechanism/hic-sohic-h2s.ejs');%>
+		<%- include('./damage-mechanism/acscc.ejs');%>
+		<%- include('./damage-mechanism/pascc.ejs');%>
+		<%- include('./damage-mechanism/scc-chloride.ejs');%>
+		<%- include('./damage-mechanism/hsc-hf.ejs');%>
+		<%- include('./damage-mechanism/hic-sohic-hf.ejs');%>
+		<%- include('./damage-mechanism/external-ferritic.ejs');%>
+		<%- include('./damage-mechanism/cui-ferritic.ejs');%>
+		<%- include('./damage-mechanism/extclscc-austenitic.ejs');%>
+		<%- include('./damage-mechanism/cui-extclscc-austenitic.ejs');%>
+		<%- include('./damage-mechanism/htha.ejs');%>
+		<%- include('./damage-mechanism/brittle-fracture.ejs');%>
+		<%- include('./damage-mechanism/low-alloy-embrittlement.ejs');%>
+		<%- include('./damage-mechanism/885-embrittlement.ejs');%>
+		<%- include('./damage-mechanism/sigma-phase-embrittlement.ejs');%>
+		<%- include('./damage-mechanism/piping-mechanical-fatigue.ejs');%>
+	</div>		

@@ -1,0 +1,5 @@
+pH of Water;PWHT_CO3 All Concentrations;NO PWHT_CO3 < 100 ppm;NO PWHT_CO3 ? 100 ppm
+< 7,5;None;None;None
+? 7,5 to 8,0;None;Low;Medium
+? 8,0 to 9,0;None;Low;High
+? 9,0;None;High;High

@@ -1,0 +1,595 @@
+/*.revisar{
+	background: red;
+}
+.comentar{
+	background: yellow;
+}*/
+
+/* Reset */
+
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: Arial, "Times New-Roman";
+  background: #f8f9fa;
+}
+
+/* * {
+	box-sizing: border-box;
+} */
+
+.container {
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  flex: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  cursor: pointer;
+}
+
+/* Gerais */
+
+/* Menu */
+
+.menu {
+  /*background: #005496;*/
+  padding: 15px 0;
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.menu-logo {
+  padding-left: 10px;
+  color: #fff;
+  font-size: 1.8em;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  margin: 5px 0 0 20px;
+  /*	border: 2px solid;
+	border-radius: 5px;*/
+}
+
+.menu-nav {
+  flex: 1;
+  align-self: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.menu-nav ul {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.menu-nav ul li a:hover {
+  color: #fff;
+}
+
+.js-menu a.tabSelecionada {
+  color: #fff;
+}
+
+/* Login Page */
+
+#body-login {
+  background-color: #005496;
+}
+
+.loginBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 60px 40px;
+  width: 350px;
+  height: 450px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 3%;
+}
+
+.loginBox input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.loginBox input[type="text"],
+.loginBox input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.loginText {
+  margin: 0;
+  padding: 0 0 30px 0;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-weight: bold;
+}
+
+.labelText {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.btnBlue {
+  color: white;
+  background-color: #60a3bc;
+}
+
+/* Árvore */
+
+.arvore {
+  /* background: tomato !important; */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  /*width: 30%;*/
+  /* padding-top: 10px; */
+  z-index: 2;
+}
+
+.offcanvas-close-div {
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.offcanvas-close-div h4 {
+  font-weight: bold;
+}
+
+#offcanvas-btn-close {
+  margin: 10px;
+}
+
+.btn-arvore {
+  width: 100%;
+  border: none;
+}
+
+.nav-ul {
+  width: 95%;
+  margin-left: 1%;
+}
+
+#equipment-list {
+  position: fixed;
+  top: 15vh;
+  bottom: 10vh;
+  overflow: auto;
+  width: 100%;
+}
+
+#btnAcessarCadastro {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Cadastro*/
+
+section {
+  margin-top: 80px;
+}
+
+.titulo {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  /*padding-bottom: 30px;*/
+}
+
+/* Cadastro Unidades */
+
+.unidade table {
+  text-align: center;
+}
+
+.unidade table button,
+.unidade table a {
+  margin: 0 10px;
+}
+
+.div-cadastro-table {
+  margin-bottom: 8px;
+  text-align: right;
+}
+
+.div-cadastro-table button {
+  margin-left: 5px;
+}
+
+.table-data {
+  margin: 20px 0;
+}
+
+.div-btn-voltar {
+  margin-bottom: 10px;
+}
+.div-btn-voltar-equip {
+  padding: 0 15px 0 10px;
+}
+
+/* Inspeção */
+
+/* Plano de Inspeção */
+
+.efetividade {
+  width: 40px;
+  text-align: center;
+  -webkit-appearance: none;
+}
+
+.trdi-history {
+  width: 60px;
+  text-align: center;
+  -webkit-appearance: none;
+}
+
+.history-tabela {
+  max-height: 500px;
+  overflow: scroll;
+  margin: 20px auto;
+}
+.history-tabela label {
+  display: none;
+}
+.history-tabela th,
+.history-tabela td {
+  width: 150px !important;
+}
+/* CheckBox Mecanismos de Dano */
+
+.flag-dm {
+  margin: 10px auto 30px auto;
+  padding: 10px;
+  max-width: 80%;
+}
+
+.flag-dm ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.flag-dm ul li {
+  width: 250px;
+  padding: 2px 0;
+}
+.flag-dm ul li label {
+  display: inline;
+}
+
+/* Menu Mecanismos de Dano*/
+
+.menu-nav-dm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-nav-dm button {
+  width: 250px;
+  text-align: center;
+}
+
+/*Preencher mecanismo BOX */
+
+.dados-dm {
+  display: block;
+  border-width: 2px !important;
+  border-radius: 5px;
+  padding: 20px;
+  height: 380px;
+  overflow-y: auto;
+  background: #fff;
+}
+
+.mecanismoDanoBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: right;
+}
+
+.btn-calculate-details {
+  min-width: 200px;
+}
+
+/* SCC Caustic - Ajuste Imagem */
+/* 
+#btnsccCaustic{
+	justify-content: space-around;
+}
+
+#btnsccCaustic img{
+	max-height: 300px;
+	margin-top: 10px;
+}
+
+.figure p{
+	text-align: center;
+	font-weight: bold;
+} */
+
+/* Footer */
+/* 
+.footer{
+	padding: 0 0 10px 240px;
+	position: fixed;
+	bottom:0;
+}*/
+
+/* MODAL */
+/* 
+.modal-background{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: #000;
+	opacity: 90%;
+	z-index: 100;
+}
+
+.modal-cadastro{
+	background: #005496;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 500px;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 20px;
+	border: 1px solid #fff;
+}
+
+.modal-cadastro label{
+	width: 150px;
+	padding: 5px 10px;
+}
+.modal-cadastro div{
+	padding: 15px 0;
+	text-align: center;
+} */
+
+/* --------------------- */
+
+/* Slide in Left */
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.slideOutLeft {
+  -webkit-animation-name: slideOutLeft;
+  animation-name: slideOutLeft;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideOutLeft {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    visibility: hidden;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+@keyframes slideOutLeft {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    visibility: hidden;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -10%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -%, 0);
+    transform: translate3d(0, -10%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+/*
+ .fadeOutUp {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeOutUp {
+  0% {
+  opacity: 1;
+  }
+  100% {
+	  visibility: none;
+  opacity: 0;
+  -webkit-transform: translate3d(0, -10%, 0);
+  transform: translate3d(0, -10%, 0);
+  }
+  }
+  @keyframes fadeOutUp {
+  0% {
+  opacity: 1;
+  }
+  100% {
+	  visibility: none;
+  opacity: 0;
+  -webkit-transform: translate3d(0, -10%, 0);
+  transform: translate3d(0, -10%, 0);
+  }
+  } 
+*/
+.hamburguer-hidden {
+  animation: open;
+}
+
+/* Minhas animações */
+
+.ativo-block {
+  display: block;
+  animation: show 0.5s forwards;
+}
+
+.ativo-flex {
+  display: flex;
+  animation: show 0.5s forwards;
+}
+
+.inativo {
+  display: none;
+}
+
+.expandir-img {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  height: 80vh;
+  animation: modal 0.5s forwards;
+  z-index: 101;
+}
+
+.modal-cadastro {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  height: 50vh;
+  animation: modal 0.5s forwards;
+  z-index: 101;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0px, 0, 0);
+  }
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes open {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0px, 0);
+  }
+}
+
+@keyframes baixar-seta {
+  0% {
+    transform: rotate(90);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}

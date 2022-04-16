@@ -1,0 +1,75 @@
+<%- include('../../../partials/head.ejs'); %>
+	<body>
+		<%- include('../../../partials/header-menu/header-cadastro.ejs'); %>
+	
+		<section class="unidade container-fluid">
+			<h1 class="titulo"><%= site.site %></h1>
+			<hr>
+			<div class="table-data">
+				<div class="row justify-content-md-center">
+					<div class="table-responsive col-md-8">
+						<div class="div-cadastro-table div-btn-voltar-equip row justify-content-between">
+							<a href="/cadastro/site"><button type="button" class="btn btn-secondary"><i class="bi bi-arrow-left"></i> Voltar</button></a>
+							<div>
+								<a href="/cadastro/site/<%= siteId %>/equipment/new"><button type="button" class="btn btn-primary"><i class="bi bi-folder-plus"></i> Novo</button></a>
+								<a href="/cadastro/site/<%= siteId %>/equipment/archive/view"><button type="button" class="btn btn-secondary"><i class="bi bi-archive-fill"></i> Arquivados</button></a>
+							</div>
+						</div>
+						<table class="table table-striped table-bordered" cellspacing="0" cellpadding="0">
+							<thead>
+								<tr>
+									<th>Equipment</th>
+									<th>Equipment Type</th>
+									<th class="actions">Ações</th>
+								</tr>
+							</thead>
+							<tbody>
+								<% equipment.forEach(el=>{ %>
+									<tr>
+										<th scope="row"><%= el.equipment %></th>
+										<td><%= el.equipmentType %></td>
+										<td>
+											<a href="/cadastro/site/<%= el.siteId %>/equipment/<%= el.equipmentType %>/<%= el.id %>/component" class="btn btn-success btn-xs">Visualizar</a>
+											<a href="/cadastro/site/<%= el.siteId %>/equipment/edit/<%= el.id %>" class="btn btn-warning"><i class="bi bi-pencil-square"></i></i> Renomear</a>
+											<form method="POST" action="/cadastro/site/<%= el.siteId %>/equipment/archive" style="display: inline;" onsubmit="confirmarArquivo(event, this)">
+												<input type="hidden" name="equipmentId" value="<%= el.id %>">
+												<button class="btn btn-danger"><i class="bi bi-archive"></i> Arquivar</button>
+												<!-- <i class="fas fa-trash"></i> -->
+												<!-- <i class="fas fa-archive"></i> -->
+											</form>
+										</td>
+									</tr>
+								<% }) %>
+							</tbody>
+						</table>
+				
+					</div>
+				</div> <!-- /#list -->
+			</div>  <!-- /#main -->
+		</section>
+	</body>
+	<script>
+		// var filtro = document.getElementById('filtro-clientes');
+		// var tabela = document.getElementById('lista-clientes');
+		// filtro.onkeyup = function() {
+		// 	var nomeFiltro = filtro.value;
+		// 	for (var i = 1; i < tabela.rows.length; i++) {
+		// 		var conteudoCelula = tabela.rows[i].cells[1].innerText;
+		// 		var corresponde = conteudoCelula.toLowerCase().indexOf(nomeFiltro) >= 0;
+		// 		tabela.rows[i].style.display = corresponde ? '' : 'none';
+		// 	}
+		// };
+	
+		function confirmarArquivo(event, form){
+			event.preventDefault();
+			var decision = confirm("Tem certeza que deseja arquivar a unidade?");
+			if(decision){
+				window.alert("Unidade arquivada!")
+				form.submit();
+			}else{
+				console.log("Foi um acidente");
+			}
+		}
+	
+	</script>
+<%- include('../../../partials/footer.ejs'); %>

@@ -1,0 +1,226 @@
+[
+    {
+        "ComponentType": "COMPC",
+        "EquipmentType": "Compressor",
+        "holecost_Large": 100000,
+        "holecost_Medium": 20000,
+        "holecost_Rupture": 300000,
+        "holecost_Small": 10000
+    },
+    {
+        "ComponentType": "COMPR",
+        "EquipmentType": "Compressor",
+        "holecost_Large": 50000,
+        "holecost_Medium": 10000,
+        "holecost_Rupture": 100000,
+        "holecost_Small": 5000
+    },
+    {
+        "ComponentType": "HEXSS",
+        "EquipmentType": "Heat exchanger",
+        "holecost_Large": 20000,
+        "holecost_Medium": 2000,
+        "holecost_Rupture": 60000,
+        "holecost_Small": 1000
+    },
+    {
+        "ComponentType": "HEXTS",
+        "EquipmentType": "Heat exchanger",
+        "holecost_Large": 20000,
+        "holecost_Medium": 2000,
+        "holecost_Rupture": 60000,
+        "holecost_Small": 1000
+    },
+    {
+        "ComponentType": "HEXTUBE",
+        "EquipmentType": "Heat exchanger",
+        "holecost_Large": 20000,
+        "holecost_Medium": 2000,
+        "holecost_Rupture": 60000,
+        "holecost_Small": 1000
+    },
+    {
+        "ComponentType": "PIPE-1",
+        "EquipmentType": "Pipe",
+        "holecost_Large": 0,
+        "holecost_Medium": 0,
+        "holecost_Rupture": 20,
+        "holecost_Small": 5
+    },
+    {
+        "ComponentType": "PIPE-2",
+        "EquipmentType": "Pipe",
+        "holecost_Large": 0,
+        "holecost_Medium": 0,
+        "holecost_Rupture": 40,
+        "holecost_Small": 5
+    },
+    {
+        "ComponentType": "PIPE-4",
+        "EquipmentType": "Pipe",
+        "holecost_Large": 0,
+        "holecost_Medium": 10,
+        "holecost_Rupture": 60,
+        "holecost_Small": 5
+    },
+    {
+        "ComponentType": "PIPE-6",
+        "EquipmentType": "Pipe",
+        "holecost_Large": 0,
+        "holecost_Medium": 20,
+        "holecost_Rupture": 120,
+        "holecost_Small": 5
+    },
+    {
+        "ComponentType": "PIPE-8",
+        "EquipmentType": "Pipe",
+        "holecost_Large": 60,
+        "holecost_Medium": 30,
+        "holecost_Rupture": 180,
+        "holecost_Small": 5
+    },
+    {
+        "ComponentType": "PIPE-10",
+        "EquipmentType": "Pipe",
+        "holecost_Large": 80,
+        "holecost_Medium": 40,
+        "holecost_Rupture": 240,
+        "holecost_Small": 5
+    },
+    {
+        "ComponentType": "PIPE-12",
+        "EquipmentType": "Pipe",
+        "holecost_Large": 120,
+        "holecost_Medium": 60,
+        "holecost_Rupture": 360,
+        "holecost_Small": 5
+    },
+    {
+        "ComponentType": "PIPE-16",
+        "EquipmentType": "Pipe",
+        "holecost_Large": 160,
+        "holecost_Medium": 80,
+        "holecost_Rupture": 500,
+        "holecost_Small": 5
+    },
+    {
+        "ComponentType": "PIPEGT16",
+        "EquipmentType": "Pipe",
+        "holecost_Large": 240,
+        "holecost_Medium": 120,
+        "holecost_Rupture": 700,
+        "holecost_Small": 10
+    },
+    {
+        "ComponentType": "PUMP2S",
+        "EquipmentType": "Pump",
+        "holecost_Large": 5000,
+        "holecost_Medium": 2500,
+        "holecost_Rupture": 5000,
+        "holecost_Small": 1000
+    },
+    {
+        "ComponentType": "PUMP1S",
+        "EquipmentType": "Pump",
+        "holecost_Large": 5000,
+        "holecost_Medium": 2500,
+        "holecost_Rupture": 5000,
+        "holecost_Small": 1000
+    },
+    {
+        "ComponentType": "PUMPR",
+        "EquipmentType": "Pump",
+        "holecost_Large": 5000,
+        "holecost_Medium": 2500,
+        "holecost_Rupture": 10000,
+        "holecost_Small": 1000
+    },
+    {
+        "ComponentType": "TANKBOTTOM",
+        "EquipmentType": "Tank650",
+        "holecost_Large": 0,
+        "holecost_Medium": 0,
+        "holecost_Rupture": 120000,
+        "holecost_Small": 5000
+    },
+    {
+        "ComponentType": "COURSE-1-10",
+        "EquipmentType": "Tank650",
+        "holecost_Large": 20000,
+        "holecost_Medium": 12000,
+        "holecost_Rupture": 40000,
+        "holecost_Small": 5000
+    },
+    {
+        "ComponentType": "FINFAN_TUBE",
+        "EquipmentType": "Vessel",
+        "holecost_Large": 20000,
+        "holecost_Medium": 2000,
+        "holecost_Rupture": 60000,
+        "holecost_Small": 1000
+    },
+    {
+        "ComponentType": "FINFAN",
+        "EquipmentType": "Vessel",
+        "holecost_Large": 20000,
+        "holecost_Medium": 2000,
+        "holecost_Rupture": 60000,
+        "holecost_Small": 1000
+    },
+    {
+        "ComponentType": "KODRUM",
+        "EquipmentType": "Vessel",
+        "holecost_Large": 20000,
+        "holecost_Medium": 12000,
+        "holecost_Rupture": 40000,
+        "holecost_Small": 5000
+    },
+    {
+        "ComponentType": "DRUM",
+        "EquipmentType": "Vessel",
+        "holecost_Large": 20000,
+        "holecost_Medium": 12000,
+        "holecost_Rupture": 40000,
+        "holecost_Small": 5000
+    },
+    {
+        "ComponentType": "FILTER",
+        "EquipmentType": "Vessel",
+        "holecost_Large": 4000,
+        "holecost_Medium": 2000,
+        "holecost_Rupture": 10000,
+        "holecost_Small": 1000
+    },
+    {
+        "ComponentType": "REACTOR",
+        "EquipmentType": "Vessel",
+        "holecost_Large": 40000,
+        "holecost_Medium": 24000,
+        "holecost_Rupture": 80000,
+        "holecost_Small": 10000
+    },
+    {
+        "ComponentType": "COLBTM",
+        "EquipmentType": "Vessel",
+        "holecost_Large": 50000,
+        "holecost_Medium": 25000,
+        "holecost_Rupture": 100000,
+        "holecost_Small": 10000
+    },
+    {
+        "ComponentType": "COLTOP",
+        "EquipmentType": "Vessel",
+        "holecost_Large": 50000,
+        "holecost_Medium": 25000,
+        "holecost_Rupture": 100000,
+        "holecost_Small": 10000
+    },
+    {
+        "ComponentType": "COLMID",
+        "EquipmentType": "Vessel",
+        "holecost_Large": 50000,
+        "holecost_Medium": 25000,
+        "holecost_Rupture": 100000,
+        "holecost_Small": 10000
+    }
+]

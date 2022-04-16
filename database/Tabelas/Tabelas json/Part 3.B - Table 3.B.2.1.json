@@ -1,0 +1,162 @@
+[
+    {
+        "ConversionFactor": "C1",
+        "SIUnits": 31623
+    },
+    {
+        "ConversionFactor": "C2",
+        "SIUnits": 1000
+    },
+    {
+        "ConversionFactor": "C3",
+        "SIUnits": 4536
+    },
+    {
+        "ConversionFactor": "C4a e C4b",
+        "SIUnits": 2.205
+    },
+    {
+        "ConversionFactor": "C5",
+        "SIUnits": 25.2
+    },
+    {
+        "ConversionFactor": "C6",
+        "SIUnits": 55.6
+    },
+    {
+        "ConversionFactor": "C8",
+        "SIUnits": 0.0929
+    },
+    {
+        "ConversionFactor": "C9",
+        "SIUnits": 0.123
+    },
+    {
+        "ConversionFactor": "C10",
+        "SIUnits": 9.744
+    },
+    {
+        "ConversionFactor": "C11",
+        "SIUnits": 0.145
+    },
+    {
+        "ConversionFactor": "C12",
+        "SIUnits": 1.8
+    },
+    {
+        "ConversionFactor": "C13",
+        "SIUnits": 6.29
+    },
+    {
+        "ConversionFactor": "C14",
+        "SIUnits": 1
+    },
+    {
+        "ConversionFactor": "C15",
+        "SIUnits": 4.685
+    },
+    {
+        "ConversionFactor": "C16",
+        "SIUnits": 299.44
+    },
+    {
+        "ConversionFactor": "C17",
+        "SIUnits": 0.001
+    },
+    {
+        "ConversionFactor": "C18",
+        "SIUnits": 0.005
+    },
+    {
+        "ConversionFactor": "C19",
+        "SIUnits": 1.085
+    },
+    {
+        "ConversionFactor": "C20",
+        "SIUnits": 1.013
+    },
+    {
+        "ConversionFactor": "C21",
+        "SIUnits": 5328
+    },
+    {
+        "ConversionFactor": "C22",
+        "SIUnits": 5.8
+    },
+    {
+        "ConversionFactor": "C23",
+        "SIUnits": 0.45
+    },
+    {
+        "ConversionFactor": "C24",
+        "SIUnits": 2.6
+    },
+    {
+        "ConversionFactor": "C25",
+        "SIUnits": 0.0296
+    },
+    {
+        "ConversionFactor": "C26",
+        "SIUnits": 100
+    },
+    {
+        "ConversionFactor": "C27",
+        "SIUnits": 1
+    },
+    {
+        "ConversionFactor": "C28",
+        "SIUnits": 1000
+    },
+    {
+        "ConversionFactor": "C29",
+        "SIUnits": 0.0004303
+    },
+    {
+        "ConversionFactor": "C30",
+        "SIUnits": 2.15e-07
+    },
+    {
+        "ConversionFactor": "C31",
+        "SIUnits": 864
+    },
+    {
+        "ConversionFactor": "C32",
+        "SIUnits": 0.543
+    },
+    {
+        "ConversionFactor": "C33",
+        "SIUnits": 0.0815
+    },
+    {
+        "ConversionFactor": "C34",
+        "SIUnits": 86.4
+    },
+    {
+        "ConversionFactor": "C35",
+        "SIUnits": 29.6195
+    },
+    {
+        "ConversionFactor": "C36",
+        "SIUnits": 30.5
+    },
+    {
+        "ConversionFactor": "C37",
+        "SIUnits": 1.408e-08
+    },
+    {
+        "ConversionFactor": "C38",
+        "SIUnits": 1.1341
+    },
+    {
+        "ConversionFactor": "C39",
+        "SIUnits": 3.9365
+    },
+    {
+        "ConversionFactor": "C40",
+        "SIUnits": 5.9352
+    },
+    {
+        "ConversionFactor": "C41",
+        "SIUnits": 32
+    }
+]

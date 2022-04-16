@@ -1,0 +1,57 @@
+<%- include('../../../partials/head.ejs'); %>
+	<body>
+		<%- include('../../../partials/header-menu/header-cadastro.ejs'); %>
+	
+		<section class="unidade container-fluid dataBox">
+			<h1 class="titulo">Editar Cadastro Componente</h1>
+			<hr>
+			<div class="table-data row justify-content-md-center">
+		
+				<form method="POST" action="/cadastro/site/<%= component.siteId %>/equipment/<%= equipmentType %>/<%= equipmentId %>/component/update" class="form-cadastro">
+					<div class="mb-4">
+						<label for="component" class="form-label">Component</label>
+						<input value="<%= component.component %>" type="text" class="form-control" id="component" name="component" required>
+					</div>
+					<div class="mb-4">
+						<label for="componentType" class="form-label">Component Type</label>
+						<select id="componentType" name="componentType" class="form-select form-control" aria-label="Default select example" required>
+							<% componentTypeOptions.forEach((el, index)=>{ %>
+							<option value="<%= componentTypeOptions[index] %>"> <%= componentTypeOptions[index] %></option>
+						<% }) %>
+						</select>
+						
+					</div>
+					<div class="mb-4">
+						<label for="inventoryGroupId" class="form-label">Inventory Group</label>
+						<select id="inventoryGroupId" name="inventoryGroupId" class="form-select form-control" aria-label="Default select example" required>
+							<% inventoryOptions.forEach((el, index)=>{ %>
+								<option value="<%= inventory[index].id %>"> <%= inventoryOptions[index] %> </option>
+							<% }) %>
+						</select>
+					</div>
+					<input type="hidden" name="componentId" value="<%= component.id %>">
+					<button type="submit" class="btn btn-success">Atualizar</button>
+					<a href="/cadastro/site/<%= component.siteId %>/equipment/<%= equipmentType %>/<%= equipmentId %>/component" class="ml-2"><button type="button" class="btn btn-secondary">Cancelar</button></a>
+				</form>
+			</div>
+		</section>
+		<%- include('../../../partials/modal.ejs'); %>
+	</body>
+	<script>
+		
+		function selectAtive(selectId, selectValue){
+			
+			const options = document.querySelectorAll(`#${selectId} option`);
+			
+			options.forEach(el=>{		
+				if(el.value == selectValue){
+					el.selected = true;
+				}
+			});
+		}
+
+		selectAtive("componentType", "<%= component.componentType %>");
+		selectAtive("inventoryGroupId", "<%= component.inventoryGroupId %>");
+
+	</script>
+<%- include('../../../partials/footer.ejs'); %>

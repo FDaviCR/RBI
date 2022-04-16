@@ -1,0 +1,138 @@
+[
+    {
+        "Fluid": "C1-C2",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 1
+    },
+    {
+        "Fluid": "C3-C4",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 1
+    },
+    {
+        "Fluid": "C5",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 1
+    },
+    {
+        "Fluid": "C6-C8",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 0.9
+    },
+    {
+        "Fluid": "C9-C12",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 0.5
+    },
+    {
+        "Fluid": "C13-C16",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 0.1
+    },
+    {
+        "Fluid": "C17-C25",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 0.05
+    },
+    {
+        "Fluid": "C25+",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 0.02
+    },
+    {
+        "Fluid": "H2",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 1
+    },
+    {
+        "Fluid": "H2S",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 1
+    },
+    {
+        "Fluid": "HF",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 1
+    },
+    {
+        "Fluid": "HCl(Acid)",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 1
+    },
+    {
+        "Fluid": "Water",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 1
+    },
+    {
+        "Fluid": "Steam",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 1
+    },
+    {
+        "Fluid": "Acid/Caustic",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 0.9
+    },
+    {
+        "Fluid": "Aromatics",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 1
+    },
+    {
+        "Fluid": "AlCl3",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 1
+    },
+    {
+        "Fluid": "Pyrophoric",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 1
+    },
+    {
+        "Fluid": "Ammonia",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 1
+    },
+    {
+        "Fluid": "Chlorine",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 1
+    },
+    {
+        "Fluid": "CO",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 1
+    },
+    {
+        "Fluid": "DEE",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 1
+    },
+    {
+        "Fluid": "HCl(Gas)",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 1
+    },
+    {
+        "Fluid": "Nitric acid",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 0.8
+    },
+    {
+        "Fluid": "NO2",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 0.75
+    },
+    {
+        "Fluid": "Phosgene",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 1
+    },
+    {
+        "Fluid": "TDI",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 0.15
+    },
+    {
+        "Fluid": "Methanol",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 1
+    },
+    {
+        "Fluid": "PO",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 1
+    },
+    {
+        "Fluid": "Styrene",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 0.6
+    },
+    {
+        "Fluid": "EEA",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 0.65
+    },
+    {
+        "Fluid": "EE",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 0.75
+    },
+    {
+        "Fluid": "EG",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 0.45
+    },
+    {
+        "Fluid": "EO",
+        "FractionEvaporatedin24Hours(a)-fract_evap": 1
+    }
+]

@@ -1,0 +1,35 @@
+Fluid;Fraction Evaporated in 24 Hours (a) - fract_evap
+C1-C2;1
+C3-C4;1
+C5;1
+C6-C8;0.9
+C9-C12;0.5
+C13-C16;0.1
+C17-C25;0.05
+C25+;0.02
+H2;1
+H2S;1
+HF;1
+HCl(Acid);1
+Water;1
+Steam;1
+Acid/Caustic;0.9
+Aromatics;1
+AlCl3;1
+Pyrophoric;1
+Ammonia;1
+Chlorine;1
+CO;1
+DEE;1
+HCl(Gas);1
+Nitric acid;0.8
+NO2;0.75
+Phosgene;1
+TDI;0.15
+Methanol;1
+PO;1
+Styrene;0.6
+EEA;0.65
+EE;0.75
+EG;0.45
+EO;1

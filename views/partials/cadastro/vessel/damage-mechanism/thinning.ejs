@@ -1,0 +1,132 @@
+<div id="btnThinning" class=" mecanismoDanoBox">				
+	<div>
+		<ul>
+			<li>
+				<label for="furnishedThickness">Furnished Thickness (mm)</label>
+				<input id="furnishedThickness" type="number" step="any" min="0">
+			</li>
+			<li>
+				<label for="minimumRequiredThickness">Minimum Required Thickness (mm)</label>
+				<input id="minimumRequiredThickness" type="number" step="any" min="0">
+			</li>
+			<li>
+				<label for="minimumStructuralThickness">Minimum Structural Thickness (mm)</label>
+				<input class="opcional" id="minimumStructuralThickness" type="number" step="any" min="0" placeholder="Opcional">
+			</li>
+			<li>
+				<label for="hasClad">Has Clad/Weld?</label>
+				<select id="hasClad">
+					<option value=""></option>
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</select>
+			</li>
+			<li>
+				<label for="cladThickness">Cladding/Weld Overlay Thickness, (mm)</label>
+				<input id="cladThickness" type="number" step="any" min="0">
+			</li>
+			<li class="revisar">
+				<label for="lastInspectionThinning">Last Inspecition Date Thinning</label>
+				<input id="lastInspectionThinning" type="date" max="9999-12-31">
+			</li>
+			<li>
+				<label for="trdi">Last Inspection Known Thickness (mm)</label>
+				<input id="trdi" type="number" step="any" min="0">
+			</li>
+			<li>
+				<label for="cr_Bm">Base Material Corrosion Rate (mm/ano)</label>
+				<input id="cr_Bm" type="number" step="any" min="0">
+			</li>
+			<li>
+				<label for="cr_Cm"> Cladding/Weld Corrosion Rate(mm/ano)</label>
+				<input id="cr_Cm" type="number" step="any" min="0">
+			</li>
+			<li>
+				<label for="corrosionType">Corrosion Type</label>
+				<select id="corrosionType">
+					<option value=""></option>
+					<option value="general">General</option>
+					<option value="localized">Localized</option>
+				</select>
+			</li>
+			<li>
+				<label for="confidenceData">Data Confidence Level</label>
+				<select id="confidenceData">
+					<option value=""></option>
+					<option value="low">Low</option>
+					<option value="medium">Medium</option>
+					<option value="high">High</option>
+				</select>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<ul>
+			<li>
+				<label for="shapeFactor">Shape Factor for the Component Type</label>
+				<select id="shapeFactor">
+					<option value=""></option>
+					<option value="2">Cylinder</option>
+					<option value="1.13">Head</option>
+					<option value="4">Sphere</option>
+				</select>
+			</li>
+			<li>
+				<label for="yieldStrength">Material Yield Strength (ksi)</label>
+				<input id="yieldStrength" type="number" step="any" min="0">
+			</li>
+			<li>
+				<label for="tensileStrength">Material Tensile Strength (ksi)</label>
+				<input id="tensileStrength" type="number" step="any" min="0">
+			</li>
+			<li>
+				<label for="jointEfficiency">Joint Efficiency</label>
+				<input id="jointEfficiency" type="number" step="any" min="0">
+			</li>
+			<li class="revisar">
+				<label for="allowableStress">Allowable Stress (ksi)</label>
+				<input class="opcional" id="allowableStress" type="number" step="any" min="0" placeholder="Minima estrutural preenchida?">
+			</li>
+			<li class="revisar">
+				<label for="fomThining">Fom</label>
+				<select id="fomThining">
+					<option value=""></option>
+					<option value="">Pendente</option>
+					<option value="">Puxar da tabela 4.8</option>
+				</select>
+			</li>
+			<li class="comentar">
+				<label for="fip">Fip</label>
+				<select id="fip">
+					<option value=""></option>
+					<option value="1">1</option>
+					<option value="3">3</option>
+				</select>
+			</li>
+			<li class="comentar">
+				<label for="fdl">Fdl</label>
+				<select id="fdl">
+					<option value=""></option>
+					<option value="1">1</option>
+					<option value="3">3</option>
+				</select>
+			</li>
+			<li class="revisar">
+				<label for="N_A_Thinning">N_A_Thinning</label>
+				<input id="N_A_Thinning" type="number" step="1" min="0" max="6">
+			</li>	
+			<li class="revisar">
+				<label for="N_B_Thinning">N_B_Thinning</label>
+				<input id="N_B_Thinning" type="number" step="1" min="0" max="6">
+			</li>	
+			<li class="revisar">
+				<label for="N_C_Thinning">N_C_Thinning</label>
+				<input id="N_C_Thinning" type="number" step="1" min="0" max="6">
+			</li>	
+			<li class="revisar">
+				<label for="N_D_Thinning">N_D_Thinning</label>
+				<input id="N_D_Thinning" type="number" step="1" min="0" max="6">
+			</li>	
+		</ul>
+	</div>
+</div>

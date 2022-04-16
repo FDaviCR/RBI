@@ -1,0 +1,671 @@
+<%- include('../../../partials/head.ejs'); %>
+	<body>
+		<%- include('../../../partials/header-menu/header-resultado.ejs'); %>
+		<section class="unidade container-fluid">
+			<%- include('../../../partials/offcanvas/offcanvas-resultado.ejs'); %>
+			
+			<div class="table-data row justify-content-center">
+				<h4>Risk Analises</h4>
+				<div class="table-responsive d-flex justify-content-around">
+					<table class="table table-sm table-primary table-bordered table-striped col-sm-4">
+						<tbody>
+							<tr>
+								<th scope="row">CA<sub> f</sub> (m²)</th>
+								<td><%= CA_final.toFixed(4) %></td>
+							</tr>
+					  </tbody>
+					</table>
+			</div>
+
+			<hr class="container">
+
+			<div class="table-data row d-flex justify-content-center col-12">
+				<button class="btn btn-primary btn-outline-primary btn-calculate-details ml-1 mr-1 mb-2" type="button">Consequence Details</button>
+				<button class="btn btn-primary btn-outline-primary btn-calculate-details col-2 ml-1 mr-1 mb-2" type="button">Probability Details</button>
+				<button class="btn btn-primary btn-outline-primary btn-calculate-details col-2 ml-1 mr-1 mb-2" type="button">Risk Details</button>
+			</div>
+
+			<div class="calculate-details inativo row justify-content-center">
+				<div class="row justify-content-center">
+					<h4>Consequence Details</h4>
+					<div class="table-responsive d-flex justify-content-center">
+						<table class="table-data table table-sm table-primary table-bordered table-striped col-sm-4">
+							<tbody>
+								<tr>
+									<th scope="row">CA<sub> f,cmd</sub><sup>flam</sup> (m²)</th>
+									<td><%= CA_FLAM_CMD_FINAL.toFixed(4) %></td>
+								</tr>
+								<tr>
+									<th scope="row">CA<sub> f,inj</sub><sup>flam</sup> (m²)</th>
+									<td><%= CA_FLAM_INJ_FINAL.toFixed(4) %></td>
+								</tr>
+								<tr>
+									<th scope="row">CA<sub> f,inj</sub><sup>tox</sup> (m²)</th>
+									<td><%= CA_TOX_INJ_FINAL.toFixed(4) %></td>
+								</tr>
+								<tr>
+									<th scope="row">CA<sub> f,inj</sub><sup>nfnt</sup> (m²)</th>
+									<td><%= CA_NFNT_INJ_FINAL.toFixed(4) %></td>
+								</tr>
+								<tr>
+									<th scope="row">CA<sub> f,cmd</sub> (m²)</th>
+									<td><%= CA_cmd_final.toFixed(4) %></td>
+								</tr>
+								<tr>
+									<th scope="row">CA<sub> f,inj</sub> (m²)</th>
+									<td><%= CA_inj_final.toFixed(4) %></td>
+								</tr>
+								<tr>
+									<th scope="row" >CA<sub> f</sub> (m²)</th>
+									<td><%= CA_final.toFixed(4) %></td>
+								</tr>
+							</tbody>
+						</table>
+				</div>
+					
+					<div class="table-responsive d-flex justify-content-around">
+						<table class="table-data table table-sm table-seccondary table-bordered table-striped col-sm-4">
+							<tbody>
+							<tr>
+								<th scope="row">Liquid Density (kg/m³)</th>
+								<td><%= liquidDensity.toFixed(4) %></td>
+							</tr>
+							<tr>
+								<th scope="row">Vapor Density (kg/m³)</th>
+								<td><%= vaporDensity.toFixed(4) %></td>
+							</tr>
+							<tr>
+								<th scope="row">Molecular Weight (kg/kg-mol)</th>
+								<td><%= MW %></td>
+							</tr>
+							<tr>
+								<th scope="row">Ideal Gas Specific Heat Ratio</th>
+								<td><%= k.toFixed(4) %></td>
+							</tr>
+							<tr>
+								<th scope="row">Specific Heat (J/kg-mol-K)</th>
+								<td><%= Cp.toFixed(4) %></td>
+							</tr>
+							<tr>
+								<th scope="row">AIT (K)</th>
+								<td><%= AIT.toFixed(2) %></td>
+							</tr>
+							</tbody>
+						</table>
+						<table class="table-data table table-sm table-seccondary table-bordered table-striped col-sm-4">
+							<tbody>
+							<tr>
+								<th scope="row">Stored Fluid Phase</th>
+								<td><%= storedFluidPhase %></td>
+							</tr>
+							<tr>
+								<th scope="row">Ambient State</th>
+								<td><%= ambientState %></td>
+							</tr>
+							<tr>
+								<th scope="row">Model as</th>
+								<td><%= isModelAsGas %></td>
+							</tr>
+							<tr>
+								<th scope="row">Component Mass (kg)</th>
+								<td><%= massComp.toFixed(4) %></td>
+							</tr>
+							<tr>
+								<th scope="row">Inventory Group Mass (kg)</th>
+								<td><%= massInv.toFixed(4) %></td>
+							</tr>
+							<th scope="row">Fact_di</th>
+								<td><%= factDi %></td>
+							</tr>
+							</tbody>
+						</table>
+						<table class="table-data table table-sm table-seccondary table-bordered table-striped col-sm-4">
+							<tbody>
+							<tr>
+								<th scope="row">Fact_Mit</th>
+									<td><%= factMit %></td>
+							</tr>
+							<tr>
+								<th scope="row">Fluid Type</th>
+									<td><%= fluidType %></td>
+							</tr>
+							<tr>
+								<th scope="row">Transition Pressure (kPa)</th>
+									<td><%= Ptrans.toFixed(4) %></td>
+							</tr>
+							<tr>
+								<th scope="row">Fact_AIT</th>
+									<td><%= factAIT.toFixed(4) %></td>
+							</tr>
+							<tr>
+								<th scope="row">Toxic Fluid</th>
+								<td><%= toxicFluid %></td>
+							</tr>
+							<tr>
+								<th scope="row">Toxic_cdef</th>
+								<td><%= constante_cdef_CA_TOX %></td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="table-responsive d-flex justify-content-start">
+						<table class="table-data table table-sm table-seccondary table-bordered table-striped col-sm-4">
+							<tbody>
+							<tr>
+								<th scope="row">AINL_Cont_a</th>
+									<td><%= AINL_Cont_a %></td>
+							</tr>
+							<tr>
+								<th scope="row">AINL_Cont_b</th>
+									<td><%= AINL_Cont_b %></td>
+							</tr>
+								<tr>
+								<th scope="row">AIL_Cont_a</th>
+									<td><%= AIL_Cont_a %></td>
+							</tr>
+							<tr>
+								<th scope="row">AIL_Cont_b</th>
+									<td><%= AIL_Cont_b %></td>
+							</tr>
+							<tr>
+								<th scope="row">AINL_Inst_a</th>
+									<td><%= AINL_Inst_a %></td>
+							</tr>
+							<tr>
+								<th scope="row">AINL_Inst_b</th>
+									<td><%= AINL_Inst_b %></td>
+							</tr>
+								<tr>
+								<th scope="row">AIL_Inst_a</th>
+									<td><%= AIL_Inst_a %></td>
+							</tr>
+							<tr>
+								<th scope="row">AIL_Inst_b</th>
+									<td><%= AIL_Inst_b %></td>
+							</tr>
+							</tbody>
+						</table>
+						<table class="table-data table table-sm table-seccondary table-bordered table-striped col-sm-4">
+							<tbody>
+							<tr>
+								<th scope="row">INJ_AINL_Cont_a</th>
+									<td><%= INJ_AINL_Cont_a %></td>
+							</tr>
+							<tr>
+								<th scope="row">INJ_AINL_Cont_b</th>
+									<td><%= INJ_AINL_Cont_b %></td>
+							</tr>
+								<tr>
+								<th scope="row">INJ_AIL_Cont_a</th>
+									<td><%= INJ_AIL_Cont_a %></td>
+							</tr>
+							<tr>
+								<th scope="row">INJ_AIL_Cont_b</th>
+									<td><%= INJ_AIL_Cont_b %></td>
+							</tr>
+							<tr>
+								<th scope="row">INJ_AINL_Inst_a</th>
+									<td><%= INJ_AINL_Inst_a %></td>
+							</tr>
+							<tr>
+								<th scope="row">INJ_AINL_Inst_b</th>
+									<td><%= INJ_AINL_Inst_b %></td>
+							</tr>
+								<tr>
+								<th scope="row">INJ_AIL_Inst_a</th>
+									<td><%= INJ_AIL_Inst_a %></td>
+							</tr>
+							<tr>
+								<th scope="row">INJ_AIL_Inst_b</th>
+									<td><%= INJ_AIL_Inst_b %></td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					
+				</div>
+				
+				<div class="table-data row justify-content-md-center">
+					<h4> Consequence for Each Release Hole Size</h4>
+					<div class="table-responsive">
+						<table class="table table-striped">
+							<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Small</th>
+								<th scope="col">Medium</th>
+								<th scope="col">Large</th>
+								<th scope="col">Rupture</th>
+								<th scope="col">Unit</th>
+							</tr>
+							</thead>
+							<tbody id="releaseHoleSizeTable">
+							<tr>
+								<th scope="row">d</th>
+								<% dn.forEach(n => { %> <td><%= n %></td> <%});%>
+									<td>mm</td>
+							</tr>
+							<tr>
+								<th scope="row">gff</th>
+							<% gff.forEach(n => { %> <td><%= n %></td> <%});%>
+							<td></td>
+							</tr>
+							<tr>
+								<th scope="row">A</th>
+							<% An.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+							<td>mm²</td>
+							</tr>
+							<tr>
+								<th scope="row">W</th>
+							<% Wn.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+							<td>kg/s</td>
+							</tr>
+							<tr>
+								<th scope="row">Mass<sub>add</sub></th>
+								<% massAdd.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td>kg</td>
+							</tr>
+							<tr>
+								<th scope="row">Mass<sub>avail</sub></th>
+								<% massAvail.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td>kg</td>
+							</tr>
+							<tr>
+								<th scope="row">Release Type</th>
+								<% releaseType.forEach(n => { %> <td><%= n %></td> <%});%>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row">Ld<sub>max</sub></th>
+								<% ldMax.forEach(n => { %> <td><%= n %></td> <%});%>
+								<td>min</td>
+							</tr>
+							<tr>
+								<th scope="row">Rate</th>
+								<% rate.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td>kg/s</td>
+							</tr>
+							<tr>
+								<th scope="row">Ld</th>
+								<% ld.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td>s</td>
+							</tr>
+							<tr>
+								<th scope="row">Mass</th>
+								<% mass.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td>kg</td>
+							</tr>
+							<tr>
+								<th scope="row">eneff</th>
+								<% eneff.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row">CA<sub>cmd</sub><sup>AINL-CONT</sup></th>
+								<% AINL_CONT.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td>m²</td>
+							</tr>
+							<tr>
+								<th scope="row">CA<sub>cmd</sub><sup>AIL-CONT</sup></th>
+								<% AIL_CONT.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td>m²</td>
+							</tr>
+							<tr>
+								<th scope="row">CA<sub>cmd</sub><sup>AINL-INST</sup></th>
+								<% AINL_INST.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td>m²</td>
+							</tr>
+							<tr>
+								<th scope="row">CA<sub>cmd</sub><sup>AIL-INST</sup></th>
+								<% AIL_INST.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td>m²</td>
+							</tr>
+							<tr>
+								<th scope="row">CA<sub>inj</sub><sup>AINL-CONT</sup></th>
+								<% INJ_AINL_CONT.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td>m²</td>
+							</tr>
+							<tr>
+								<th scope="row">CA<sub>inj</sub><sup>AIL-CONT</sup></th>
+								<% INJ_AIL_CONT.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td>m²</td>
+							</tr>
+							<tr>
+								<th scope="row">CA<sub>inj</sub><sup>AINL-INST</sup></th>
+								<% INJ_AINL_INST.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td>m²</td>
+							</tr>
+							<tr>
+								<th scope="row">CA<sub>inj</sub><sup>AIL-INST</sup></th>
+								<% INJ_AIL_INST.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td>m²</td>
+							</tr>
+							<tr>
+								<th scope="row">fact<sup> IC</sup></th>
+								<% factIC.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row">CA<sub>cmd</sub><sup>AIL</sup></th>
+								<% CA_AIL_CMD.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td>m²</td>
+							</tr>
+							<tr>
+								<th scope="row">CA<sub>inj</sub><sup>AIL</sup></th>
+								<% CA_AIL_INJ.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td>m²</td>
+							</tr>
+							<tr>
+								<th scope="row">CA<sub>cmd</sub><sup>AINL</sup></th>
+								<% CA_AINL_CMD.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td>m²</td>
+							</tr>
+							<tr>
+								<th scope="row">CA<sub>inj</sub><sup>AINL</sup></th>
+								<% CA_AINL_INJ.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td>m²</td>
+							</tr>
+								<tr>
+								<th scope="row">CA<sub>cmd</sub><sup>flam</sup></th>
+								<% CA_FLAM_CMD.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td>m²</td>
+							</tr>
+							<tr>
+								<th scope="row">CA<sub>inj</sub><sup>flam</sup></th>
+								<% CA_FLAM_INJ.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td>m²</td>
+							</tr>
+							<tr>
+								<th scope="row">ld<sup>tox</sup></th>
+								<% ldTox.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td>s</td>
+							</tr>
+							<tr>
+								<th scope="row">rate<sup>tox</sup></th>
+								<% rateTox.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td>kg/s</td>
+							</tr>
+							<tr>
+								<th scope="row">mass<sup>tox</sup></th>
+								<% massTox.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td>kg</td>
+							</tr>
+							<tr>
+								<th scope="row">CA<sub>inj</sub><sup>tox</sup></th>
+								<% CA_TOX.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td>m²</td>
+							</tr>
+							<tr>
+								<th scope="row">CA<sub>inj</sub><sup>CONT_NFNT</sup></th>
+								<% CA_NFNT_CONT.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td>m²</td>
+							</tr>
+							<tr>
+								<th scope="row">CA<sub>inj</sub><sup>INST_NFNT</sup></th>
+								<% CA_NFNT_INST.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td>m²</td>
+							</tr>
+							<tr>
+								<th scope="row">fact<sup>IC_NFNT</sup></th>
+								<% fact_IC_NFNT.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row">CA<sub>inj</sub><sup>leak</sup></th>
+								<% CA_leak_INJ.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td>m²</td>
+							</tr>						
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="calculate-details inativo row justify-content-center">
+				<div class="row justify-content-center">
+					<h4>Probability Details</h4>
+					<div class="table-responsive d-flex justify-content-center">
+						<table class="table-data table table-sm table-primary table-bordered table-striped col-sm-4">
+							<tbody>
+								<tr>
+									<th scope="row">CA<sub> f,cmd</sub><sup>flam</sup> (m²)</th>
+									<td><%= CA_FLAM_CMD_FINAL.toFixed(4) %></td>
+								</tr>
+								<tr>
+									<th scope="row">CA<sub> f,inj</sub><sup>flam</sup> (m²)</th>
+									<td><%= CA_FLAM_INJ_FINAL.toFixed(4) %></td>
+								</tr>
+							</tbody>
+						</table>
+				</div>
+					
+					<div class="table-responsive d-flex justify-content-around">
+						<table class="table-data table table-sm table-seccondary table-bordered table-striped col-sm-4">
+							<tbody>
+							<tr>
+								<th scope="row">Liquid Density (kg/m³)</th>
+								<td><%= liquidDensity.toFixed(4) %></td>
+							</tr>
+							<tr>
+								<th scope="row">Vapor Density (kg/m³)</th>
+								<td><%= vaporDensity.toFixed(4) %></td>
+							</tr>
+							</tbody>
+						</table>
+						<table class="table-data table table-sm table-seccondary table-bordered table-striped col-sm-4">
+							<tbody>
+							<tr>
+								<th scope="row">Stored Fluid Phase</th>
+								<td><%= storedFluidPhase %></td>
+							</tr>
+							<tr>
+								<th scope="row">Ambient State</th>
+								<td><%= ambientState %></td>
+							</tr>
+							</tbody>
+						</table>
+						<table class="table-data table table-sm table-seccondary table-bordered table-striped col-sm-4">
+							<tbody>
+							<tr>
+								<th scope="row">Fact_Mit</th>
+									<td><%= factMit %></td>
+							</tr>
+							<tr>
+								<th scope="row">Fluid Type</th>
+									<td><%= fluidType %></td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="table-responsive d-flex justify-content-start">
+						<table class="table-data table table-sm table-seccondary table-bordered table-striped col-sm-4">
+							<tbody>
+							<tr>
+								<th scope="row">AINL_Cont_a</th>
+									<td><%= AINL_Cont_a %></td>
+							</tr>
+							<tr>
+								<th scope="row">AINL_Cont_b</th>
+									<td><%= AINL_Cont_b %></td>
+							</tr>
+							</tbody>
+						</table>
+						<table class="table-data table table-sm table-seccondary table-bordered table-striped col-sm-4">
+							<tbody>
+							<tr>
+								<th scope="row">INJ_AINL_Cont_a</th>
+									<td><%= INJ_AINL_Cont_a %></td>
+							</tr>
+							<tr>
+								<th scope="row">INJ_AINL_Cont_b</th>
+									<td><%= INJ_AINL_Cont_b %></td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					
+				</div>
+				
+				<div class="table-data row justify-content-md-center">
+					<h4> Probability for Each Release Hole Size</h4>
+					<div class="table-responsive">
+						<table class="table table-striped">
+							<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Small</th>
+								<th scope="col">Medium</th>
+								<th scope="col">Large</th>
+								<th scope="col">Rupture</th>
+								<th scope="col">Unit</th>
+							</tr>
+							</thead>
+							<tbody id="releaseHoleSizeTable">
+							<tr>
+								<th scope="row">d</th>
+								<% dn.forEach(n => { %> <td><%= n %></td> <%});%>
+									<td>mm</td>
+							</tr>
+							<tr>
+								<th scope="row">CA<sub>inj</sub><sup>leak</sup></th>
+								<% CA_leak_INJ.forEach(n => { %> <td><%= n.toFixed(4) %></td> <%});%>
+								<td>m²</td>
+							</tr>						
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="calculate-details inativo table-data row justify-content-center">
+				<p>Risk Datails</p>
+			</div>
+		</section>
+	</body>
+
+	<script>
+
+	// Inserir o título //
+	
+	const pageTitle = document.querySelector("#page-title");
+	
+	pageTitle.innerText = "<%= equipment.equipment %>"+" - "+"<%= component.component %>";
+	
+
+	// Componente selecionado //
+	
+	const todosComponentes = document.querySelectorAll(".drop-componente");
+	const todosEquipamentos = document.querySelectorAll(".drop-equipamento");	
+	const compAtual = "<%= component.component %>";
+	const equipmentAtual = "<%= equipment.equipment %>";
+		
+	function componentAtual(tag){
+	
+		todosEquipamentos.forEach(equipamento=>{
+
+			let equipTexto = equipamento.textContent;
+			let testeEquip = equipTexto.trimStart().trimEnd();
+		
+			if(equipmentAtual == testeEquip){
+				equipamento.parentElement.parentElement.classList.replace("inativo", "equipment-selected");
+				equipamento.parentElement.nextElementSibling.classList.replace("inativo", "component-selected");
+			}
+		
+		});
+		
+		todosComponentes.forEach(el=>{
+		
+			let compTexto = el.textContent;
+			
+			let testeComp = compTexto.trimStart().trimEnd();
+			
+			let ulSuperior = el.parentElement.parentElement.classList.contains("component-selected");
+			
+				if(compAtual == testeComp && ulSuperior){
+					console.log(el.parentElement.parentElement.classList);
+					el.classList.replace("btn-outline-primary", "btn-primary");
+				
+				}
+		});	
+						
+	}
+
+		function clickBtnDetails(el){
+			btnCalculateDetails.forEach(el=>el.classList.add("btn-outline-primary"))
+			this.classList.toggle("btn-outline-primary");
+		};
+	
+		function showDetails(){
+			btnCalculateDetails.forEach((el)=>{
+				el.addEventListener("click", clickBtnDetails);
+			});
+			btnCalculateDetails.forEach((el,index)=>{
+				el.addEventListener("click", ()=>{
+					if(calculateDetails[index].classList.contains("inativo")){
+						calculateDetails.forEach((content) => {
+							content.classList.add("inativo");
+							});
+						calculateDetails[index].classList.remove("inativo");
+					} else {
+					calculateDetails[index].classList.add("inativo");
+					el.classList.add("btn-outline-primary");
+					}
+				});
+			});
+		};
+		const btnCalculateDetails = document.querySelectorAll(".btn-calculate-details");
+		const calculateDetails = document.querySelectorAll(".calculate-details");
+
+		//const teste = calculateDetails[index].classList.contains(".inativo") ? true : false;
+		
+	showDetails();
+	componentAtual();
+
+/*		
+// Inserir dados tabela Release Hole Size //
+	
+	const releaseHoleSizeTable = document.querySelector("#releaseHoleSizeTable");
+	
+	releaseHoleSizeTable.innerHTML = `<tr>
+										<th scope="row">3</th>
+										<td colspan="2">Larry the Bird</td>
+										<td>@twitter</td>
+										<td>@twitter</td>
+										<td>@twitter</td>
+									</tr>`;
+									
+	releaseHoleSizeTable.innerHTML = `<tr>
+										<th scope="row">4</th>
+										<td colspan="2">Larry the Bird</td>
+										<td>@twitter</td>
+										<td>@twitter</td>
+										<td>@twitter</td>
+									</tr>`;
+*/		
+	//	Preencher INPUTs TYPE DATE
+	/*
+	function inputDate(inputId, inputValue){
+		// console.log(inputValue);
+		if(!!inputValue && inputValue != "Invalid Date"){
+			const dateDB = document.querySelector(`#${inputId}`);
+			let dateValue = new Date(inputValue);
+			let	dateValueFormat = dateValue.toISOString();
+				
+			function formataStringData(data) {
+				let dia = data.split("T")[0];
+				let mes  = data.split("-")[1];
+				let ano  = data.split("-")[0];
+
+				return dateValueCorrigido = (ano + '-' + ("0"+mes).slice(-2) + '-' + ("0"+dia).slice(-2));
+			}
+
+			
+				formataStringData(dateValueFormat);
+				dateDB.value = dateValueCorrigido;
+		} else{
+				console.log("data inválida")
+		}
+}
+*/
+	
+	</script>
+		
+<%- include('../../../partials/footer.ejs'); %>

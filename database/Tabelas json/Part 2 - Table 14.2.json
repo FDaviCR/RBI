@@ -1,0 +1,14 @@
+[
+    {
+        "HighSulfurSteel>0.01%S": "High",
+        "LowSulfurSteel?0.01%S": "High",
+        "ProductForm - Seamless/ExtrudedPipe": "Low",
+        "WeldCondition": "Non-PWHT"
+    },
+    {
+        "HighSulfurSteel>0.01%S": "High",
+        "LowSulfurSteel?0.01%S": "Medium",
+        "ProductForm - Seamless/ExtrudedPipe": "Low",
+        "WeldCondition": "PWHT"
+    }
+]

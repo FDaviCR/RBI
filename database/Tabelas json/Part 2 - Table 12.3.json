@@ -1,0 +1,18 @@
+[
+    {
+        "SeverityIndex - SVI": 5000,
+        "Susceptibility": "High"
+    },
+    {
+        "SeverityIndex - SVI": 500,
+        "Susceptibility": "Medium"
+    },
+    {
+        "SeverityIndex - SVI": 50,
+        "Susceptibility": "Low"
+    },
+    {
+        "SeverityIndex - SVI": 0,
+        "Susceptibility": "None"
+    }
+]

@@ -1,0 +1,178 @@
+<div id="btnThinning" class=" mecanismoDanoBox">		
+	<div class="col-sm-5">
+		<ul>
+			<li class="row justify-content-md-center mb-2">
+				<label for="furnishedThickness" class="col-sm-8 col-form-label">Furnished Thickness (mm)</label>
+				<div class="col-sm-4">
+					<input class="form-control" name="furnishedThickness" id="furnishedThickness" type="number" step="any" min="0" >
+				</div>
+			</li>
+			<li class="row justify-content-md-center mb-2">
+				<label class="col-sm-8 col-form-label" for="minimumRequiredThickness">Minimum Required Thickness (mm)</label>
+				<div class="col-sm-4">
+					<input class="form-control" name="minimumRequiredThickness" id="minimumRequiredThickness" type="number" step="any" min="0">
+				</div>
+			</li>
+			<li class="row justify-content-md-center mb-2">
+				<label class="col-sm-8 col-form-label" for="minimumStructuralThickness">Minimum Structural Thickness (mm)</label>
+				<div class="col-sm-4">
+					<input class="opcional form-control" name="minimumStructuralThickness" id="minimumStructuralThickness" type="number" step="any" min="0" placeholder="Opcional">
+				</div>
+			</li>
+			<li class="row justify-content-md-center mb-2">
+				<label class="col-sm-8 col-form-label" for="hasClad">Has Clad/Weld?</label>
+				<div class="col-sm-4">
+					<select class="form-control" name="hasClad" id="hasClad">
+						<option value=""></option>
+						<option value="true">Yes</option>
+						<option value="false">No</option>
+					</select>
+				</div>
+			</li>
+			<li class="row justify-content-md-center mb-2">
+				<label class="col-sm-8 col-form-label" for="cladThickness">Cladding/Weld Overlay Thickness (mm)</label>
+				<div class="col-sm-4">
+					<input class="form-control" name="cladThickness" id="cladThickness" type="number" step="any" min="0">
+				</div>
+			</li>
+			<li class="row justify-content-md-center mb-2 revisar">
+				<label class="col-sm-8 col-form-label" for="lastInspectionThinning">Last Inspecition Date Thinning</label>
+				<div class="col-sm-4">
+					<input class="form-control" name="lastInspectionThinning" id="lastInspectionThinning" type="date" max="9999-12-31">
+				</div>
+			</li>
+			<li class="row justify-content-md-center mb-2">
+				<label class="col-sm-8 col-form-label" for="trdi">Last Inspection Known Thickness (mm)</label>
+				<div class="col-sm-4">
+					<input class="form-control" name="trdi" id="trdi" type="number" step="any" min="0">
+				</div>
+			</li>
+			<li class="row justify-content-md-center mb-2">
+				<label class="col-sm-8 col-form-label" for="cr_Bm">Base Material Corrosion Rate (mm/ano)</label>
+				<div class="col-sm-4">
+					<input class="form-control" name="cr_Bm" id="cr_Bm" type="number" step="any" min="0">
+				</div>
+			</li>
+			<li class="row justify-content-md-center mb-2">
+				<label class="col-sm-8 col-form-label" for="cr_Cm"> Cladding/Weld Corrosion Rate(mm/ano)</label>
+				<div class="col-sm-4">
+					<input class="form-control" name="cr_Cm" id="cr_Cm" type="number" step="any" min="0">
+				</div>
+			</li>
+			<li class="row justify-content-md-center mb-2">
+				<label class="col-sm-8 col-form-label" for="corrosionType">Corrosion Type</label>
+				<div class="col-sm-4">
+					<select class="form-control" name="corrosionType" id="corrosionType">
+						<option value=""></option>
+						<option value="general">General</option>
+						<option value="localized">Localized</option>
+					</select>
+				</div>
+			</li>
+			<li class="row justify-content-md-center mb-2">
+				<label class="col-sm-8 col-form-label" for="confidenceData">Data Confidence Level</label>
+				<div class="col-sm-4">
+					<select class="form-control" name="confidenceData" id="confidenceData">
+						<option value=""></option>
+						<option value="low">Low</option>
+						<option value="medium">Medium</option>
+						<option value="high">High</option>
+					</select>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="col-sm-5">
+		<ul>
+			<li class="row justify-content-md-center mb-2">
+				<label class="col-sm-8 col-form-label" for="shapeFactor">Shape Factor</label>
+				<div class="col-sm-4">
+					<select class="form-control" name="shapeFactor" id="shapeFactor">
+						<option value=""></option>
+						<option value="2">Cylinder</option>
+						<option value="1.13">Head</option>
+						<option value="4">Sphere</option>
+					</select>
+				</div>
+			</li>
+			<li class="row justify-content-md-center mb-2">
+				<label class="col-sm-8 col-form-label" for="yieldStrength">Material Yield Strength (ksi)</label>
+				<div class="col-sm-4">
+					<input class="form-control" name="yieldStrength" id="yieldStrength" type="number" step="any" min="0">
+				</div>
+			</li>
+			<li class="row justify-content-md-center mb-2">
+				<label class="col-sm-8 col-form-label" for="tensileStrength">Material Tensile Strength (ksi)</label>
+				<div class="col-sm-4">
+					<input class="form-control" name="tensileStrength" id="tensileStrength" type="number" step="any" min="0">
+				</div>
+			</li>
+			<li class="row justify-content-md-center mb-2">
+				<label class="col-sm-8 col-form-label" for="jointEfficiency">Joint Efficiency</label>
+				<div class="col-sm-4">
+					<input class="form-control" name="jointEfficiency" id="jointEfficiency" type="number" step="any" min="0">
+				</div>
+			</li>
+			<li class="row justify-content-md-center mb-2 revisar">
+				<label class="col-sm-8 col-form-label" for="allowableStress">Allowable Stress (ksi)</label>
+				<div class="col-sm-4">
+					<input class="form-control opcional" name="allowableStress" id="allowableStress" type="number" step="any" min="0" placeholder="Minima estrutural preenchida?">
+				</div>
+			</li>
+			<li class="row justify-content-md-center mb-2 revisar">
+				<label class="col-sm-8 col-form-label" for="fomThinning">Fom</label>
+				<div class="col-sm-4">
+					<select class="form-control" name="fomThinning" id="fomThinning">
+						<option value=""></option>
+						<option value="">Pendente</option>
+						<option value="">Puxar da tabela 4.8</option>
+					</select>
+				</div>
+			</li>
+			<li class="row justify-content-md-center mb-2 comentar">
+				<label class="col-sm-8 col-form-label" for="fipThinning">Fip</label>
+				<div class="col-sm-4">
+					<select class="form-control" name="fipThinning" id="fipThinning">
+						<option value=""></option>
+						<option value="1">1</option>
+						<option value="3">3</option>
+					</select>
+				</div>
+			</li>
+			<li class="row justify-content-md-center mb-2 comentar">
+				<label class="col-sm-8 col-form-label" for="fdlhinning">Fdl</label>
+				<div class="col-sm-4">
+					<select class="form-control" name="fdlhinning" id="fdlhinning">
+						<option value=""></option>
+						<option value="1">1</option>
+						<option value="3">3</option>
+					</select>
+				</div>
+			</li>
+			<li class="row justify-content-md-center mb-2 revisar">
+				<label class="col-sm-8 col-form-label" for="N_A_Thinning">N_A_Thinning</label>
+				<div class="col-sm-4">
+					<input class="form-control" name="N_A_Thinning" id="N_A_Thinning" type="number" step="1" min="0" max="6">
+				</div>
+			</li>
+			<li class="row justify-content-md-center mb-2 revisar">
+				<label class="col-sm-8 col-form-label" for="N_B_Thinning">N_B_Thinning</label>
+				<div class="col-sm-4">
+					<input class="form-control" name="N_B_Thinning" id="N_B_Thinning" type="number" step="1" min="0" max="6">
+				</div>
+			</li>	
+			<li class="row justify-content-md-center mb-2 revisar">
+				<label class="col-sm-8 col-form-label" for="N_C_Thinning">N_C_Thinning</label>
+				<div class="col-sm-4">
+					<input class="form-control" name="N_C_Thinning" id="N_C_Thinning" type="number" step="1" min="0" max="6">
+				</div>
+			</li>	
+			<li class="row justify-content-md-center mb-2 revisar">
+				<label class="col-sm-8 col-form-label" for="N_D_Thinning">N_D_Thinning</label>
+				<div class="col-sm-4">
+					<input class="form-control" name="N_D_Thinning" id="N_D_Thinning" type="number" step="1" min="0" max="6">
+				</div>
+			</li>	
+		</ul>
+	</div>
+</div>

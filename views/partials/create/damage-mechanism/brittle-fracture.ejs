@@ -1,0 +1,30 @@
+<div id="btnbrittleFracture" class=" mecanismoDanoBox">				
+	<p>If both of the following are true, then the component should be evaluated for susceptibility to brittle fracture.
+		a) The material is carbon steel or a low alloy steel; <span>see Table 20.1</span>.
+		b) If minimum design metal temperature (MDMT), TMDMT, or minimum allowable temperature (MAT), TMAT, is
+		unknown, or the component is known to operate at or below the MDMT or MAT under normal or upset
+		conditions.
+	</p>
+	<p>
+		Falta colocar:
+		<dl>
+			<li>Material Type (Carbon Steel or Low Alloy Steel)</li>
+			<li>Exemption Curve A, B, C, D</li>
+			<li>Material Minimum Yield Strength, YS</li>
+		</dl>
+	</p>
+	<ul>
+		<li class="comentar">
+			<label for="administrativeControlsBrittleFracture">Administrative controls for upset management?</label>
+			<select id="administrativeControlsBrittleFracture">
+				<option value=""></option>
+				<option value="true">Yes</option>
+				<option value="false">No</option>
+			</select>
+		</li>
+		<li class="comentar">
+			<label for="cteBrittleFracture">Critical Exposure Temperature as defined in API 579-1/ASME FFS-1 (°C)</label>
+			<input id="cteBrittleFracture" type="number" step="any">
+		</li>
+	</ul>
+</div>

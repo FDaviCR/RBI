@@ -1,0 +1,172 @@
+[
+    {
+        "ExamplesofApplicableMaterials": "Methane, ethane, ethylene, LNG, fuel gas",
+        "FluidType": "TYPE 0",
+        "RepresentativeFluid": "C1-C2"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Propane, butane, isobutane, LPG",
+        "FluidType": "TYPE 0",
+        "RepresentativeFluid": "C3-C4"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Pentane",
+        "FluidType": "TYPE 0",
+        "RepresentativeFluid": "C5"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Gasoline, naphtha, light straight run, heptane",
+        "FluidType": "TYPE 0",
+        "RepresentativeFluid": "C6-C8"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Diesel, kerosene",
+        "FluidType": "TYPE 0",
+        "RepresentativeFluid": "C9-C12"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Jet fuel, kerosene, atmospheric gas oil",
+        "FluidType": "TYPE 0",
+        "RepresentativeFluid": "C13-C16"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Gas oil, typical crude",
+        "FluidType": "TYPE 0",
+        "RepresentativeFluid": "C17-C25"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Residuum, heavy crude, lube oil, seal oil",
+        "FluidType": "TYPE 0",
+        "RepresentativeFluid": "C25+"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Hydrogen",
+        "FluidType": "TYPE 0",
+        "RepresentativeFluid": "H2"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Hydrogen sulfide",
+        "FluidType": "TYPE 0",
+        "RepresentativeFluid": "H2S"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Hydrogen fluoride",
+        "FluidType": "TYPE 0",
+        "RepresentativeFluid": "HF"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Hydrochloric acid",
+        "FluidType": "TYPE 0",
+        "RepresentativeFluid": "HCl(Acid)"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Water",
+        "FluidType": "TYPE 0",
+        "RepresentativeFluid": "Water"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Steam",
+        "FluidType": "TYPE 0",
+        "RepresentativeFluid": "Steam"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Acid, caustic",
+        "FluidType": "TYPE 0",
+        "RepresentativeFluid": "Acid/Caustic"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Benzene, toluene, xylene, cumene",
+        "FluidType": "TYPE 1",
+        "RepresentativeFluid": "Aromatics"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Aluminum chloride",
+        "FluidType": "TYPE 0",
+        "RepresentativeFluid": "AlCl3"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Pyrophoric materials",
+        "FluidType": "TYPE 0",
+        "RepresentativeFluid": "Pyrophoric"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Ammonia",
+        "FluidType": "TYPE 0",
+        "RepresentativeFluid": "Ammonia"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Chlorine",
+        "FluidType": "TYPE 0",
+        "RepresentativeFluid": "Chlorine"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Carbon monoxide",
+        "FluidType": "TYPE 1",
+        "RepresentativeFluid": "CO"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Diethyl ether",
+        "FluidType": "TYPE 0",
+        "RepresentativeFluid": "DEE"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Hydrogen chloride",
+        "FluidType": "TYPE 1",
+        "RepresentativeFluid": "HCl(Gas)"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Nitric acid",
+        "FluidType": "TYPE 1",
+        "RepresentativeFluid": "Nitric acid"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Nitrogen dioxide",
+        "FluidType": "TYPE 1",
+        "RepresentativeFluid": "NO2"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Phosgene",
+        "FluidType": "TYPE 0",
+        "RepresentativeFluid": "Phosgene"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Toluene diisocyanate",
+        "FluidType": "TYPE 1",
+        "RepresentativeFluid": "TDI"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Methanol",
+        "FluidType": "TYPE 1",
+        "RepresentativeFluid": "Methanol"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Propylene oxide",
+        "FluidType": "TYPE 1",
+        "RepresentativeFluid": "PO"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Styrene",
+        "FluidType": "TYPE 1",
+        "RepresentativeFluid": "Styrene"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Ethylene glycol monoethyl ether acetate",
+        "FluidType": "TYPE 1",
+        "RepresentativeFluid": "EEA"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Ethylene glycol monoethyl ether",
+        "FluidType": "TYPE 1",
+        "RepresentativeFluid": "EE"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Ethylene glycol",
+        "FluidType": "TYPE 1",
+        "RepresentativeFluid": "EG"
+    },
+    {
+        "ExamplesofApplicableMaterials": "Ethylene oxide",
+        "FluidType": "TYPE 1",
+        "RepresentativeFluid": "EO"
+    }
+]

@@ -1,0 +1,236 @@
+[
+    {
+        "ComponentType": "COMPC",
+        "EquipmentType": "Compressor",
+        "field7": 3e-05,
+        "gff_Large": 2e-06,
+        "gff_Medium": 2e-05,
+        "gff_Rupture": 0,
+        "gff_Small": 8e-06
+    },
+    {
+        "ComponentType": "COMPR",
+        "EquipmentType": "Compressor",
+        "field7": 3.06e-05,
+        "gff_Large": 2e-06,
+        "gff_Medium": 2e-05,
+        "gff_Rupture": 6e-07,
+        "gff_Small": 8e-06
+    },
+    {
+        "ComponentType": "HEXSS",
+        "EquipmentType": "Heat_Exchanger",
+        "field7": 3.06e-05,
+        "gff_Large": 2e-06,
+        "gff_Medium": 2e-05,
+        "gff_Rupture": 6e-07,
+        "gff_Small": 8e-06
+    },
+    {
+        "ComponentType": "HEXTS",
+        "EquipmentType": "Heat_Exchanger",
+        "field7": 3.06e-05,
+        "gff_Large": 2e-06,
+        "gff_Medium": 2e-05,
+        "gff_Rupture": 6e-07,
+        "gff_Small": 8e-06
+    },
+    {
+        "ComponentType": "PIPE-1",
+        "EquipmentType": "Pipe",
+        "field7": 3.06e-05,
+        "gff_Large": 0,
+        "gff_Medium": 0,
+        "gff_Rupture": 2.6e-06,
+        "gff_Small": 2.8e-05
+    },
+    {
+        "ComponentType": "PIPE-2",
+        "EquipmentType": "Pipe",
+        "field7": 3.06e-05,
+        "gff_Large": 0,
+        "gff_Medium": 0,
+        "gff_Rupture": 2.6e-06,
+        "gff_Small": 2.8e-05
+    },
+    {
+        "ComponentType": "PIPE-4",
+        "EquipmentType": "Pipe",
+        "field7": 3.06e-05,
+        "gff_Large": 0,
+        "gff_Medium": 2e-05,
+        "gff_Rupture": 2.6e-06,
+        "gff_Small": 8e-06
+    },
+    {
+        "ComponentType": "PIPE-6",
+        "EquipmentType": "Pipe",
+        "field7": 3.06e-05,
+        "gff_Large": 0,
+        "gff_Medium": 2e-05,
+        "gff_Rupture": 2.6e-06,
+        "gff_Small": 8e-06
+    },
+    {
+        "ComponentType": "PIPE-8",
+        "EquipmentType": "Pipe",
+        "field7": 3.06e-05,
+        "gff_Large": 2e-06,
+        "gff_Medium": 2e-05,
+        "gff_Rupture": 6e-07,
+        "gff_Small": 8e-06
+    },
+    {
+        "ComponentType": "PIPE-10",
+        "EquipmentType": "Pipe",
+        "field7": 3.06e-05,
+        "gff_Large": 2e-06,
+        "gff_Medium": 2e-05,
+        "gff_Rupture": 6e-07,
+        "gff_Small": 8e-06
+    },
+    {
+        "ComponentType": "PIPE-12",
+        "EquipmentType": "Pipe",
+        "field7": 3.06e-05,
+        "gff_Large": 2e-06,
+        "gff_Medium": 2e-05,
+        "gff_Rupture": 6e-07,
+        "gff_Small": 8e-06
+    },
+    {
+        "ComponentType": "PIPE-16",
+        "EquipmentType": "Pipe",
+        "field7": 3.06e-05,
+        "gff_Large": 2e-06,
+        "gff_Medium": 2e-05,
+        "gff_Rupture": 6e-07,
+        "gff_Small": 8e-06
+    },
+    {
+        "ComponentType": "PIPEGT16",
+        "EquipmentType": "Pipe",
+        "field7": 3.06e-05,
+        "gff_Large": 2e-06,
+        "gff_Medium": 2e-05,
+        "gff_Rupture": 6e-07,
+        "gff_Small": 8e-06
+    },
+    {
+        "ComponentType": "PUMP2S",
+        "EquipmentType": "Pump",
+        "field7": 3.06,
+        "gff_Large": 2e-06,
+        "gff_Medium": 2e-05,
+        "gff_Rupture": 6e-07,
+        "gff_Small": 8e-06
+    },
+    {
+        "ComponentType": "PUMPR",
+        "EquipmentType": "Pump",
+        "field7": 3.06,
+        "gff_Large": 2e-06,
+        "gff_Medium": 2e-05,
+        "gff_Rupture": 6e-07,
+        "gff_Small": 8e-06
+    },
+    {
+        "ComponentType": "PUMP1S",
+        "EquipmentType": "Pump",
+        "field7": 3.06,
+        "gff_Large": 2e-06,
+        "gff_Medium": 2e-05,
+        "gff_Rupture": 6e-07,
+        "gff_Small": 8e-06
+    },
+    {
+        "ComponentType": "TANKBOTTOM",
+        "EquipmentType": "Tank650",
+        "field7": 0.000722,
+        "gff_Large": 0,
+        "gff_Medium": 0,
+        "gff_Rupture": 2e-06,
+        "gff_Small": 0.00072
+    },
+    {
+        "ComponentType": "COURSE-1-10",
+        "EquipmentType": "Tank650",
+        "field7": 0.0001,
+        "gff_Large": 5e-06,
+        "gff_Medium": 2.5e-05,
+        "gff_Rupture": 1e-07,
+        "gff_Small": 7e-05
+    },
+    {
+        "ComponentType": "KODRUM",
+        "EquipmentType": "Vessel",
+        "field7": 3.06e-05,
+        "gff_Large": 2e-06,
+        "gff_Medium": 2e-05,
+        "gff_Rupture": 6e-07,
+        "gff_Small": 8e-06
+    },
+    {
+        "ComponentType": "COLBTM",
+        "EquipmentType": "Vessel",
+        "field7": 3.06e-05,
+        "gff_Large": 2e-06,
+        "gff_Medium": 2e-05,
+        "gff_Rupture": 6e-07,
+        "gff_Small": 8e-06
+    },
+    {
+        "ComponentType": "FINFAN",
+        "EquipmentType": "Vessel",
+        "field7": 3.06e-05,
+        "gff_Large": 2e-06,
+        "gff_Medium": 2e-05,
+        "gff_Rupture": 6e-07,
+        "gff_Small": 8e-06
+    },
+    {
+        "ComponentType": "FILTER",
+        "EquipmentType": "Vessel",
+        "field7": 3.06e-05,
+        "gff_Large": 2e-06,
+        "gff_Medium": 2e-05,
+        "gff_Rupture": 6e-07,
+        "gff_Small": 8e-06
+    },
+    {
+        "ComponentType": "DRUM",
+        "EquipmentType": "Vessel",
+        "field7": 3.06e-05,
+        "gff_Large": 2e-06,
+        "gff_Medium": 2e-05,
+        "gff_Rupture": 6e-07,
+        "gff_Small": 8e-06
+    },
+    {
+        "ComponentType": "REACTOR",
+        "EquipmentType": "Vessel",
+        "field7": 3.06e-05,
+        "gff_Large": 2e-06,
+        "gff_Medium": 2e-05,
+        "gff_Rupture": 6e-07,
+        "gff_Small": 8e-06
+    },
+    {
+        "ComponentType": "COLTOP",
+        "EquipmentType": "Vessel",
+        "field7": 3.06e-05,
+        "gff_Large": 2e-06,
+        "gff_Medium": 2e-05,
+        "gff_Rupture": 6e-07,
+        "gff_Small": 8e-06
+    },
+    {
+        "ComponentType": "COLMID",
+        "EquipmentType": "Vessel",
+        "field7": 3.06e-05,
+        "gff_Large": 2e-06,
+        "gff_Medium": 2e-05,
+        "gff_Rupture": 6e-07,
+        "gff_Small": 8e-06
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "AdjustmentFactorFINS": 1.25,
+        "InsulationType": "Unknown/unspecified"
+    },
+    {
+        "AdjustmentFactorFINS": 0.75,
+        "InsulationType": "Foamglass"
+    },
+    {
+        "AdjustmentFactorFINS": 1,
+        "InsulationType": "Pearlite"
+    },
+    {
+        "AdjustmentFactorFINS": 1.25,
+        "InsulationType": "Fiberglass"
+    },
+    {
+        "AdjustmentFactorFINS": 1.25,
+        "InsulationType": "Mineral wool"
+    },
+    {
+        "AdjustmentFactorFINS": 1.25,
+        "InsulationType": "Calcium silicate"
+    },
+    {
+        "AdjustmentFactorFINS": 1.25,
+        "InsulationType": "Asbestos"
+    }
+]

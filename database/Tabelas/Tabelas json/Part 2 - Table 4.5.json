@@ -1,0 +1,20 @@
+[
+    {
+        "DamageState": "PR_thin_1",
+        "HighConfidenceData": 0.8,
+        "LowConfidenceData": 0.5,
+        "MediumConfidenceData": 0.7
+    },
+    {
+        "DamageState": "PR_thin_2",
+        "HighConfidenceData": 0.15,
+        "LowConfidenceData": 0.3,
+        "MediumConfidenceData": 0.2
+    },
+    {
+        "DamageState": "PR_thin_3",
+        "HighConfidenceData": 0.05,
+        "LowConfidenceData": 0.2,
+        "MediumConfidenceData": 0.1
+    }
+]

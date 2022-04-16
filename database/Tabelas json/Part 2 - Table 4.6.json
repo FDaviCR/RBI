@@ -1,0 +1,26 @@
+[
+    {
+        "A": 0.9,
+        "B": 0.7,
+        "C": 0.5,
+        "ConditionalProbabilityofInspection": "CO_thin_1",
+        "D": 0.4,
+        "E": 0.33
+    },
+    {
+        "A": 0.09,
+        "B": 0.2,
+        "C": 0.3,
+        "ConditionalProbabilityofInspection": "CO_thin_2",
+        "D": 0.33,
+        "E": 0.33
+    },
+    {
+        "A": 0.01,
+        "B": 0.1,
+        "C": 0.2,
+        "ConditionalProbabilityofInspection": "CO_thin_3",
+        "D": 0.27,
+        "E": 0.33
+    }
+]

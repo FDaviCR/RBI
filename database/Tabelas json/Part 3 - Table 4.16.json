@@ -1,0 +1,162 @@
+[
+    {
+        "Material": "Carbon Steel",
+        "matcost": 1.0
+    },
+    {
+        "Material": "Organic Coatings (< 80 mil)",
+        "matcost": 1.2
+    },
+    {
+        "Material": "1.25Cr-0.5Mo",
+        "matcost": 1.3
+    },
+    {
+        "Material": "2.25Cr-1Mo",
+        "matcost": 1.7
+    },
+    {
+        "Material": "5Cr-0.5Mo",
+        "matcost": 1.7
+    },
+    {
+        "Material": "7Cr-0.5Mo",
+        "matcost": 2.0
+    },
+    {
+        "Material": "Clad 304 SS",
+        "matcost": 2.1
+    },
+    {
+        "Material": "Fiberglass",
+        "matcost": 2.5
+    },
+    {
+        "Material": "Polypropylene Lined (pp)",
+        "matcost": 2.5
+    },
+    {
+        "Material": "9Cr-1Mo",
+        "matcost": 2.6
+    },
+    {
+        "Material": "405 SS",
+        "matcost": 2.8
+    },
+    {
+        "Material": "410 SS",
+        "matcost": 2.8
+    },
+    {
+        "Material": "304 SS",
+        "matcost": 3.2
+    },
+    {
+        "Material": "Clad 316 SS",
+        "matcost": 3.3
+    },
+    {
+        "Material": "Strip Lined Alloy",
+        "matcost": 3.3
+    },
+    {
+        "Material": "Organic Coating (> 80 mil)",
+        "matcost": 3.4
+    },
+    {
+        "Material": "CS �Saran� Lined",
+        "matcost": 3.4
+    },
+    {
+        "Material": "CS Rubber Lined",
+        "matcost": 4.4
+    },
+    {
+        "Material": "316 SS",
+        "matcost": 4.8
+    },
+    {
+        "Material": "CS Glass Lined",
+        "matcost": 5.8
+    },
+    {
+        "Material": "Clad Alloy 400",
+        "matcost": 6.4
+    },
+    {
+        "Material": "90/10 Cu/Ni",
+        "matcost": 6.8
+    },
+    {
+        "Material": "Clad Alloy 600",
+        "matcost": 7.0
+    },
+    {
+        "Material": "CS �Teflon� Lined",
+        "matcost": 7.8
+    },
+    {
+        "Material": "Clad Nickel",
+        "matcost": 8.0
+    },
+    {
+        "Material": "Alloy 800",
+        "matcost": 8.4
+    },
+    {
+        "Material": "70/30 Cu/Ni",
+        "matcost": 8.5
+    },
+    {
+        "Material": "904L",
+        "matcost": 8.8
+    },
+    {
+        "Material": "Alloy 20",
+        "matcost": 11.0
+    },
+    {
+        "Material": "Alloy 400",
+        "matcost": 15.0
+    },
+    {
+        "Material": "Alloy 600",
+        "matcost": 15.0
+    },
+    {
+        "Material": "Nickel",
+        "matcost": 18.0
+    },
+    {
+        "Material": "Acid Brick",
+        "matcost": 20.0
+    },
+    {
+        "Material": "Refractory",
+        "matcost": 20.0
+    },
+    {
+        "Material": "Alloy 625",
+        "matcost": 26.0
+    },
+    {
+        "Material": "Titanium",
+        "matcost": 28.0
+    },
+    {
+        "Material": "Alloy �C�",
+        "matcost": 29.0
+    },
+    {
+        "Material": "Zirconium",
+        "matcost": 34.0
+    },
+    {
+        "Material": "Alloy �B�",
+        "matcost": 36.0
+    },
+    {
+        "Material": "Tantalum",
+        "matcost": 535.0
+    }
+]

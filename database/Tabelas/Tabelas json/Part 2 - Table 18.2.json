@@ -1,0 +1,30 @@
+[
+    {
+        "Dry": "None",
+        "Mild": "None",
+        "Moderate": "None",
+        "OperatingTemperature(C)": "<49",
+        "Severe": "None"
+    },
+    {
+        "Dry": "Low",
+        "Mild": "Medium",
+        "Moderate": "High",
+        "OperatingTemperature(C)": "49 to 93",
+        "Severe": "High"
+    },
+    {
+        "Dry": "None",
+        "Mild": "Low",
+        "Moderate": "Medium",
+        "OperatingTemperature(C)": "93 to 149",
+        "Severe": "High"
+    },
+    {
+        "Dry": "None",
+        "Mild": "None",
+        "Moderate": "None",
+        "OperatingTemperature(C)": ">149",
+        "Severe": "None"
+    }
+]

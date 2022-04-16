@@ -1,0 +1,41 @@
+<section class="modal">
+	<div class="modal-cadastro inativo">
+		<div>
+			<form method="POST" action="/cadastrar/salvar" id="form-modal">
+				<ul>
+					<li>
+						<label for="modalSite">Site</label>
+						<select id="modalSite" name="site">
+							<option value=""></option>
+							<option value="U-2110">U-2110</option>
+							<option value="U-2111">U-2111</option>
+							<option value="U-2221">U-2221</option>
+						</select>
+					</li>				
+					<li>
+						<label for="modalEquipment">Equipment</label>
+						<input type="text" id="modalEquipment" name="equipment">
+					</li>
+					<li class="revisar">
+						<label for="modalEquipmentType">Equipment Type</label>
+						<input type="text" id="modalEquipmentType" name="equipmentType" placeholder="Colocar lista suspensa">
+					</li>
+					<li>
+						<label for="modalComponent">Component</label>
+						<input type="text" id="modalComponent" name="component">
+					</li>
+					<li class="revisar">
+						<label for="modalComponentType">Component Type</label>
+						<input type="text" id="modalComponentType" name="componentType" placeholder="Colocar lista suspensa">
+					</li>
+				</ul>
+			</form>
+		</div>
+		<div class="btn-modal">
+			<button id="modalCadastrar" type="submit" form="form-modal">Cadastrar</button>
+			<button id="modalCancelar" type="button">Cancelar</button>
+		</div>
+	</div>
+	<div class="modal-background inativo">
+	</div>
+</section>

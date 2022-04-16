@@ -1,0 +1,65 @@
+[
+    {
+        "Dry": 0,
+        "Mild": 0,
+        "Moderate": 0,
+        "OperatingTemperature(C)": -12,
+        "Severe": 0
+    },
+    {
+        "Dry": 0,
+        "Mild": 0,
+        "Moderate": 0.025,
+        "OperatingTemperature(C)": -8,
+        "Severe": 0.076
+    },
+    {
+        "Dry": 0.025,
+        "Mild": 0.076,
+        "Moderate": 0.127,
+        "OperatingTemperature(C)": 6,
+        "Severe": 0.254
+    },
+    {
+        "Dry": 0.025,
+        "Mild": 0.076,
+        "Moderate": 0.127,
+        "OperatingTemperature(C)": 32,
+        "Severe": 0.254
+    },
+    {
+        "Dry": 0.051,
+        "Mild": 0.127,
+        "Moderate": 0.254,
+        "OperatingTemperature(C)": 71,
+        "Severe": 0.508
+    },
+    {
+        "Dry": 0.025,
+        "Mild": 0.025,
+        "Moderate": 0.127,
+        "OperatingTemperature(C)": 107,
+        "Severe": 0.254
+    },
+    {
+        "Dry": 0,
+        "Mild": 0.025,
+        "Moderate": 0.051,
+        "OperatingTemperature(C)": 135,
+        "Severe": 0.254
+    },
+    {
+        "Dry": 0,
+        "Mild": 0,
+        "Moderate": 0.025,
+        "OperatingTemperature(C)": 162,
+        "Severe": 0.127
+    },
+    {
+        "Dry": 0,
+        "Mild": 0,
+        "Moderate": 0,
+        "OperatingTemperature(C)": 176,
+        "Severe": 0
+    }
+]

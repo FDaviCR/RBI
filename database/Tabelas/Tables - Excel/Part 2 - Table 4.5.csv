@@ -1,0 +1,4 @@
+Damage State;Low Confidence Data;Medium Confidence Data;High Confidence Data
+PR_thin_1;0.5;0.7;0.8
+PR_thin_2;0.3;0.2;0.15
+PR_thin_3;0.2;0.1;0.05

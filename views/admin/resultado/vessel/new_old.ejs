@@ -1,0 +1,775 @@
+<%- include('../../../partials/head.ejs'); %>
+	<body>
+		<%- include('../../../partials/header-menu/header-cadastro.ejs'); %>
+		<section class="unidade container-fluid">
+			<h2 class="titulo"><%= component.component %></h2>
+			<hr>	
+			<div class="table-data row justify-content-around">
+				<div role="group" aria-label="Menu de ações">
+					<a href="/cadastro/site/<%= siteId %>/equipment/<%= equipmentType %>/<%= equipmentId %>/component"><button type="button" id="voltarCadastro" class="btn btn-secondary mr-2"><i class="bi bi-arrow-left"></i> Voltar</button></a>
+					<button type="button" class="btn btn-warning" id="editarCadastro"><i class="bi bi-pencil-square"></i> Editar</button>
+					<button type="button" class="btn btn-danger inativo" id="cancelarCadastro" onclick="cancelarCadastro(event)"><i class="bi bi-x-square"></i></i> Cancelar</button>
+					<button type="submit" class="btn btn-success inativo" id="salvarCadastro" form="form-vessel"><i class="bi bi-save"></i><!--<i class="bi bi-pencil-square">--> Salvar</button>
+				</div>
+				<div class="btn-group" role="group" aria-label="Menu de navegação">
+					<button type="button" class="btn btn-nav btn-primary btn-outline-primary">General</button>
+					<button type="button" class="btn btn-nav btn-primary btn-outline-primary">Operation</button>
+					<button type="button" class="btn btn-nav btn-primary btn-outline-primary">Dates</button>
+					<button type="button" class="btn btn-nav btn-primary btn-outline-primary">Damage Mechanisms</button>
+					<button type="button" class="btn btn-nav btn-primary btn-outline-primary">Inspection History</button>
+				</div>
+			</div>
+			<hr>
+			<div class="table-data">
+				<!-- <div class="table-data row justify-content-md-center"> -->
+
+				<form method="POST" action="/cadastro/component/vessel/save" class="form-cadastro" id="form-vessel">
+					<fieldset class="">
+					
+						<input type="hidden" name="siteId" value="<%= siteId %>">
+						<input type="hidden" name="equipmentId" value="<%= equipmentId %>">
+						<input type="hidden" name="componentId" value="<%= componentId %>">
+					
+						<div class="row justify-content-md-center mb-3">
+							<label for="site" class="col-sm-2 col-form-label">Site</label>
+							<div class="col-sm-3">
+								<input type="text" id="site" name="site" class="form-control" value="<%= site.site %>">
+							</div>
+							
+							<label for="FMS" class="col-sm-2 col-form-label">FMS</label>
+							<div class="col-sm-3">
+								<input id="FMS" name="FMS" type="number" step="any" min="0" class="form-control" value="<%= site.FMS %>">
+							</div>
+						</div>
+
+						<div class="row justify-content-md-center mb-3">
+							<label for="equipment" class="col-sm-2 col-form-label">Equipment</label>
+							<div class="col-sm-3">
+								<input type="text" id="equipment" name="equipment" class="form-control" value="<%= equipment.equipment %>">
+							</div>
+							
+							<label for="equipmentType" class="col-sm-2 col-form-label">Equipment Type</label>
+							<div class="col-sm-3">
+								<input type="text" id="equipmentType" name="equipmentType" class="form-control" value="<%= equipment.equipmentType %>">
+							</div>
+						</div>
+						
+						<div class="row justify-content-md-center mb-3">
+							<label for="component" class="col-sm-2 col-form-label">Component</label>
+							<div class="col-sm-3">
+								<input type="text" id="component" name="component" class="form-control" value="<%= component.component %>">
+							</div>
+							
+							<label for="componentType" class="col-sm-2 col-form-label">Component Type</label>
+							<div class="col-sm-3">
+								<input type="text" id="componentType" name="componentType" class="form-control" value="<%= component.componentType %>">
+							</div>
+						</div>
+						
+						<div class="row justify-content-md-center mb-3">
+							<label for="detectionSystem" class="col-sm-2 col-form-label">Detection System</label>
+							<div class="col-sm-8">
+								<select id="detectionSystem" name="detectionSystem" class="form-control">
+									<option value=""></option>
+									<option value="A">A | Instrumentation designed specifically to detect material losses by changes in operating conditions (i.e. loss of pressure or flow) in the system.</option>
+									<option value="B">B | Suitably located detectors to determine when the material is present outside the pressure-containing envelope.</option>
+									<option value="C">C | Visual detection, cameras, or detectors with marginal coverage.</option>
+								</select>
+							</div>
+						</div>
+						
+						<div class="row justify-content-md-center mb-3">
+							<label for="isolationSystem" class="col-sm-2 col-form-label">Isolation System</label>
+							<div class="col-sm-8">
+								<select id="isolationSystem" name="isolationSystem" class="form-control">
+									<option value=""></option>
+									<option value="A">A | Isolation or shutdown systems activated directly from process instrumentation or detectors, with no operator intervention.</option>
+									<option value="B">B | Isolation or shutdown systems activated by operators in the control room or other suitable locations remote from the leak.</option>
+									<option value="C">C | Isolation dependent on manually operated valves.</option>
+								</select>
+							</div>
+						</div>
+						
+						<div class="row justify-content-md-center mb-3">
+							<label for="mitigationSystem" class="col-sm-2 col-form-label">Mitigation System</label>
+							<div class="col-sm-8">
+								<select id="mitigationSystem" name="mitigationSystem" class="form-control">
+									<option value=""></option>
+									<option value="0.25">Inventory blowdown, coupled with isolation system classification B or higher</option>
+									<option value="0.2">Fire water deluge system and monitors</option>
+									<option value="0.05">Fire water monitors only</option>
+									<option value="0.15">Foam spray system</option>
+									<option value="0">None</option>
+									<!--
+									<option value="Inventory blowdown, coupled with isolation system classification B or higher">Inventory blowdown, coupled with isolation system classification B or higher</option>
+									<option value="Fire water deluge system and monitors">Fire water deluge system and monitors</option>
+									<option value="Fire water monitors only">Fire water monitors only</option>
+									<option value="Foam spray system">Foam spray system</option>
+									<option value="None">None</option>
+									-->
+								</select>
+							</div>
+						</div>
+						<div class="row justify-content-md-center mb-3">
+							<label for="grupoInventario" class="col-sm-2 col-form-label revisar">Inventory Group</label>
+							<div class="col-sm-3">
+								<input type="text" id="grupoInventario" name="grupoInventario" placeholder="Colocar lista suspensa" class="form-control">
+							</div>
+							
+							<label for="inventoryGroupMass" class="col-sm-2 col-form-label revisar">Inventory Group Mass (kg)</label>
+							<div class="col-sm-3">
+								<input type="number" step="any" min="0" id="inventoryGroupMass" name="inventoryGroupMass" class="form-control">
+							</div>
+						</div>
+					</fieldset>
+					
+					<!------------------------------ CONSEQUENCIA ----------------------------------------->		
+					<fieldset class="">		
+						<div class="row justify-content-md-center mb-3">
+							<label for="operatingPressure" class="col-sm-2 col-form-label">Operating Pressure (kgf/cm²)</label>
+							<div class="col-sm-3">
+								<input type="number" id="operatingPressure" name="operatingPressure" step="any" class="form-control">
+							</div>
+							
+							<label for="operatingTemperature" class="col-sm-2 col-form-label">Operating Temperature (°C)</label>
+							<div class="col-sm-3">
+								<input type="number" id="operatingTemperature" name="operatingTemperature" step="any" class="form-control">
+							</div>
+						</div>						
+						<div class="row justify-content-md-center mb-3">
+							<label for="insideDiameter" class="col-sm-2 col-form-label">Inside Diameter (mm)</label>
+							<div class="col-sm-3">
+								<input type="number" id="insideDiameter" name="insideDiameter" step="any" min="0" class="form-control">
+							</div>
+							
+							<label for="volumeComponent" class="col-sm-2 col-form-label">Volume (m³)</label>
+							<div class="col-sm-3">
+								<input type="number" id="volumeComponent" name="volumeComponent" step="any" min="0" class="form-control">
+							</div>
+						</div>	
+						<div class="row justify-content-md-center mb-3">
+							<label for="representativeFluid" class="col-sm-2 col-form-label revisar">Representative Fluid</label>
+							<div class="col-sm-3">
+								
+								<select id="representativeFluid" name="representativeFluid" class="form-select form-control" aria-label="Default select example">
+								  <option value="" selected></option>
+									<% representativeFluidOptions.forEach((el, index)=>{ %>
+										<option value="<%= representativeFluidOptions[index] %>"> <%= representativeFluidOptions[index] %></option>
+									<% }) %>
+								</select>
+								
+							</div>
+							
+							<label for="storedFluidPhase" class="col-sm-2 col-form-label revisar">Stored Fluid Phase</label>
+							<div class="col-sm-3">
+								<select id="storedFluidPhase" name="storedFluidPhase" class="form-control">
+									<option value=""></option>
+									<option value="Liquid">Liquid</option>
+									<option value="Gas">Gas</option>
+								</select>
+							</div>
+						</div>	
+						<div class="row justify-content-md-center mb-3">
+							<label for="percentLiquid" class="col-sm-2 col-form-label">% Liquid</label>
+							<div class="col-sm-3">
+								<input type="number" id="percentLiquid" name="percentLiquid" step="any" min="0" max="100" class="form-control">
+							</div>
+							
+							<label for="reynolds" class="col-sm-2 col-form-label">N. Reynolds</label>
+							<div class="col-sm-3">
+								<input id="reynolds" name="reynolds" type="number" step="any" min="0" placeholder="Opcional" class="opcional form-control">
+							</div>
+						</div>	
+						<div class="row justify-content-md-center mb-3">
+							<label for="toxicComposition" class="col-sm-2 col-form-label">Toxic Composition</label>
+							<div class="col-sm-3">
+								<select id="toxicComposition" name="toxicComposition" class="form-control">
+									<option value=""></option>
+									<option value="HF">HF</option>
+									<option value="H2S">H2S</option>
+									<option value="Ammonia">Ammonia</option>
+									<option value="Chlorine">Chlorine</option>
+									<option value="AlCl3">AlCl3</option>
+									<option value="CO">CO</option>
+									<option value="HCl(Gas)">HCl(Gas)</option>
+								</select>
+							</div>
+							
+							<label for="percentToxicFluid" class="col-sm-2 col-form-label">% Toxic Fluid</label>
+							<div class="col-sm-3">
+								<input type="number" id="percentToxicFluid" name="percentToxicFluid" step="any" min="0" max="100" class="form-control">
+							</div>
+						</div>
+						<div class="row justify-content-md-center mb-3">
+							<label for="idlh" class="col-sm-2 col-form-label inativo">IDLH Concentration?</label>
+							<div class="col-sm-3">
+								<input type="hidden" id="idlh" name="idlh" class="form-control revisar">
+							</div>
+						</div>
+					</fieldset>
+
+					<fieldset class="">
+						<div class="row justify-content-md-center mb-3">
+							<label for="installationDate" class="col-sm-2 col-form-label">Installation Date</label>
+							<div class="col-sm-3">
+								<input name="installationDate" id="installationDate" type="date" max="9999-12-31" class="form-control">
+							</div>
+							
+							<label for="lastInspectionInterna" class="col-sm-2 col-form-label">Last Inside Inspection</label>
+							<div class="col-sm-3">
+								<input name="lastInspectionInterna" id="lastInspectionInterna" type="date" max="9999-12-31" class="form-control">
+							</div>
+						</div>
+						<div class="row justify-content-md-center mb-3">
+							<label for="rbiDate" class="col-sm-2 col-form-label">RBI Date</label>
+							<div class="col-sm-3">
+								<input name="rbiDate" id="rbiDate" type="date" max="9999-12-31" class="form-control">
+							</div>
+							
+							<label for="planDate" class="col-sm-2 col-form-label">Plan Date</label>
+							<div class="col-sm-3">
+								<input name="planDate" id="planDate"type="date" max="9999-12-31" class="form-control">
+							</div>
+						</div>	
+						<div class="row justify-content-md-center mb-3">
+							<label for="turnaroundDate1" class="col-sm-2 col-form-label">Turnaround Date 1</label>
+							<div class="col-sm-3">
+								<input name="turnaroundDate1" id="turnaroundDate1" type="date" max="9999-12-31" class="form-control">
+							</div>
+							
+							<label for="turnaroundDate2" class="col-sm-2 col-form-label">Turnaround Date 2</label>
+							<div class="col-sm-3">
+								<input name="turnaroundDate2" id="turnaroundDate2" type="date" max="9999-12-31" class="form-control">
+							</div>
+						</div>		
+						<div class="row justify-content-md-center mb-3">
+							<label for="prazoMax" class="col-sm-2 col-form-label">Prazo máximo de inspeção (meses)</label>
+							<div class="col-sm-3">
+								<input name="prazoMax" id="prazoMax" type="number" step="any" min="0" class="form-control">
+							</div>
+							
+							<label for="maximumProcessTemperature" class="col-sm-2 col-form-label">Maximum process temperature (°C)</label>
+							<div class="col-sm-3">
+								<input name="maximumProcessTemperature" id="maximumProcessTemperature" type="number" step="any" min="0" class="form-control">
+							</div>
+						</div>		
+						<div class="row justify-content-md-center mb-3">
+							<label for="steamTrace" class="col-sm-2 col-form-label">Heat traced?</label>
+							<div class="col-sm-3">
+								<select name="steamTrace" id="steamTrace" class="form-control">
+									<option value=""></option>
+									<option value="Yes">Yes</option>
+									<option value="No">No</option>
+								</select>
+							</div>
+							
+							<label for="steamOut" class="col-sm-2 col-form-label">Steamed Out?</label>
+							<div class="col-sm-3">
+								<select name="steamOut" id="steamOut" class="form-control">
+									<option value=""></option>
+									<option value="Yes">Yes</option>
+									<option value="No">No</option>
+								</select>
+							</div>
+						</div>		
+						<div class="row justify-content-md-center mb-3">
+							<label for="pwht" class="col-sm-2 col-form-label">PWHT?</label>
+							<div class="col-sm-3">
+								<select name="pwht" id="pwht" class="form-control">
+									<option value=""></option>
+									<option value="Yes">Yes</option>
+									<option value="No">No</option>
+								</select>
+							</div>
+						</div>		
+					</fieldset>
+
+					<fieldset class="">
+
+						<!------------------------------ SELEÇÃO MECANISMOS DE DANO ----------------------------------------->
+						<div class="dados-componente">
+							<h3 class="titulo">Mecanismos de Dano Ativos</h3>
+							
+							<div class="flag-dm border border-success text-dark rounded">
+								<ul class="js-dm-chb">
+									<li>	
+										<input type="checkbox" name="thinning" id="thinning" onclick="return false" checked>
+										<label for="thinning">Thinning</label>
+									</li>
+									<li>	
+										<input type="checkbox" name="lining" id="lining">
+										<label for="lining">Lining</label>
+									</li>	
+									<li>	
+										<input type="checkbox" name="sccCaustic" id="sccCaustic">
+										<label for="sccCaustic">SCC Caustic</label>
+									</li>
+									<li>	
+										<input type="checkbox" name="sccAmine" id="sccAmine">
+										<label for="sccAmine">SCC Amine</label>
+									</li>
+									<li>	
+										<input type="checkbox" name="sccSulfide" id="sccSulfide">
+										<label for="sccSulfide">SCC Sulfide</label>
+									</li>	
+									<li>	
+										<input type="checkbox" name="hicSohicH2S" id="hicSohicH2S">
+										<label for="hicSohicH2S">HIC/SOHIC-H2S</label>
+									</li>	
+									<li>	
+										<input type="checkbox" name="acscc" id="acscc">
+										<label for="acscc">ACSCC</label>
+									</li>	
+									<li>	
+										<input type="checkbox" name="pascc" id="pascc">
+										<label for="pascc">PASCC</label>
+									</li>	
+									<li>	
+										<input type="checkbox" name="sccChloride" id="sccChloride">
+										<label for="sccChloride">SCC Chloride</label>
+									</li>	
+									<li>	
+										<input type="checkbox" name="hscHF" id="hscHF">
+										<label for="hscHF">HSC-HF</label>
+									</li>		
+									<li>	
+										<input type="checkbox" name="hicSohicHF" id="hicSohicHF">
+										<label for="hicSohicHF">HIC/SOHIC-HF</label>
+									</li>					
+									<li>	
+										<input type="checkbox" name="externalFerritic" id="externalFerritic">
+										<label for="externalFerritic">External Ferritic</label>
+									</li>
+									<li>	
+										<input type="checkbox" name="cuiFerritic" id="cuiFerritic">
+										<label for="cuiFerritic">CUI Ferritic</label>
+									</li>
+									<li>	
+										<input type="checkbox" name="extclsccAustenitic" id="extclsccAustenitic">
+										<label for="extclsccAustenitic">EXTCLSCC Aust.</label>
+									</li>
+									<li>	
+										<input type="checkbox" name="cuiExtclsccAustenitic" id="cuiExtclsccAustenitic">
+										<label for="cuiExtclsccAustenitic">CUI EXTCLSCC Austenitic</label>
+									</li>
+									<li>	
+										<input type="checkbox" name="htha" id="htha">
+										<label for="htha">HTHA</label>
+									</li>
+									<li>	
+										<input type="checkbox" name="brittleFracture" id="brittleFracture">
+										<label for="brittleFracture">Brittle Fracture</label>
+									</li>
+									<li>	
+										<input type="checkbox" name="lowAlloySteelEmbrittlement" id="lowAlloySteelEmbrittlement">
+										<label for="lowAlloySteelEmbrittlement">Low-Alloy Embrittlement</label>
+									</li>
+									<li>	
+										<input type="checkbox" name="embrittlement885F" id="embrittlement885F">
+										<label for="embrittlement885F">885°F Embrittlement</label>
+									</li>		
+									<li>	
+										<input type="checkbox" name="sigmaPhaseEmbrittlement" id="sigmaPhaseEmbrittlement">
+										<label for="sigmaPhaseEmbrittlement">Sigma Phase Embrittlement</label>
+									</li>	
+									<li>	
+										<input type="checkbox" name="pipingMechanicalFatigue" id="pipingMechanicalFatigue">
+										<label for="pipingMechanicalFatigue">Piping Mechanical Fatigue</label>
+									</li>								
+								</ul>
+							</div>
+						</div>
+						
+						<hr>
+						
+							<div class="table-data">
+								<div class="btn-group menu-nav-dm js-menu-nav-dm" role="group" aria-label="Basic example">
+									<button type="button" class="btn btn-success btn-outline-success" data-id="btnThinning">Thinning</button>
+									<button type="button" class="btn btn-success btn-outline-success" data-id="btnLining">Lining</button>
+									<button type="button" class="btn btn-success btn-outline-success" data-id="btnsccCaustic">SCC Caustic</button>
+									<button type="button" class="btn btn-success btn-outline-success" data-id="btnsccAmine">SCC Amine</button>
+									<button type="button" class="btn btn-success btn-outline-success" data-id="btnsccSulfide">SCC Sulfide</button>
+									<button type="button" class="btn btn-success btn-outline-success" data-id="btnhicSohicH2S">HIC/SOHIC-H2S</button>
+									<button type="button" class="btn btn-success btn-outline-success" data-id="btnacscc">ACSCC</button>
+									<button type="button" class="btn btn-success btn-outline-success" data-id="btnpascc">PASCC</button>
+									<button type="button" class="btn btn-success btn-outline-success" data-id="btnsccChloride">SCC Chloride</button>
+									<button type="button" class="btn btn-success btn-outline-success" data-id="btnhscHF">HSC-HF</button>
+									<button type="button" class="btn btn-success btn-outline-success" data-id="btnhicSohicHF">HIC/SOHIC-HF</button>
+									<button type="button" class="btn btn-success btn-outline-success" data-id="btnexternalFerritic">External Ferritic</button>
+									<button type="button" class="btn btn-success btn-outline-success" data-id="btncuiFerritic">CUI Ferritic</button>
+									<button type="button" class="btn btn-success btn-outline-success" data-id="btnextclsccAustenitic">EXTCLSCC Austenitic</button>
+									<button type="button" class="btn btn-success btn-outline-success" data-id="btncuiExtclsccAustenitic">CUI EXTCLSCC Austenitic</button>
+									<button type="button" class="btn btn-success btn-outline-success" data-id="btnHTHA">HTHA</button>
+									<button type="button" class="btn btn-success btn-outline-success" data-id="btnbrittleFracture">Brittle Fracture</button>
+									<button type="button" class="btn btn-success btn-outline-success" data-id="btnlowAlloySteelEmbrittlement">Low Alloy Steel Embrittlement</button>
+									<button type="button" class="btn btn-success btn-outline-success" data-id="btnembrittlement885F">885 °F Embrittlement</button>
+									<button type="button" class="btn btn-success btn-outline-success" data-id="btnsigmaPhaseEmbrittlement">Sigma Phase Embrittlement</button>
+									<button type="button" class="btn btn-success btn-outline-success" data-id="btnpipingMechanicalFatigue">Piping Mechanical Fatigue</button>
+								</div>
+							</div>
+											
+							<div class="dados-dm">
+							
+								<!------------------------------ DADOS Thinning ----------------------------------------->
+								
+								<div id="btnThinning" class=" mecanismoDanoBox">		
+									<div class="col-sm-5">
+										<ul>
+											<li class="row justify-content-md-center mb-2">
+												<label for="furnishedThickness" class="col-sm-8 col-form-label">Furnished Thickness (mm)</label>
+												<div class="col-sm-4">
+													<input class="form-control" name="furnishedThickness" id="furnishedThickness" type="number" step="any" min="0" >
+												</div>
+											</li>
+											<li class="row justify-content-md-center mb-2">
+												<label class="col-sm-8 col-form-label" for="minimumRequiredThickness">Minimum Required Thickness (mm)</label>
+												<div class="col-sm-4">
+													<input class="form-control" name="minimumRequiredThickness" id="minimumRequiredThickness" type="number" step="any" min="0">
+												</div>
+											</li>
+											<li class="row justify-content-md-center mb-2">
+												<label class="col-sm-8 col-form-label" for="minimumStructuralThickness">Minimum Structural Thickness (mm)</label>
+												<div class="col-sm-4">
+													<input class="opcional form-control" name="minimumStructuralThickness" id="minimumStructuralThickness" type="number" step="any" min="0" placeholder="Opcional">
+												</div>
+											</li>
+											<li class="row justify-content-md-center mb-2">
+												<label class="col-sm-8 col-form-label" for="hasClad">Has Clad/Weld?</label>
+												<div class="col-sm-4">
+													<select class="form-control" name="hasClad" id="hasClad">
+														<option value=""></option>
+														<option value="true">Yes</option>
+														<option value="false">No</option>
+													</select>
+												</div>
+											</li>
+											<li class="row justify-content-md-center mb-2">
+												<label class="col-sm-8 col-form-label" for="cladThickness">Cladding/Weld Overlay Thickness (mm)</label>
+												<div class="col-sm-4">
+													<input class="form-control" name="cladThickness" id="cladThickness" type="number" step="any" min="0">
+												</div>
+											</li>
+											<li class="row justify-content-md-center mb-2 revisar">
+												<label class="col-sm-8 col-form-label" for="lastInspectionThinning">Last Inspecition Date Thinning</label>
+												<div class="col-sm-4">
+													<input class="form-control" name="lastInspectionThinning" id="lastInspectionThinning" type="date" max="9999-12-31">
+												</div>
+											</li>
+											<li class="row justify-content-md-center mb-2">
+												<label class="col-sm-8 col-form-label" for="trdi">Last Inspection Known Thickness (mm)</label>
+												<div class="col-sm-4">
+													<input class="form-control" name="trdi" id="trdi" type="number" step="any" min="0">
+												</div>
+											</li>
+											<li class="row justify-content-md-center mb-2">
+												<label class="col-sm-8 col-form-label" for="cr_Bm">Base Material Corrosion Rate (mm/ano)</label>
+												<div class="col-sm-4">
+													<input class="form-control" name="cr_Bm" id="cr_Bm" type="number" step="any" min="0">
+												</div>
+											</li>
+											<li class="row justify-content-md-center mb-2">
+												<label class="col-sm-8 col-form-label" for="cr_Cm"> Cladding/Weld Corrosion Rate(mm/ano)</label>
+												<div class="col-sm-4">
+													<input class="form-control" name="cr_Cm" id="cr_Cm" type="number" step="any" min="0">
+												</div>
+											</li>
+											<li class="row justify-content-md-center mb-2">
+												<label class="col-sm-8 col-form-label" for="corrosionType">Corrosion Type</label>
+												<div class="col-sm-4">
+													<select class="form-control" name="corrosionType" id="corrosionType">
+														<option value=""></option>
+														<option value="general">General</option>
+														<option value="localized">Localized</option>
+													</select>
+												</div>
+											</li>
+											<li class="row justify-content-md-center mb-2">
+												<label class="col-sm-8 col-form-label" for="confidenceData">Data Confidence Level</label>
+												<div class="col-sm-4">
+													<select class="form-control" name="confidenceData" id="confidenceData">
+														<option value=""></option>
+														<option value="low">Low</option>
+														<option value="medium">Medium</option>
+														<option value="high">High</option>
+													</select>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="col-sm-5">
+										<ul>
+											<li class="row justify-content-md-center mb-2">
+												<label class="col-sm-8 col-form-label" for="shapeFactor">Shape Factor</label>
+												<div class="col-sm-4">
+													<select class="form-control" name="shapeFactor" id="shapeFactor">
+														<option value=""></option>
+														<option value="2">Cylinder</option>
+														<option value="1.13">Head</option>
+														<option value="4">Sphere</option>
+													</select>
+												</div>
+											</li>
+											<li class="row justify-content-md-center mb-2">
+												<label class="col-sm-8 col-form-label" for="yieldStrength">Material Yield Strength (ksi)</label>
+												<div class="col-sm-4">
+													<input class="form-control" name="yieldStrength" id="yieldStrength" type="number" step="any" min="0">
+												</div>
+											</li>
+											<li class="row justify-content-md-center mb-2">
+												<label class="col-sm-8 col-form-label" for="tensileStrength">Material Tensile Strength (ksi)</label>
+												<div class="col-sm-4">
+													<input class="form-control" name="tensileStrength" id="tensileStrength" type="number" step="any" min="0">
+												</div>
+											</li>
+											<li class="row justify-content-md-center mb-2">
+												<label class="col-sm-8 col-form-label" for="jointEfficiency">Joint Efficiency</label>
+												<div class="col-sm-4">
+													<input class="form-control" name="jointEfficiency" id="jointEfficiency" type="number" step="any" min="0">
+												</div>
+											</li>
+											<li class="row justify-content-md-center mb-2 revisar">
+												<label class="col-sm-8 col-form-label" for="allowableStress">Allowable Stress (ksi)</label>
+												<div class="col-sm-4">
+													<input class="form-control opcional" name="allowableStress" id="allowableStress" type="number" step="any" min="0" placeholder="Minima estrutural preenchida?">
+												</div>
+											</li>
+											<li class="row justify-content-md-center mb-2 revisar">
+												<label class="col-sm-8 col-form-label" for="thinningMechanism">Thinning Mechanism</label>
+												<div class="col-sm-4">
+													<select class="form-control" name="thinningMechanism" id="thinningMechanism">
+														<option value=""></option>
+														<% thinningMechanismOptions.forEach((el, index)=>{ %>
+															<option value="<%= thinningMechanismOptions[index] %>"> <%= thinningMechanismOptions[index] %></option>
+														<% }) %>
+													</select>
+												</div>
+											</li>
+											<li class="row justify-content-md-center mb-2 revisar">
+												<label class="col-sm-8 col-form-label" for="adjustmentFactorsThinning">Adjustment Factors</label>
+												<div class="col-sm-4">
+													<select class="form-control" name="adjustmentFactorsThinning" id="adjustmentFactorsThinning">
+														<option value=""></option>
+														<option value="KeyProcessAndProbes">Key Process Variable and Electrical Resistance Probes</option>
+														<option value="KeyProcess">Key Process Variable</option>
+														<option value="ElectricalResistanceProbes">Electrical Resistance Probes</option>
+														<option value="CorrosionCoupons">Corrosion Coupons</option>
+														<option value="None">None</option>
+													</select>
+												</div>
+											</li>
+											<li class="row justify-content-md-center mb-2 comentar">
+												<label class="col-sm-8 col-form-label" for="fipThinning">Fip</label>
+												<div class="col-sm-4">
+													<select class="form-control" name="fipThinning" id="fipThinning">
+														<option value=""></option>
+														<option value="1">A highly effective inspection specifically for injection/mix point corrosion within the injection point circuit (according to API 570) is performed.</option>
+														<option value="3">Piping circuit contains an injection/mix point</option>
+														<option value="0">N/A</option>
+													</select>
+												</div>
+											</li>
+											<li class="row justify-content-md-center mb-2 comentar">
+												<label class="col-sm-8 col-form-label" for="fdlhinning">Fdl</label>
+												<div class="col-sm-4">
+													<select class="form-control" name="fdlhinning" id="fdlhinning">
+														<option value=""></option>
+														<option value="1">A highly effective inspection method is used to address the potential of localized corrosion in the dead-leg.</option>
+														<option value="3">Piping circuit contains a dead-leg.</option>
+														<option value="0">N/A</option>
+													</select>
+												</div>
+											</li>
+											<li class="row justify-content-md-center mb-2 revisar">
+												<label class="col-sm-8 col-form-label" for="N_A_Thinning">N_A_Thinning</label>
+												<div class="col-sm-4">
+													<input class="form-control" name="N_A_Thinning" id="N_A_Thinning" type="number" step="1" min="0" max="6">
+												</div>
+											</li>
+											<li class="row justify-content-md-center mb-2 revisar">
+												<label class="col-sm-8 col-form-label" for="N_B_Thinning">N_B_Thinning</label>
+												<div class="col-sm-4">
+													<input class="form-control" name="N_B_Thinning" id="N_B_Thinning" type="number" step="1" min="0" max="6">
+												</div>
+											</li>	
+											<li class="row justify-content-md-center mb-2 revisar">
+												<label class="col-sm-8 col-form-label" for="N_C_Thinning">N_C_Thinning</label>
+												<div class="col-sm-4">
+													<input class="form-control" name="N_C_Thinning" id="N_C_Thinning" type="number" step="1" min="0" max="6">
+												</div>
+											</li>	
+											<li class="row justify-content-md-center mb-2 revisar">
+												<label class="col-sm-8 col-form-label" for="N_D_Thinning">N_D_Thinning</label>
+												<div class="col-sm-4">
+													<input class="form-control" name="N_D_Thinning" id="N_D_Thinning" type="number" step="1" min="0" max="6">
+												</div>
+											</li>	
+										</ul>
+									</div>
+								</div>
+
+								<%- include('../../../partials/create/damage-mechanism/lining.ejs');%>
+								<%- include('../../../partials/create/damage-mechanism/scc-caustic.ejs');%>
+								<%- include('../../../partials/create/damage-mechanism/scc-amine.ejs');%>
+								<%- include('../../../partials/create/damage-mechanism/scc-sulfide.ejs');%>
+								<%- include('../../../partials/create/damage-mechanism/hic-sohic-h2s.ejs');%>
+								<%- include('../../../partials/create/damage-mechanism/acscc.ejs');%>
+								<%- include('../../../partials/create/damage-mechanism/pascc.ejs');%>
+								<%- include('../../../partials/create/damage-mechanism/scc-chloride.ejs');%>
+								<%- include('../../../partials/create/damage-mechanism/hsc-hf.ejs');%>
+								<%- include('../../../partials/create/damage-mechanism/hic-sohic-hf.ejs');%>
+								<%- include('../../../partials/create/damage-mechanism/external-ferritic.ejs');%>
+								<%- include('../../../partials/create/damage-mechanism/cui-ferritic.ejs');%>
+								<%- include('../../../partials/create/damage-mechanism/extclscc-austenitic.ejs');%>
+								<%- include('../../../partials/create/damage-mechanism/cui-extclscc-austenitic.ejs');%>
+								<%- include('../../../partials/create/damage-mechanism/htha.ejs');%>
+								<%- include('../../../partials/create/damage-mechanism/brittle-fracture.ejs');%>
+								<%- include('../../../partials/create/damage-mechanism/low-alloy-embrittlement.ejs');%>
+								<%- include('../../../partials/create/damage-mechanism/885-embrittlement.ejs');%>
+								<%- include('../../../partials/create/damage-mechanism/sigma-phase-embrittlement.ejs');%>
+								<%- include('../../../partials/create/damage-mechanism/piping-mechanical-fatigue.ejs');%>
+							</div>	
+					</fieldset>
+					
+					<fieldset class="">
+
+						<%- include('../../../partials/create/inspection-history.ejs');%>
+						
+					</fieldset>
+				</form>
+			</div>
+		
+							
+					
+			
+		</section>
+	</body>
+	<script>
+		// var filtro = document.getElementById('filtro-clientes');
+		// var tabela = document.getElementById('lista-clientes');
+		// filtro.onkeyup = function() {
+		// 	var nomeFiltro = filtro.value;
+		// 	for (var i = 1; i < tabela.rows.length; i++) {
+		// 		var conteudoCelula = tabela.rows[i].cells[1].innerText;
+		// 		var corresponde = conteudoCelula.toLowerCase().indexOf(nomeFiltro) >= 0;
+		// 		tabela.rows[i].style.display = corresponde ? '' : 'none';
+		// 	}
+		// };
+	
+	// Navegar pelo MENU secundário //
+		function clickBtnNav(el){
+			btnNav.forEach(el=>el.classList.add("btn-outline-primary"))
+			this.classList.toggle("btn-outline-primary");
+		};
+	
+		function navform(){
+			btnNav.forEach((el)=>{
+				el.addEventListener("click", clickBtnNav);
+			});
+			btnNav.forEach((el,index)=>{
+				el.addEventListener("click", ()=>{	
+					fieldset.forEach((content) => {
+						content.classList.add("inativo");
+						});
+					fieldset[index].classList.remove("inativo");
+				});
+			});
+		};
+		
+		const btnNav = document.querySelectorAll(".btn-nav");
+		const fieldset = document.querySelectorAll("fieldset");
+		navform();
+		window.onload = btnNav[3].click();
+	
+	
+	//	Botões de ação //
+	
+		const input = document.querySelectorAll("input");
+		const selection = document.querySelectorAll("select");
+		
+		input.forEach((el)=>el.disabled = true);
+		selection.forEach((el)=>el.disabled = true);
+		
+		function btnEditar(editar){
+			btnEditarCadastro.classList.toggle("inativo");
+			btnCancelarCadastro.classList.toggle("inativo");
+			btnSalvarCadastro.classList.toggle("inativo");
+			btnVoltarCadastro.classList.toggle("inativo");
+			
+			input.forEach((el)=>el.disabled = editar);
+			selection.forEach((el)=>el.disabled = editar);
+			
+			for (let i=0; i<=8; i++) {
+				input[i].readOnly = true;
+			};
+			
+		}
+		const btnEditarCadastro = document.querySelector("#editarCadastro");
+		btnEditarCadastro.addEventListener("click", ()=>{btnEditar(false)});
+		
+		const btnCancelarCadastro = document.querySelector("#cancelarCadastro");
+		const btnSalvarCadastro = document.querySelector("#salvarCadastro");
+		const btnVoltarCadastro = document.querySelector("#voltarCadastro");
+
+		function cancelarCadastro(event){
+			event.preventDefault();
+			var decision = confirm("ATENÇÃO: Todas as modificações realizadas serão perdidas. Deseja continuar?");
+			if(decision){
+				window.alert("Alterações desfeitas!")
+				document.location.reload(true);
+			}else{
+				console.log("Foi um acidente");
+			}
+		}
+
+/*		
+	// IDLH teste //
+
+		const toxicFluid = document.querySelector("#toxicComposition");
+		const TAGtoxicFluidPercent = document.querySelector("#percentToxicFluid");
+		let idlh = document.querySelector("#idlh");
+
+		function isIDLH(fluid){
+		
+			let toxicFluidPercent = TAGtoxicFluidPercent.value * 10000; // converter para ppm
+
+			if(fluid == "HF" && toxicFluidPercent >= 30){
+				idlh.setAttribute("value", "true");
+			} else if(fluid == "H2S" && toxicFluidPercent >= 100){
+				idlh.setAttribute("value", "true");
+			} else if(fluid == "Ammonia" && toxicFluidPercent >= 10){
+				idlh.setAttribute("value", "true");
+			} else if(fluid == "Chlorine" && toxicFluidPercent >= 10){
+				idlh.setAttribute("value", "true");
+			} else if(fluid == "AlCl3" && toxicFluidPercent >= 0){
+				idlh.setAttribute("value", "true");
+			} else if(fluid == "CO" && toxicFluidPercent >= 1200){
+				idlh.setAttribute("value", "true");
+			} else if(fluid == "HCl(Gas)" && toxicFluidPercent >= 50){
+				idlh.setAttribute("value", "true");
+			} else{
+				idlh.setAttribute("value", "false");
+			}
+		}
+	
+		window.addEventListener("load", ()=>isIDLH(toxicFluid.value));
+		toxicFluid.addEventListener("change", ()=>isIDLH(toxicFluid.value));
+		TAGtoxicFluidPercent.addEventListener("change", ()=>isIDLH(toxicFluid.value));
+*/		
+/*	Selecionar o SELECT ATIVO
+	const shapeOptions = document.querySelectorAll("#shapeFactor option");
+	const shapeValue = <%="shapeValue"%>;
+	
+//	shapeOptions[1].selected = true;
+		
+	shapeOptions.forEach(el=>{
+		console.log(el.value)
+		
+			if(el.value == shapeValue){
+				el.selected = true;
+			}
+		});
+*/	
+	
+
+	</script>
+<%- include('../../../partials/footer.ejs'); %>

@@ -1,0 +1,37 @@
+[
+    {
+        "ContinuousReleasesDuration(minutes)": 5,
+        "H2S_c": 1.2411,
+        "H2S_d": 3.9686,
+        "HF-Acid_c": 1.1401,
+        "HF-Acid_d": 3.5683
+    },
+    {
+        "ContinuousReleasesDuration(minutes)": 10,
+        "H2S_c": 1.241,
+        "H2S_d": 4.0948,
+        "HF-Acid_c": 1.1031,
+        "HF-Acid_d": 3.8431
+    },
+    {
+        "ContinuousReleasesDuration(minutes)": 20,
+        "H2S_c": 1.237,
+        "H2S_d": 4.238,
+        "HF-Acid_c": 1.0816,
+        "HF-Acid_d": 4.104
+    },
+    {
+        "ContinuousReleasesDuration(minutes)": 40,
+        "H2S_c": 1.2297,
+        "H2S_d": 4.3626,
+        "HF-Acid_c": 1.0942,
+        "HF-Acid_d": 4.3295
+    },
+    {
+        "ContinuousReleasesDuration(minutes)": 60,
+        "H2S_c": 1.2266,
+        "H2S_d": 4.4365,
+        "HF-Acid_c": 1.1031,
+        "HF-Acid_d": 4.4576
+    }
+]

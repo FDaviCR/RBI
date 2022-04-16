@@ -1,0 +1,54 @@
+<div id="btnLining" class=" mecanismoDanoBox">				
+	<ul>
+		<li class="row justify-content-md-center mb-2">
+			<label class="col-sm-5 col-form-label" for="dateLining">Lining Installation Date</label>
+			<div class="col-sm-4">
+				<input class="form-control" name="dateLining" id="dateLining" type="date" max="9999-12-31">
+			</div>
+		</li>
+		<li class="row justify-content-md-center mb-2 revisar">
+			<label class="col-sm-5 col-form-label" for="dateLastLiningInspection">Date of last A/B Effectiveness Inspection</label>
+			<div class="col-sm-4">
+				<input class="form-control" name="dateLastLiningInspection" id="dateLastLiningInspection" type="date" max="9999-12-31">
+			</div>
+		</li>
+		<li class="row justify-content-md-center mb-2 revisar">
+			<label class="col-sm-5 col-form-label" for="liningType">Lining Type</label>
+			<div class="col-sm-4">
+				<select class="form-control" name="liningType" id="liningType">
+					<option value=""></option>
+					<option value="StripLinedAlloyResistant">Strip Lined Alloy (Resistant)</option>
+					<option value="CastableRefractory">Castable Refractory</option>
+					<option value="CastableRefractory Severe Conditions">Castable Refractory Severe Conditions</option>
+					<option value="GlassLined">Glass Lined</option>
+					<option value="AcidBrick">Acid Brick</option>
+					<option value="Fiberglass">Fiberglass</option>
+					<option value="Low-qualityImmersionGradeCoatingSprayAppliedTo40Mils)">Low-quality Immersion Grade Coating (Spray Applied, to 40 mils)</option>
+					<option value="Medium-qualityImmersionGradeCoatingFilledTrowelAppliedTo80mils">Medium-quality Immersion Grade Coating (Filled, Trowel Applied, to 80 mils)</option>
+					<option value="High-qualityImmersionGradeCoatingReinforcedTrowelAppliedMore80mils">High-quality Immersion Grade Coating (Reinforced, Trowel Applied, ≥80 mils)</option>
+				</select>
+			</div>
+		</li>
+		<li class="row justify-content-md-center mb-2">
+			<label class="col-sm-5 col-form-label" for="liningCondition">Lining Condition</label>
+			<div class="col-sm-4">
+				<select class="form-control" name="liningCondition" id="liningCondition">
+					<option value=""></option>
+					<option value="10">Poor</option>
+					<option value="2">Average</option>
+					<option value="1">Good</option>
+				</select>
+			</div>
+		</li>
+		<li class="row justify-content-md-center mb-2 comentar">
+			<label class="col-sm-5 col-form-label" for="fomLining">On-line Monitoring</label>
+			<div class="col-sm-4">
+				<select class="form-control" name="fomLining" id="fomLining">
+					<option value=""></option>
+					<option value="0.1">On-line monitoring is used, and it is known to be effective at detecting lining deterioration</option>
+					<option value="1">Otherwise</option>
+				</select>
+			</div>
+		</li>
+	</ul>
+</div>

@@ -1,0 +1,65 @@
+<%- include('../../../partials/head.ejs'); %>
+	<body>
+		<%- include('../../../partials/header-menu/header-cadastro.ejs'); %>
+		<%- include('../../../admin/cadastro/vessel/vessel-index.ejs'); %>
+
+	<script>
+	
+	
+	// Inserir o título //
+	
+	const pageTitle = document.querySelector("#page-title");
+	
+	pageTitle.innerText = "<%= equipment.equipment %>"+" - "+"<%= component.component %>";
+	
+
+	// Componente selecionado //
+	
+	const todosComponentes = document.querySelectorAll(".drop-componente");
+	const todosEquipamentos = document.querySelectorAll(".drop-equipamento");
+	
+	
+	const compAtual = "<%= component.component %>";
+	const equipmentAtual = "<%= equipment.equipment %>";
+		
+	function componentAtual(tag){
+	
+		todosEquipamentos.forEach(equipamento=>{
+
+			let equipTexto = equipamento.textContent;
+			let testeEquip = equipTexto.trimStart().trimEnd();
+		
+			if(equipmentAtual == testeEquip){
+				equipamento.parentElement.parentElement.classList.replace("inativo", "equipment-selected");
+				equipamento.parentElement.nextElementSibling.classList.replace("inativo", "component-selected");
+			}
+		
+		});
+		
+		todosComponentes.forEach(el=>{
+		
+			let compTexto = el.textContent;
+			
+			let testeComp = compTexto.trimStart().trimEnd();
+			
+			let ulSuperior = el.parentElement.parentElement.classList.contains("component-selected");
+			
+				if(compAtual == testeComp && ulSuperior){
+					console.log(el.parentElement.parentElement.classList);
+					el.classList.replace("btn-outline-primary", "btn-primary");
+				
+				}
+		});	
+						
+	}
+	
+	componentAtual();
+
+	// Esconder Btn //
+	
+		
+		// btnMenuHamburguer.classList.add("inativo");
+	
+	</script>
+		
+<%- include('../../../partials/footer.ejs'); %>

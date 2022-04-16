@@ -1,0 +1,29 @@
+[
+    {
+        "As-welded200to237": "Medium",
+        "As-welded<200": "Low",
+        "As-welded>237": "High",
+        "EnvironmentalSeverity": "High",
+        "PWHT200to237": "Low",
+        "PWHT<200": "None",
+        "PWHT>237": "Medium"
+    },
+    {
+        "As-welded200to237": "Medium",
+        "As-welded<200": "Low",
+        "As-welded>237": "High",
+        "EnvironmentalSeverity": "Moderate",
+        "PWHT200to237": "None",
+        "PWHT<200": "None",
+        "PWHT>237": "Low"
+    },
+    {
+        "As-welded200to237": "Low",
+        "As-welded<200": "Low",
+        "As-welded>237": "Medium",
+        "EnvironmentalSeverity": "Low",
+        "PWHT200to237": "None",
+        "PWHT<200": "None",
+        "PWHT>237": "None"
+    }
+]

@@ -1,0 +1,28 @@
+Toxic Component;Probit Parameters_A;Probit Parameters_B;Probit Parameters_N;IDLH (ppm);AEGL3-10 (ppm);AEGL3-30 (ppm);AEGL3-60 (ppm);EPA Toxic Endpoint (mg/L);ERPG-3
+Acrolein;-9.93;2.05;1;2;;;;0.5;
+Acrylonitrile;-29.42;3.01;1.43;85;;;;0.08;75
+Aluminum trichloride;-14.65;2;1;;;;;;
+Ammonia;-35.9;1.85;2;10;;;;0.14;750
+Benzene;-109.8;5.3;2;500;;;;;1000
+Bromine;-9.04;0.92;2;3;;;;0.01;5
+Carbon monoxide;-37.98;3.7;1;1200;1700;600;330;;500
+Carbon tetrachloride;-6.29;0.41;2.5;200;;;;;750
+Chlorine;-8.29;0.92;2;10;;28;20;0.01;20
+Ethylene glycol monoethyl ether;-15.54;1;2;;;;;;
+Ethylene oxide;-6.21;1;1;800;;;;;
+Formaldehyde;-12.24;1.3;2;20;;;;0.01;25
+Hydrogen chloride;-16.85;2;1;50;620;210;100;0.03;150
+Hydrogen cyanide;-29.42;3.01;1.43;50;27;21;15;;25
+Hydrogen fluoride;-48.33;4.853;1;30;170;62;44;;
+Hydrogen sulfide;-31.42;3.01;1.43;100;76;60;50;;100
+Methanol;;;;;15000;15000;7900;;
+Methyl bromide;-56.81;5.27;1;;;;;;200
+Methyl isocyanate;-5.64;1.64;0.65;;;;;;
+Nitric acid;-5.48;1;2;;;;;;
+Nitrogen dioxide;-13.79;1.4;2;20;;;;;
+Phosgene;-19.27;3.69;1;2;3.6;1.5;0.75;;
+Propylene oxide;-7.415;0.509;2;400;;;;0.59;750
+Styrene;;;;700;;;;;1000
+Sulphur dioxide;-15.67;2.1;1;100;;;;;
+Toluene;-6.79;0.41;2.5;500;1600;900;630;;
+Toluene diisocyanate;-4.49;1;2;;;;;;

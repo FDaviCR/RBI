@@ -1,0 +1,57 @@
+[
+    {
+        "Temperature(C)": "?38",
+        "lessequal10_101to1000": "Low",
+        "lessequal10_11to100": "Low",
+        "lessequal10_1to10": "Low",
+        "lessequal10_>1000": "Medium",
+        "more10_101to1000": "None",
+        "more10_11to100": "None",
+        "more10_1to10": "None",
+        "more10_>1000": "None"
+    },
+    {
+        "Temperature(C)": ">38 to 66",
+        "lessequal10_101to1000": "Medium",
+        "lessequal10_11to100": "Medium",
+        "lessequal10_1to10": "Low",
+        "lessequal10_>1000": "High",
+        "more10_101to1000": "Low",
+        "more10_11to100": "Low",
+        "more10_1to10": "Low",
+        "more10_>1000": "Low"
+    },
+    {
+        "Temperature(C)": ">66 to 93",
+        "lessequal10_101to1000": "High",
+        "lessequal10_11to100": "Medium",
+        "lessequal10_1to10": "Medium",
+        "lessequal10_>1000": "High",
+        "more10_101to1000": "Low",
+        "more10_11to100": "Low",
+        "more10_1to10": "Low",
+        "more10_>1000": "Low"
+    },
+    {
+        "Temperature(C)": ">93 to 149",
+        "lessequal10_101to1000": "High",
+        "lessequal10_11to100": "High",
+        "lessequal10_1to10": "Medium",
+        "lessequal10_>1000": "High",
+        "more10_101to1000": "Low",
+        "more10_11to100": "Low",
+        "more10_1to10": "Low",
+        "more10_>1000": "Medium"
+    },
+    {
+        "Temperature(C)": ">149",
+        "lessequal10_101to1000": "High",
+        "lessequal10_11to100": "High",
+        "lessequal10_1to10": "High",
+        "lessequal10_>1000": "High",
+        "more10_101to1000": "Medium",
+        "more10_11to100": "Medium",
+        "more10_1to10": "Medium",
+        "more10_>1000": "High"
+    }
+]

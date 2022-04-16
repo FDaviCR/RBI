@@ -1,0 +1,6 @@
+Temperature (C);lessequal10_1 to 10;lessequal10_11 to 100;lessequal10_101 to 1000;lessequal10_>1000;more10_1 to 10;more10_11 to 100;more10_101 to 1000;more10_>1000
+?38;Low;Low;Low;Medium;None;None;None;None
+>38 to 66;Low;Medium;Medium;High;Low;Low;Low;Low
+>66 to 93;Medium;Medium;High;High;Low;Low;Low;Low
+>93 to 149;Medium;High;High;High;Low;Low;Low;Medium
+>149;High;High;High;High;Medium;Medium;Medium;High
