@@ -4,15 +4,19 @@ const connection = require("../database/database");
 const Component = connection.define('log',{
 	userId:{
 		type: Sequelize.INTEGER,
-		allowNull: false,
+		allowNull: false
 	},
-    equipmentId: {
+    elementId: {
         type: Sequelize.INTEGER,
-        allowNull: false,
+        allowNull: false
+    },
+    type:{
+        type: Sequelize.STRING,
+        allowNull: false
     },
 	data:{
         type: Sequelize.DATE,
-        allowNull: false,
+        allowNull: false
     },
 });
 
