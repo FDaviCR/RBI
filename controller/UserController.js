@@ -5,7 +5,7 @@ const bcrypt = require('bcryptjs');
 
 router.get("/admin/users", (req,res) => {
     User.findAll().then(users => {
-        res.render("admin/users/index", {users: users});
+        res.render("admin/usuario/index", {users: users});
     });
 });
 
@@ -14,34 +14,32 @@ router.get("/admin/users/create", (req,res) => {
 });
 
 router.post("/users/create", (req,res) => {
-    var email = req.body.email;
-    var password = req.body.password;
+    let email = req.body.email;
+    let password = req.body.password;
 
-    User.findOne({where:{login: email}}).then( user =>{
+    User.findOne({where:{login: email}}).then(user =>{
         if(user == undefined){
-            var salt = bcrypt.genSaltSync(10);
-            var hash = bcrypt.hashSync(password, salt);
-            var cad = null
+            let salt = bcrypt.genSaltSync(10);
+            let hash = bcrypt.hashSync(password, salt);
+            let cad = null
 
-            if(req.session.usuario == undefined){
+            if(req.session.user == undefined){
                 cad = "Usuário Primario";
             }else{
-                cad = req.session.usuario;
+                cad = req.session.user;
             }
 
             User.create({
                 login: email,
                 password: hash,
-                usuario: cad,
-                ativo: true
-            }).then(function(x){
-                console.log(x.id);
-                if(req.session.usuario == undefined){
+                user: cad,
+                active: true
+            }).then(()=>{
+                if(req.session.user == undefined){
                     res.redirect("/");
                 }else{
                     res.redirect("/admin/users/");
                 }
-                
             }).catch((err)=>{
                 console.log(err);
             });
@@ -57,13 +55,15 @@ router.get("/login", (req, res) => {
 });
 
 router.post("/authenticate", (req,res) => {
-    var login = req.body.email;
-    var password = req.body.password;
-    req.session.usuario = login;
+    let login = req.body.email;
+    let password = req.body.password;
+    //req.session.user = login;
+
+    console.log("------------------ HERE ---------------------")
 
     User.findOne({where:{login:login}}).then(user=>{
         if(user != undefined){
-            var correct = bcrypt.compareSync(password, user.password);
+            let correct = bcrypt.compareSync(password, user.password);
 
             if(correct){
                 req.session.user = {
@@ -74,7 +74,6 @@ router.post("/authenticate", (req,res) => {
             }else{
                 res.redirect("/login");
             }
-
         }else{
             res.redirect("/login");
         }
@@ -82,10 +81,10 @@ router.post("/authenticate", (req,res) => {
 });
 
 router.post("/users/delete", (req, res)=>{
-    var id = req.body.id;
+    let id = req.body.id;
     if(id != undefined){
         if(!isNaN(id)){
-            User.update({ativo: false,usuario: req.session.usuario},{
+            User.update({active: false,user: req.session.user},{
                 where:{
                     id:id
                 }
@@ -94,7 +93,6 @@ router.post("/users/delete", (req, res)=>{
             })
         }else{
             res.redirect("/users");
-            console.log("Não-número");
         }
     }else{
         res.redirect("/users");
@@ -103,10 +101,10 @@ router.post("/users/delete", (req, res)=>{
 
 
 router.post("/users/reactivate", (req, res)=>{
-    var id = req.body.id;
+    let id = req.body.id;
     if(id != undefined){
         if(!isNaN(id)){
-            User.update({ativo: true,usuario: req.session.usuario},{
+            User.update({active: true,user: req.session.user},{
                 where:{
                     id:id
                 }
@@ -115,17 +113,15 @@ router.post("/users/reactivate", (req, res)=>{
             })
         }else{
             res.redirect("/users");
-            console.log("Não-número");
         }
     }else{
         res.redirect("/users");
     }
 });
 
-
 router.get("/logout", (req,res) =>{
     req.session.user = undefined;
     res.redirect("/login");
 });
 
-module.exports = router;
+module.exports = router

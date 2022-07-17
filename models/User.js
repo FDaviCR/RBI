@@ -10,6 +10,10 @@ const User = connection.define('users',{
         type: Sequelize.STRING,
         allowNull: false
     },
+    user:{
+        type: Sequelize.STRING,
+        allowNull: false
+    },
     active:{
         type: Sequelize.BOOLEAN,
         allowNull: false

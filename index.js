@@ -8,7 +8,8 @@ const connection = require("./database/database.js");
 // const componentController = require("./controller/ArvoreController");
 // const Component = require("./models/Arvore");
 
-const usersController = require("./controller/UsersController");
+//const usersController = require("./controller/UsersController");
+const userController = require("./controller/UserController");
 const siteController = require("./controller/SiteController");
 const equipmentController = require("./controller/EquipmentController");
 const componentController = require("./controller/ComponentController");
@@ -18,15 +19,14 @@ const inventoryGroupController = require("./controller/InventoryGroupController"
 const archiveController = require("./controller/ArchiveController");
 const resultController = require("./controller/ResultController");
 
+const User = require("./models/User");
 const Site = require("./models/Site");
 const Equipment = require("./models/Equipment");
-const component = require("./models/Component");
-const vessel = require("./models/Vessel");
-const inventoryGroup = require("./models/InventoryGroup");
-
+const Cmponent = require("./models/Component");
+const Vessel = require("./models/Vessel");
+const InventoryGroup = require("./models/InventoryGroup");
 
 //const consenqueceVesselController = require("./controller/risk/vessel/ConsenqueceVesselController");
-
 
 // View engine
 app.set('view engine','ejs');
@@ -47,7 +47,7 @@ app.get("/", (req, res) => {
     res.render("index.ejs");
 });
 
-app.use("/", usersController);
+app.use("/", userController);
 app.use("/", siteController);
 app.use("/", equipmentController);
 app.use("/", componentController);
@@ -57,13 +57,9 @@ app.use("/", inventoryGroupController);
 app.use("/", archiveController);
 app.use("/", resultController);
 
-
 //app.use("/", consenqueceVesselController);
 
-
-
-
-app.listen(3000,()=>{
+app.listen(3333,()=>{
 	console.log("App rodando na porta 3000. Iniciando...");
 });
 
